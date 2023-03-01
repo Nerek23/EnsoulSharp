@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{FC0DEFBA-7C6E-4209-8850-4D106E947994}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnsoulSharp</RootNamespace>
+    <AssemblyName>EnsoulSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00Q6MPBXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AHXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AXXZ.cs" />
+    <Compile Include="-CrtImplementationDetails-\LanguageSupport.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadExceptionHandlerException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleUninitializer.cs" />
+    <Compile Include="-CrtImplementationDetails-\Progress.cs" />
+    <Compile Include="-CrtImplementationDetails-\ThisModule.cs" />
+    <Compile Include="-CrtImplementationDetails-\TriBool.cs" />
+    <Compile Include="-Module-.cs" />
+    <Compile Include="AbilityResourceType.cs" />
+    <Compile Include="AIBaseClient.cs" />
+    <Compile Include="AIBaseClientAggro.cs" />
+    <Compile Include="AIBaseClientAggroEventArgs.cs" />
+    <Compile Include="AIBaseClientBuffAdd.cs" />
+    <Compile Include="AIBaseClientBuffAddEventArgs.cs" />
+    <Compile Include="AIBaseClientBuffRemove.cs" />
+    <Compile Include="AIBaseClientBuffRemoveEventArgs.cs" />
+    <Compile Include="AIBaseClientDoCast.cs" />
+    <Compile Include="AIBaseClientIssueOrder.cs" />
+    <Compile Include="AIBaseClientIssueOrderEventArgs.cs" />
+    <Compile Include="AIBaseClientNewPath.cs" />
+    <Compile Include="AIBaseClientNewPathEventArgs.cs" />
+    <Compile Include="AIBaseClientPlayAnimation.cs" />
+    <Compile Include="AIBaseClientPlayAnimationEventArgs.cs" />
+    <Compile Include="AIBaseClientProcessSpellCast.cs" />
+    <Compile Include="AIBaseClientProcessSpellCastEventArgs.cs" />
+    <Compile Include="AIBaseClientVisibleEnter.cs" />
+    <Compile Include="AIBaseClientVisibleLeave.cs" />
+    <Compile Include="AIHeroClient.cs" />
+    <Compile Include="AIHeroClientLevelUp.cs" />
+    <Compile Include="AIHeroClientLevelUpEventArgs.cs" />
+    <Compile Include="AIMarker.cs" />
+    <Compile Include="AIMinionClient.cs" />
+    <Compile Include="AITurretClient.cs" />
+    <Compile Include="AITurretCommon.cs" />
+    <Compile Include="AnimatedBuildingClient.cs" />
+    <Compile Include="AntiDisconnectFlags.cs" />
+    <Compile Include="AttackableUnit.cs" />
+    <Compile Include="AttackableUnitTeleport.cs" />
+    <Compile Include="AttackableUnitTeleportEventArgs.cs" />
+    <Compile Include="Barracks.cs" />
+    <Compile Include="BarracksDampenerClient.cs" />
+    <Compile Include="BuffInstance.cs" />
+    <Compile Include="BuffType.cs" />
+    <Compile Include="BuildingClient.cs" />
+    <Compile Include="BuyItemResult.cs" />
+    <Compile Include="CalculationDisplayMode.cs" />
+    <Compile Include="ClickType.cs" />
+    <Compile Include="CollisionFlags.cs" />
+    <Compile Include="DragonSRX.cs" />
+    <Compile Include="DragonSRXSlot.cs" />
+    <Compile Include="DrawFX.cs" />
+    <Compile Include="Drawing.cs" />
+    <Compile Include="DrawingBeginScene.cs" />
+    <Compile Include="DrawingD3D11PostResizeBuffers.cs" />
+    <Compile Include="DrawingD3D11PreResizeBuffers.cs" />
+    <Compile Include="DrawingD3D11Present.cs" />
+    <Compile Include="DrawingDraw.cs" />
+    <Compile Include="DrawingEndScene.cs" />
+    <Compile Include="DrawingFlushDraw.cs" />
+    <Compile Include="DrawingFlushEndScene.cs" />
+    <Compile Include="DrawingPostReset.cs" />
+    <Compile Include="DrawingPreReset.cs" />
+    <Compile Include="DrawingPresent.cs" />
+    <Compile Include="DrawingRenderMouseOvers.cs" />
+    <Compile Include="EffectEmitter.cs" />
+    <Compile Include="EmoteId.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameDisplayChat.cs" />
+    <Compile Include="GameDisplayChatEventArgs.cs" />
+    <Compile Include="GameEventId.cs" />
+    <Compile Include="GameMapId.cs" />
+    <Compile Include="GameNotify.cs" />
+    <Compile Include="GameNotifyEventArgs.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjectCharacterState.cs" />
+    <Compile Include="GameObjectCombatType.cs" />
+    <Compile Include="GameObjectCreate.cs" />
+    <Compile Include="GameObjectDelete.cs" />
+    <Compile Include="GameObjectFloatPropertyChange.cs" />
+    <Compile Include="GameObjectFloatPropertyChangeEventArgs.cs" />
+    <Compile Include="GameObjectIntegerPropertyChange.cs" />
+    <Compile Include="GameObjectIntegerPropertyChangeEventArgs.cs" />
+    <Compile Include="GameObjectNotFoundException.cs" />
+    <Compile Include="GameObjectOrder.cs" />
+    <Compile Include="GameObjectTeam.cs" />
+    <Compile Include="GameObjectType.cs" />
+    <Compile Include="GamePacketEventArgs.cs" />
+    <Compile Include="GameProcessPacket.cs" />
+    <Compile Include="GameSendChat.cs" />
+    <Compile Include="GameSendChatEventArgs.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="GameUpdate.cs" />
+    <Compile Include="GameWndEventArgs.cs" />
+    <Compile Include="GameWndProc.cs" />
+    <Compile Include="gcroot-System.cs" />
+    <Compile Include="GrassObject.cs" />
+    <Compile Include="Hacks.cs" />
+    <Compile Include="HQClient.cs" />
+    <Compile Include="Hud.cs" />
+    <Compile Include="HWND__.cs" />
+    <Compile Include="ICLRRuntimeHost.cs" />
+    <Compile Include="ICorRuntimeHost.cs" />
+    <Compile Include="ID3D11Device.cs" />
+    <Compile Include="ID3D11DeviceContext.cs" />
+    <Compile Include="IDirect3DDevice9.cs" />
+    <Compile Include="IDXGISwapChain.cs" />
+    <Compile Include="InventorySlot.cs" />
+    <Compile Include="InventorySlotNotFoundException.cs" />
+    <Compile Include="ItemData.cs" />
+    <Compile Include="ItemId.cs" />
+    <Compile Include="IUnknown.cs" />
+    <Compile Include="LevelPropAIClient.cs" />
+    <Compile Include="LevelPropGameObjectClient.cs" />
+    <Compile Include="LevelPropSpawnerPoint.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MapPropClient.cs" />
+    <Compile Include="MenuGUI.cs" />
+    <Compile Include="MissileClient.cs" />
+    <Compile Include="MissileClientCommitMovement.cs" />
+    <Compile Include="MissileClientCommitMovementEventArgs.cs" />
+    <Compile Include="Native\AbilityResource.cs" />
+    <Compile Include="Native\AIBaseClient.cs" />
+    <Compile Include="Native\AIBaseCommon.cs" />
+    <Compile Include="Native\AIHero.cs" />
+    <Compile Include="Native\AIHeroClient.cs" />
+    <Compile Include="Native\AntiDisconnectFlags.cs" />
+    <Compile Include="Native\AttackableUnit.cs" />
+    <Compile Include="Native\AvatarClient.cs" />
+    <Compile Include="Native\AvatarCommon.cs" />
+    <Compile Include="Native\BaseInventory.cs" />
+    <Compile Include="Native\BaseParams.cs" />
+    <Compile Include="Native\BasePerk.cs" />
+    <Compile Include="Native\BasePerkInfo.cs" />
+    <Compile Include="Native\Box.cs" />
+    <Compile Include="Native\BuffInstance.cs" />
+    <Compile Include="Native\BuffInstanceClient.cs" />
+    <Compile Include="Native\BuffManager.cs" />
+    <Compile Include="Native\BuffManagerClient.cs" />
+    <Compile Include="Native\BuffScriptInstance.cs" />
+    <Compile Include="Native\BuffScriptInstanceStack.cs" />
+    <Compile Include="Native\CameraConfig.cs" />
+    <Compile Include="Native\CharacterData.cs" />
+    <Compile Include="Native\CharacterIntermediate.cs" />
+    <Compile Include="Native\CharacterRecord.cs" />
+    <Compile Include="Native\CharacterState.cs" />
+    <Compile Include="Native\CharacterStateIndicatorIndexData.cs" />
+    <Compile Include="Native\ChatViewController.cs" />
+    <Compile Include="Native\ClientCameraPositionClient.cs" />
+    <Compile Include="Native\DefaultPacket.cs" />
+    <Compile Include="Native\DefaultPacketHeader.cs" />
+    <Compile Include="Native\DX11Device.cs" />
+    <Compile Include="Native\DX9Device.cs" />
+    <Compile Include="Native\EffectEmitter.cs" />
+    <Compile Include="Native\EmoteRadialViewController.cs" />
+    <Compile Include="Native\Enums\AbilityResourceType.cs" />
+    <Compile Include="Native\Enums\BuffType.cs" />
+    <Compile Include="Native\Enums\BuyItemResult.cs" />
+    <Compile Include="Native\Enums\CalculationDisplayMode.cs" />
+    <Compile Include="Native\Enums\CastType.cs" />
+    <Compile Include="Native\Enums\ClassId.cs" />
+    <Compile Include="Native\Enums\ClickType.cs" />
+    <Compile Include="Native\Enums\CollisionFlags.cs" />
+    <Compile Include="Native\Enums\CombatType.cs" />
+    <Compile Include="Native\Enums\EmoteId.cs" />
+    <Compile Include="Native\Enums\EventsNames.cs" />
+    <Compile Include="Native\Enums\GameState.cs" />
+    <Compile Include="Native\Enums\IssuedOrder.cs" />
+    <Compile Include="Native\Enums\MapId.cs" />
+    <Compile Include="Native\Enums\OutputType.cs" />
+    <Compile Include="Native\Enums\PingCategory.cs" />
+    <Compile Include="Native\Enums\PingResourceType.cs" />
+    <Compile Include="Native\Enums\SpellSlot.cs" />
+    <Compile Include="Native\Enums\SpellToggleState.cs" />
+    <Compile Include="Native\Enums\SpellUseFlags.cs" />
+    <Compile Include="Native\Enums\SummonerEmoteSlot.cs" />
+    <Compile Include="Native\Enums\TargetingType.cs" />
+    <Compile Include="Native\Enums\TeamId.cs" />
+    <Compile Include="Native\Enums\X3DPlatform.cs" />
+    <Compile Include="Native\EventAdapter.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(char const -,bool,bool -)-.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(char const -,unsigned int,bool .cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.10.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.11.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.12.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.13.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.14.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.15.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.16.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.17.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.2.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.3.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.4.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.5.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.6.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.7.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.8.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.9.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(EnsoulSharp.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(enum EnsoulSharp.cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(HWND__ -,unsigned int,unsigned .cs" />
+    <Compile Include="Native\EventHandler-void (__cdecl-)(void)-.cs" />
+    <Compile Include="Native\EvolutionState.cs" />
+    <Compile Include="Native\Experience.cs" />
+    <Compile Include="Native\FacingDirection.cs" />
+    <Compile Include="Native\FrameClockFacade.cs" />
+    <Compile Include="Native\FramerateInformation.cs" />
+    <Compile Include="Native\GameClient.cs" />
+    <Compile Include="Native\GameObject.cs" />
+    <Compile Include="Native\GameObjectContainer.cs" />
+    <Compile Include="Native\GameObjectVtbl.cs" />
+    <Compile Include="Native\GameSessionInfo.cs" />
+    <Compile Include="Native\Gold.cs" />
+    <Compile Include="Native\Health.cs" />
+    <Compile Include="Native\HeroInventoryClient.cs" />
+    <Compile Include="Native\HeroInventoryCommon.cs" />
+    <Compile Include="Native\HeroStatInt.cs" />
+    <Compile Include="Native\HeroStatIntRounded.cs" />
+    <Compile Include="Native\HeroStatsCollection.cs" />
+    <Compile Include="Native\HudCursorTargetLogic.cs" />
+    <Compile Include="Native\HudPlayerResourceBars.cs" />
+    <Compile Include="Native\HudSelectLogic.cs" />
+    <Compile Include="Native\HudSpellLogic.cs" />
+    <Compile Include="Native\HudTextEdit.cs" />
+    <Compile Include="Native\HudUnitStats.cs" />
+    <Compile Include="Native\IconSlotInfo.cs" />
+    <Compile Include="Native\IGameCalculation.cs" />
+    <Compile Include="Native\IGameCalculationDataSource.cs" />
+    <Compile Include="Native\IGameCalculationOwner.cs" />
+    <Compile Include="Native\IGameCalculationOwnerVtbl.cs" />
+    <Compile Include="Native\IGameCalculationVtbl.cs" />
+    <Compile Include="Native\InstanceProxy.cs" />
+    <Compile Include="Native\InventorySlot.cs" />
+    <Compile Include="Native\ItemData.cs" />
+    <Compile Include="Native\ItemInInventory.cs" />
+    <Compile Include="Native\ItemManager.cs" />
+    <Compile Include="Native\MenuGUI.cs" />
+    <Compile Include="Native\Missile.cs" />
+    <Compile Include="Native\MissileClient.cs" />
+    <Compile Include="Native\MissileMovement.cs" />
+    <Compile Include="Native\MovementControllerClient.cs" />
+    <Compile Include="Native\MovementControllerCommon.cs" />
+    <Compile Include="Native\MultiplayerClient.cs" />
+    <Compile Include="Native\NavGrid.cs" />
+    <Compile Include="Native\NavigationPath.cs" />
+    <Compile Include="Native\NetVisibilityObjectClient.cs" />
+    <Compile Include="Native\NeutralMinionCampClient.cs" />
+    <Compile Include="Native\NeutralMinionCampCommon.cs" />
+    <Compile Include="Native\ObjectManager.cs" />
+    <Compile Include="Native\PathControllerClient.cs" />
+    <Compile Include="Native\PathControllerCommon.cs" />
+    <Compile Include="Native\Perk.cs" />
+    <Compile Include="Native\PerThreadState.cs" />
+    <Compile Include="Native\r3dRenderLayer.cs" />
+    <Compile Include="Native\ScoreboardTeamScoresDefinitions.cs" />
+    <Compile Include="Native\ScoreboardViewController.cs" />
+    <Compile Include="Native\ScriptBase.cs" />
+    <Compile Include="Native\ScriptBaseBuff.cs" />
+    <Compile Include="Native\Serializable.cs" />
+    <Compile Include="Native\SerializableVtbl.cs" />
+    <Compile Include="Native\SmartPingClientManager.cs" />
+    <Compile Include="Native\Spellbook.cs" />
+    <Compile Include="Native\SpellbookClient.cs" />
+    <Compile Include="Native\SpellCastInfo.cs" />
+    <Compile Include="Native\SpellData.cs" />
+    <Compile Include="Native\SpellDataClient.cs" />
+    <Compile Include="Native\SpellDataInst.cs" />
+    <Compile Include="Native\SpellDataInstClient.cs" />
+    <Compile Include="Native\SpellDataResource.cs" />
+    <Compile Include="Native\SpellInstance.cs" />
+    <Compile Include="Native\SpellVisualData.cs" />
+    <Compile Include="Native\StlArray-EnsoulSharp.2.cs" />
+    <Compile Include="Native\StlArray-EnsoulSharp.3.cs" />
+    <Compile Include="Native\StlArray-EnsoulSharp.cs" />
+    <Compile Include="Native\StlArray-unsigned int-.cs" />
+    <Compile Include="Native\StlAString.cs" />
+    <Compile Include="Native\StlSharedPtr-EnsoulSharp.2.cs" />
+    <Compile Include="Native\StlSharedPtr-EnsoulSharp.cs" />
+    <Compile Include="Native\StlString.cs" />
+    <Compile Include="Native\StlUniquePtr-EnsoulSharp.cs" />
+    <Compile Include="Native\StlVector-EnsoulSharp.2.cs" />
+    <Compile Include="Native\StlVector-EnsoulSharp.3.cs" />
+    <Compile Include="Native\StlVector-EnsoulSharp.4.cs" />
+    <Compile Include="Native\StlVector-EnsoulSharp.cs" />
+    <Compile Include="Native\StlVector-unsigned int-.cs" />
+    <Compile Include="Native\StlVectorMap-unsigned int,EnsoulSharp.cs" />
+    <Compile Include="Native\StlWeakPtr-EnsoulSharp.cs" />
+    <Compile Include="Native\TacticalMap.cs" />
+    <Compile Include="Native\TScrambleWrapper-bool,bool,unsigned int,0-.cs" />
+    <Compile Include="Native\TScrambleWrapper-EnsoulSharp.2.cs" />
+    <Compile Include="Native\TScrambleWrapper-EnsoulSharp.cs" />
+    <Compile Include="Native\TScrambleWrapper-float,float,unsigned int,0-.cs" />
+    <Compile Include="Native\TScrambleWrapper-int,int,unsigned int,0-.cs" />
+    <Compile Include="Native\UIMetricMultiDragonKillsSRX.cs" />
+    <Compile Include="Native\UnitInfoComponent.cs" />
+    <Compile Include="Native\Vector2f.cs" />
+    <Compile Include="Native\Vector3f.cs" />
+    <Compile Include="Native\WindowSwapChain.cs" />
+    <Compile Include="Native\X3DPresentParams.cs" />
+    <Compile Include="Native\Zoom.cs" />
+    <Compile Include="NavMesh.cs" />
+    <Compile Include="NavMeshCell.cs" />
+    <Compile Include="NeutralMinionCampClient.cs" />
+    <Compile Include="ObjectAttacher.cs" />
+    <Compile Include="ObjectManager.cs" />
+    <Compile Include="Obj_InfoPoint.cs" />
+    <Compile Include="Obj_Levelsizer.cs" />
+    <Compile Include="Obj_NavPoint.cs" />
+    <Compile Include="Obj_SpawnPoint.cs" />
+    <Compile Include="OutputType.cs" />
+    <Compile Include="Pawn.cs" />
+    <Compile Include="Perk.cs" />
+    <Compile Include="PingCategory.cs" />
+    <Compile Include="PingResourceType.cs" />
+    <Compile Include="PingStatType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopClient.cs" />
+    <Compile Include="Spellbook.cs" />
+    <Compile Include="SpellbookCastSpell.cs" />
+    <Compile Include="SpellbookCastSpellEventArgs.cs" />
+    <Compile Include="SpellbookNotFoundException.cs" />
+    <Compile Include="SpellbookStopCast.cs" />
+    <Compile Include="SpellbookStopCastEventArgs.cs" />
+    <Compile Include="SpellbookUpdateChargedSpell.cs" />
+    <Compile Include="SpellbookUpdateChargedSpellEventArgs.cs" />
+    <Compile Include="SpellData.cs" />
+    <Compile Include="SpellDataCastType.cs" />
+    <Compile Include="SpellDataInst.cs" />
+    <Compile Include="SpellDataInstNotFoundException.cs" />
+    <Compile Include="SpellDataNotFoundException.cs" />
+    <Compile Include="SpellDataTargetType.cs" />
+    <Compile Include="SpellSlot.cs" />
+    <Compile Include="SpellState.cs" />
+    <Compile Include="SpellToggleState.cs" />
+    <Compile Include="SummonerEmoteSlot.cs" />
+    <Compile Include="TacticalMap.cs" />
+    <Compile Include="tagSIZE.cs" />
+    <Compile Include="Turret.cs" />
+    <Compile Include="UnrevealedTarget.cs" />
+    <Compile Include="X3DPlatform.cs" />
+    <Compile Include="_D3DMATRIX.cs" />
+    <Compile Include="_EXCEPTION_POINTERS.cs" />
+    <Compile Include="_GUID.cs" />
+    <Compile Include="__scrt_native_startup_state.cs" />
+    <Compile Include="__s_GUID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

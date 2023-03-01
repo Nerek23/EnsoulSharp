@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D38F40BE-64EB-4A5C-B76E-3F9EB1127D9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpDX</RootNamespace>
+    <AssemblyName>SharpDX.Direct3D9</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Direct3D9\AdapterCollection.cs" />
+    <Compile Include="Direct3D9\AdapterDetails.cs" />
+    <Compile Include="Direct3D9\AdapterExCollection.cs" />
+    <Compile Include="Direct3D9\AdapterInformation.cs" />
+    <Compile Include="Direct3D9\AdapterInformationEx.cs" />
+    <Compile Include="Direct3D9\AnimationCallbackHandler.cs" />
+    <Compile Include="Direct3D9\AnimationController.cs" />
+    <Compile Include="Direct3D9\AnimationSet.cs" />
+    <Compile Include="Direct3D9\AssemblyDoc.cs" />
+    <Compile Include="Direct3D9\AttributeRange.cs" />
+    <Compile Include="Direct3D9\AttributeWeights.cs" />
+    <Compile Include="Direct3D9\BackBufferType.cs" />
+    <Compile Include="Direct3D9\BandwidthTimings.cs" />
+    <Compile Include="Direct3D9\BaseEffect.cs" />
+    <Compile Include="Direct3D9\BaseMesh.cs" />
+    <Compile Include="Direct3D9\BaseTexture.cs" />
+    <Compile Include="Direct3D9\Basis.cs" />
+    <Compile Include="Direct3D9\Blend.cs" />
+    <Compile Include="Direct3D9\BlendCaps.cs" />
+    <Compile Include="Direct3D9\BlendOperation.cs" />
+    <Compile Include="Direct3D9\BoneCombination.cs" />
+    <Compile Include="Direct3D9\Box.cs" />
+    <Compile Include="Direct3D9\CacheUtilization.cs" />
+    <Compile Include="Direct3D9\CallbackKey.cs" />
+    <Compile Include="Direct3D9\CallbackSearchFlags.cs" />
+    <Compile Include="Direct3D9\Capabilities.cs" />
+    <Compile Include="Direct3D9\Caps.cs" />
+    <Compile Include="Direct3D9\Caps2.cs" />
+    <Compile Include="Direct3D9\Caps3.cs" />
+    <Compile Include="Direct3D9\Channel.cs" />
+    <Compile Include="Direct3D9\CleanType.cs" />
+    <Compile Include="Direct3D9\ClearFlags.cs" />
+    <Compile Include="Direct3D9\ClipFlags.cs" />
+    <Compile Include="Direct3D9\ClipStatus.cs" />
+    <Compile Include="Direct3D9\ColorSource.cs" />
+    <Compile Include="Direct3D9\ColorWriteEnable.cs" />
+    <Compile Include="Direct3D9\Compare.cs" />
+    <Compile Include="Direct3D9\CompareCaps.cs" />
+    <Compile Include="Direct3D9\CompilationResult.cs" />
+    <Compile Include="Direct3D9\ComposeRectOperation.cs" />
+    <Compile Include="Direct3D9\CompressedAnimationSet.cs" />
+    <Compile Include="Direct3D9\CompressionFlags.cs" />
+    <Compile Include="Direct3D9\ConstantDescription.cs" />
+    <Compile Include="Direct3D9\ConstantTable.cs" />
+    <Compile Include="Direct3D9\ConstantTableDescription.cs" />
+    <Compile Include="Direct3D9\CreateFlags.cs" />
+    <Compile Include="Direct3D9\CreationParameters.cs" />
+    <Compile Include="Direct3D9\CubeMapFace.cs" />
+    <Compile Include="Direct3D9\CubeTexture.cs" />
+    <Compile Include="Direct3D9\CubeTextureRequirements.cs" />
+    <Compile Include="Direct3D9\Cull.cs" />
+    <Compile Include="Direct3D9\CursorCaps.cs" />
+    <Compile Include="Direct3D9\D3D9.cs" />
+    <Compile Include="Direct3D9\D3DX.cs" />
+    <Compile Include="Direct3D9\D3DX9.cs" />
+    <Compile Include="Direct3D9\DebugMonitorTokens.cs" />
+    <Compile Include="Direct3D9\DeclarationMethod.cs" />
+    <Compile Include="Direct3D9\DeclarationType.cs" />
+    <Compile Include="Direct3D9\DeclarationTypeCaps.cs" />
+    <Compile Include="Direct3D9\DeclarationUsage.cs" />
+    <Compile Include="Direct3D9\Degree.cs" />
+    <Compile Include="Direct3D9\Device.cs" />
+    <Compile Include="Direct3D9\DeviceCaps.cs" />
+    <Compile Include="Direct3D9\DeviceCaps2.cs" />
+    <Compile Include="Direct3D9\DeviceEx.cs" />
+    <Compile Include="Direct3D9\DeviceState.cs" />
+    <Compile Include="Direct3D9\DeviceType.cs" />
+    <Compile Include="Direct3D9\Direct3D.cs" />
+    <Compile Include="Direct3D9\Direct3DEx.cs" />
+    <Compile Include="Direct3D9\DisplayMode.cs" />
+    <Compile Include="Direct3D9\DisplayModeCollection.cs" />
+    <Compile Include="Direct3D9\DisplayModeEx.cs" />
+    <Compile Include="Direct3D9\DisplayModeExCollection.cs" />
+    <Compile Include="Direct3D9\DisplayModeFilter.cs" />
+    <Compile Include="Direct3D9\DisplayRotation.cs" />
+    <Compile Include="Direct3D9\DriverLevel.cs" />
+    <Compile Include="Direct3D9\Effect.cs" />
+    <Compile Include="Direct3D9\EffectCompiler.cs" />
+    <Compile Include="Direct3D9\EffectDefault.cs" />
+    <Compile Include="Direct3D9\EffectDefaultType.cs" />
+    <Compile Include="Direct3D9\EffectDescription.cs" />
+    <Compile Include="Direct3D9\EffectHandle.cs" />
+    <Compile Include="Direct3D9\EffectInstance.cs" />
+    <Compile Include="Direct3D9\EffectPool.cs" />
+    <Compile Include="Direct3D9\EffectStateManager.cs" />
+    <Compile Include="Direct3D9\EventDescription.cs" />
+    <Compile Include="Direct3D9\EventType.cs" />
+    <Compile Include="Direct3D9\ExtendedMaterial.cs" />
+    <Compile Include="Direct3D9\Fill2DCallback.cs" />
+    <Compile Include="Direct3D9\Fill3DCallback.cs" />
+    <Compile Include="Direct3D9\FillCallbackHelper.cs" />
+    <Compile Include="Direct3D9\FillMode.cs" />
+    <Compile Include="Direct3D9\Filter.cs" />
+    <Compile Include="Direct3D9\FilterCaps.cs" />
+    <Compile Include="Direct3D9\FogMode.cs" />
+    <Compile Include="Direct3D9\Font.cs" />
+    <Compile Include="Direct3D9\FontCharacterSet.cs" />
+    <Compile Include="Direct3D9\FontDescription.cs" />
+    <Compile Include="Direct3D9\FontDrawFlags.cs" />
+    <Compile Include="Direct3D9\FontPitchAndFamily.cs" />
+    <Compile Include="Direct3D9\FontPrecision.cs" />
+    <Compile Include="Direct3D9\FontQuality.cs" />
+    <Compile Include="Direct3D9\FontWeight.cs" />
+    <Compile Include="Direct3D9\Format.cs" />
+    <Compile Include="Direct3D9\Frame.cs" />
+    <Compile Include="Direct3D9\FunctionDescription.cs" />
+    <Compile Include="Direct3D9\FX.cs" />
+    <Compile Include="Direct3D9\GammaRamp.cs" />
+    <Compile Include="Direct3D9\IAllocateHierarchy.cs" />
+    <Compile Include="Direct3D9\ILoadUserData.cs" />
+    <Compile Include="Direct3D9\ImageFileFormat.cs" />
+    <Compile Include="Direct3D9\ImageInformation.cs" />
+    <Compile Include="Direct3D9\Include.cs" />
+    <Compile Include="Direct3D9\IncludeShadow.cs" />
+    <Compile Include="Direct3D9\IncludeType.cs" />
+    <Compile Include="Direct3D9\IndexBuffer.cs" />
+    <Compile Include="Direct3D9\IndexBufferDescription.cs" />
+    <Compile Include="Direct3D9\InterfaceTimings.cs" />
+    <Compile Include="Direct3D9\ISaveUserData.cs" />
+    <Compile Include="Direct3D9\Issue.cs" />
+    <Compile Include="Direct3D9\KeyframedAnimationSet.cs" />
+    <Compile Include="Direct3D9\Light.cs" />
+    <Compile Include="Direct3D9\LightType.cs" />
+    <Compile Include="Direct3D9\Line.cs" />
+    <Compile Include="Direct3D9\LineCaps.cs" />
+    <Compile Include="Direct3D9\LockedBox.cs" />
+    <Compile Include="Direct3D9\LockedRectangle.cs" />
+    <Compile Include="Direct3D9\LockFlags.cs" />
+    <Compile Include="Direct3D9\Macro.cs" />
+    <Compile Include="Direct3D9\Material.cs" />
+    <Compile Include="Direct3D9\Mesh.cs" />
+    <Compile Include="Direct3D9\MeshContainer.cs" />
+    <Compile Include="Direct3D9\MeshData.cs" />
+    <Compile Include="Direct3D9\MeshDataType.cs" />
+    <Compile Include="Direct3D9\MeshFlags.cs" />
+    <Compile Include="Direct3D9\MeshOptimizeFlags.cs" />
+    <Compile Include="Direct3D9\MeshSimplification.cs" />
+    <Compile Include="Direct3D9\ModuleInit.cs" />
+    <Compile Include="Direct3D9\MultisampleType.cs" />
+    <Compile Include="Direct3D9\NamespaceDoc.cs" />
+    <Compile Include="Direct3D9\NormalMapFlags.cs" />
+    <Compile Include="Direct3D9\PaletteEntry.cs" />
+    <Compile Include="Direct3D9\ParameterClass.cs" />
+    <Compile Include="Direct3D9\ParameterDescription.cs" />
+    <Compile Include="Direct3D9\ParameterFlags.cs" />
+    <Compile Include="Direct3D9\ParameterType.cs" />
+    <Compile Include="Direct3D9\PassDescription.cs" />
+    <Compile Include="Direct3D9\PatchEdgeStyle.cs" />
+    <Compile Include="Direct3D9\PatchInfo.cs" />
+    <Compile Include="Direct3D9\PatchMesh.cs" />
+    <Compile Include="Direct3D9\PatchMeshType.cs" />
+    <Compile Include="Direct3D9\PipelineTimings.cs" />
+    <Compile Include="Direct3D9\PixelShader.cs" />
+    <Compile Include="Direct3D9\PixelShader20Caps.cs" />
+    <Compile Include="Direct3D9\PixelShaderCaps.cs" />
+    <Compile Include="Direct3D9\PlaybackType.cs" />
+    <Compile Include="Direct3D9\Pool.cs" />
+    <Compile Include="Direct3D9\Present.cs" />
+    <Compile Include="Direct3D9\PresentationStatistics.cs" />
+    <Compile Include="Direct3D9\PresentFlags.cs" />
+    <Compile Include="Direct3D9\PresentInterval.cs" />
+    <Compile Include="Direct3D9\PresentParameters.cs" />
+    <Compile Include="Direct3D9\PrimitiveMiscCaps.cs" />
+    <Compile Include="Direct3D9\PrimitiveType.cs" />
+    <Compile Include="Direct3D9\ProgressiveMesh.cs" />
+    <Compile Include="Direct3D9\Query.cs" />
+    <Compile Include="Direct3D9\QueryType.cs" />
+    <Compile Include="Direct3D9\RasterCaps.cs" />
+    <Compile Include="Direct3D9\RasterStatus.cs" />
+    <Compile Include="Direct3D9\RectanglePatchInfo.cs" />
+    <Compile Include="Direct3D9\RegisterSet.cs" />
+    <Compile Include="Direct3D9\RenderState.cs" />
+    <Compile Include="Direct3D9\RenderToEnvironmentMap.cs" />
+    <Compile Include="Direct3D9\RenderToEnvironmentMapDescription.cs" />
+    <Compile Include="Direct3D9\RenderToSurface.cs" />
+    <Compile Include="Direct3D9\RenderToSurfaceDescription.cs" />
+    <Compile Include="Direct3D9\Resource.cs" />
+    <Compile Include="Direct3D9\ResourceManager.cs" />
+    <Compile Include="Direct3D9\ResourceResidency.cs" />
+    <Compile Include="Direct3D9\ResourceStats.cs" />
+    <Compile Include="Direct3D9\ResourceType.cs" />
+    <Compile Include="Direct3D9\ResultCode.cs" />
+    <Compile Include="Direct3D9\RotationKey.cs" />
+    <Compile Include="Direct3D9\SamplerState.cs" />
+    <Compile Include="Direct3D9\SamplerTextureType.cs" />
+    <Compile Include="Direct3D9\ScaleKey.cs" />
+    <Compile Include="Direct3D9\ScanlineOrdering.cs" />
+    <Compile Include="Direct3D9\ShadeCaps.cs" />
+    <Compile Include="Direct3D9\ShadeMode.cs" />
+    <Compile Include="Direct3D9\ShaderBytecode.cs" />
+    <Compile Include="Direct3D9\ShaderConstantInformation.cs" />
+    <Compile Include="Direct3D9\ShaderConstantTable.cs" />
+    <Compile Include="Direct3D9\ShaderFlags.cs" />
+    <Compile Include="Direct3D9\ShaderSemantic.cs" />
+    <Compile Include="Direct3D9\SimplificationMesh.cs" />
+    <Compile Include="Direct3D9\SkinInfo.cs" />
+    <Compile Include="Direct3D9\Sprite.cs" />
+    <Compile Include="Direct3D9\SpriteFlags.cs" />
+    <Compile Include="Direct3D9\StageTimings.cs" />
+    <Compile Include="Direct3D9\StateBlock.cs" />
+    <Compile Include="Direct3D9\StateBlockType.cs" />
+    <Compile Include="Direct3D9\StencilCaps.cs" />
+    <Compile Include="Direct3D9\StencilOperation.cs" />
+    <Compile Include="Direct3D9\StreamSource.cs" />
+    <Compile Include="Direct3D9\Surface.cs" />
+    <Compile Include="Direct3D9\SurfaceDescription.cs" />
+    <Compile Include="Direct3D9\SwapChain.cs" />
+    <Compile Include="Direct3D9\SwapChain9Ex.cs" />
+    <Compile Include="Direct3D9\SwapEffect.cs" />
+    <Compile Include="Direct3D9\TangentOptions.cs" />
+    <Compile Include="Direct3D9\TechniqueDescription.cs" />
+    <Compile Include="Direct3D9\Texture.cs" />
+    <Compile Include="Direct3D9\TextureAddress.cs" />
+    <Compile Include="Direct3D9\TextureAddressCaps.cs" />
+    <Compile Include="Direct3D9\TextureArgument.cs" />
+    <Compile Include="Direct3D9\TextureCaps.cs" />
+    <Compile Include="Direct3D9\TextureCoordIndex.cs" />
+    <Compile Include="Direct3D9\TextureFilter.cs" />
+    <Compile Include="Direct3D9\TextureOperation.cs" />
+    <Compile Include="Direct3D9\TextureOperationCaps.cs" />
+    <Compile Include="Direct3D9\TextureRequirements.cs" />
+    <Compile Include="Direct3D9\TextureShader.cs" />
+    <Compile Include="Direct3D9\TextureStage.cs" />
+    <Compile Include="Direct3D9\TextureTransform.cs" />
+    <Compile Include="Direct3D9\TextureWrapping.cs" />
+    <Compile Include="Direct3D9\TrackDescription.cs" />
+    <Compile Include="Direct3D9\TrackPriority.cs" />
+    <Compile Include="Direct3D9\TransformState.cs" />
+    <Compile Include="Direct3D9\TransitionType.cs" />
+    <Compile Include="Direct3D9\TrianglePatchInfo.cs" />
+    <Compile Include="Direct3D9\Usage.cs" />
+    <Compile Include="Direct3D9\UVAtlasQuality.cs" />
+    <Compile Include="Direct3D9\VCache.cs" />
+    <Compile Include="Direct3D9\VertexBlend.cs" />
+    <Compile Include="Direct3D9\VertexBuffer.cs" />
+    <Compile Include="Direct3D9\VertexBufferDescription.cs" />
+    <Compile Include="Direct3D9\VertexDeclaration.cs" />
+    <Compile Include="Direct3D9\VertexElement.cs" />
+    <Compile Include="Direct3D9\VertexFormat.cs" />
+    <Compile Include="Direct3D9\VertexFormatCaps.cs" />
+    <Compile Include="Direct3D9\VertexFormatDeclaratorCount.cs" />
+    <Compile Include="Direct3D9\VertexFormatHelper.cs" />
+    <Compile Include="Direct3D9\VertexProcessingCaps.cs" />
+    <Compile Include="Direct3D9\VertexShader.cs" />
+    <Compile Include="Direct3D9\VertexShader20Caps.cs" />
+    <Compile Include="Direct3D9\VertexShaderCaps.cs" />
+    <Compile Include="Direct3D9\VertexStats.cs" />
+    <Compile Include="Direct3D9\VertexTextureSampler.cs" />
+    <Compile Include="Direct3D9\VideoSubType.cs" />
+    <Compile Include="Direct3D9\Volume.cs" />
+    <Compile Include="Direct3D9\VolumeDescription.cs" />
+    <Compile Include="Direct3D9\VolumeTexture.cs" />
+    <Compile Include="Direct3D9\VolumeTextureRequirements.cs" />
+    <Compile Include="Direct3D9\WeldEpsilons.cs" />
+    <Compile Include="Direct3D9\WeldFlags.cs" />
+    <Compile Include="Direct3D9\XFile.cs" />
+    <Compile Include="Direct3D9\Xfilecompressedanimationset.cs" />
+    <Compile Include="Direct3D9\XFileData.cs" />
+    <Compile Include="Direct3D9\XFileEnumObject.cs" />
+    <Compile Include="Direct3D9\XFileFormat.cs" />
+    <Compile Include="Direct3D9\XFileSaveData.cs" />
+    <Compile Include="Direct3D9\XFileSaveObject.cs" />
+    <Compile Include="Direct3D9\ZBufferType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Win32Native.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

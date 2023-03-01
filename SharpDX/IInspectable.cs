@@ -1,0 +1,12 @@
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace SharpDX
+{
+	// Token: 0x0200001E RID: 30
+	[Guid("AF86E2E0-B12D-4c6a-9C5A-D7AA65101E90")]
+	[Shadow(typeof(InspectableShadow))]
+	public interface IInspectable : ICallbackable, IDisposable
+	{
+	}
+}

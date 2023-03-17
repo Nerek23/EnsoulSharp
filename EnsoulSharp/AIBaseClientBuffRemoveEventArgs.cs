@@ -8,7 +8,7 @@ namespace EnsoulSharp
 	// Token: 0x0200004E RID: 78
 	public class AIBaseClientBuffRemoveEventArgs : EventArgs
 	{
-		// Token: 0x0600030F RID: 783 RVA: 0x000052C8 File Offset: 0x000046C8
+		// Token: 0x06000316 RID: 790 RVA: 0x00005348 File Offset: 0x00004748
 		internal AIBaseClientBuffRemoveEventArgs(BuffInstance buff)
 		{
 			this.m_buff = buff;
@@ -18,7 +18,7 @@ namespace EnsoulSharp
 		/// 	Gets the buff.
 		/// </summary>
 		// Token: 0x1700003A RID: 58
-		// (get) Token: 0x06000310 RID: 784 RVA: 0x000052E4 File Offset: 0x000046E4
+		// (get) Token: 0x06000317 RID: 791 RVA: 0x00005364 File Offset: 0x00004764
 		public BuffInstance Buff
 		{
 			get

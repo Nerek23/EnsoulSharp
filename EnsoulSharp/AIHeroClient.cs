@@ -13,23 +13,23 @@ namespace EnsoulSharp
 	// Token: 0x020000B8 RID: 184
 	public class AIHeroClient : AIBaseClient
 	{
-		// Token: 0x060004BB RID: 1211 RVA: 0x000055E4 File Offset: 0x000049E4
+		// Token: 0x060004C6 RID: 1222 RVA: 0x00005664 File Offset: 0x00004A64
 		internal AIHeroClient()
 		{
 		}
 
-		// Token: 0x060004BC RID: 1212 RVA: 0x000055CC File Offset: 0x000049CC
+		// Token: 0x060004C7 RID: 1223 RVA: 0x0000564C File Offset: 0x00004A4C
 		internal AIHeroClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}
 
-		// Token: 0x060004BD RID: 1213 RVA: 0x000016D8 File Offset: 0x00000AD8
+		// Token: 0x060004C8 RID: 1224 RVA: 0x000016D8 File Offset: 0x00000AD8
 		internal new unsafe AIHeroClient* GetPtr()
 		{
 			return (AIHeroClient*)base.GetPtr();
 		}
 
-		// Token: 0x060004BE RID: 1214 RVA: 0x00005B00 File Offset: 0x00004F00
+		// Token: 0x060004C9 RID: 1225 RVA: 0x00005B80 File Offset: 0x00004F80
 		static AIHeroClient()
 		{
 			AppDomain.CurrentDomain.DomainUnload += AIHeroClient.DomainUnloadEventHandler;
@@ -38,15 +38,15 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::AIHeroClient\u0020*,int)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetAIHeroClientLevelUpHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), AIHeroClient.m_LevelUpNative.ToPointer());
 		}
 
-		// Token: 0x060004BF RID: 1215 RVA: 0x000055F8 File Offset: 0x000049F8
+		// Token: 0x060004CA RID: 1226 RVA: 0x00005678 File Offset: 0x00004A78
 		internal new static void DomainUnloadEventHandler(object sender, EventArgs e)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::AIHeroClient\u0020*,int)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetAIHeroClientLevelUpHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), AIHeroClient.m_LevelUpNative.ToPointer());
 		}
 
-		// Token: 0x060004C0 RID: 1216 RVA: 0x00005620 File Offset: 0x00004A20
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x060004CB RID: 1227 RVA: 0x000056A0 File Offset: 0x00004AA0
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnLevelUpNative(AIHeroClient* aiHeroClient, int level)
 		{
 			AIHeroClientLevelUp[] array = null;
@@ -139,8 +139,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before level up.
 		/// </summary>
 		// Token: 0x14000013 RID: 19
-		// (add) Token: 0x060004C1 RID: 1217 RVA: 0x000058F0 File Offset: 0x00004CF0
-		// (remove) Token: 0x060004C2 RID: 1218 RVA: 0x00005908 File Offset: 0x00004D08
+		// (add) Token: 0x060004CC RID: 1228 RVA: 0x00005970 File Offset: 0x00004D70
+		// (remove) Token: 0x060004CD RID: 1229 RVA: 0x00005988 File Offset: 0x00004D88
 		public static event AIHeroClientLevelUp OnLevelUp
 		{
 			add
@@ -156,8 +156,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the perks of the object.
 		/// </summary>
-		// Token: 0x17000116 RID: 278
-		// (get) Token: 0x060004C3 RID: 1219 RVA: 0x00005B70 File Offset: 0x00004F70
+		// Token: 0x1700011A RID: 282
+		// (get) Token: 0x060004CE RID: 1230 RVA: 0x00005BF0 File Offset: 0x00004FF0
 		public unsafe Perk[] Perks
 		{
 			get
@@ -187,8 +187,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the evolve points of the object.
 		/// </summary>
-		// Token: 0x17000115 RID: 277
-		// (get) Token: 0x060004C4 RID: 1220 RVA: 0x00005924 File Offset: 0x00004D24
+		// Token: 0x17000119 RID: 281
+		// (get) Token: 0x060004CF RID: 1231 RVA: 0x000059A4 File Offset: 0x00004DA4
 		public unsafe int EvolvePoints
 		{
 			get
@@ -200,8 +200,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell training points of the object.
 		/// </summary>
-		// Token: 0x17000114 RID: 276
-		// (get) Token: 0x060004C5 RID: 1221 RVA: 0x00005944 File Offset: 0x00004D44
+		// Token: 0x17000118 RID: 280
+		// (get) Token: 0x060004D0 RID: 1232 RVA: 0x000059C4 File Offset: 0x00004DC4
 		public unsafe int SpellTrainingPoints
 		{
 			get
@@ -213,8 +213,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the level of the object.
 		/// </summary>
-		// Token: 0x17000113 RID: 275
-		// (get) Token: 0x060004C6 RID: 1222 RVA: 0x00005964 File Offset: 0x00004D64
+		// Token: 0x17000117 RID: 279
+		// (get) Token: 0x060004D1 RID: 1233 RVA: 0x000059E4 File Offset: 0x00004DE4
 		public unsafe int Level
 		{
 			get
@@ -226,8 +226,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the experience of the object.
 		/// </summary>
-		// Token: 0x17000112 RID: 274
-		// (get) Token: 0x060004C7 RID: 1223 RVA: 0x00005984 File Offset: 0x00004D84
+		// Token: 0x17000116 RID: 278
+		// (get) Token: 0x060004D2 RID: 1234 RVA: 0x00005A04 File Offset: 0x00004E04
 		public unsafe float Experience
 		{
 			get
@@ -239,8 +239,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the experience to current level of the object.
 		/// </summary>
-		// Token: 0x17000111 RID: 273
-		// (get) Token: 0x060004C8 RID: 1224 RVA: 0x000059A4 File Offset: 0x00004DA4
+		// Token: 0x17000115 RID: 277
+		// (get) Token: 0x060004D3 RID: 1235 RVA: 0x00005A24 File Offset: 0x00004E24
 		public float ExpToCurrentLevel
 		{
 			get
@@ -252,8 +252,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the experience to next level of the object.
 		/// </summary>
-		// Token: 0x17000110 RID: 272
-		// (get) Token: 0x060004C9 RID: 1225 RVA: 0x000059C4 File Offset: 0x00004DC4
+		// Token: 0x17000114 RID: 276
+		// (get) Token: 0x060004D4 RID: 1236 RVA: 0x00005A44 File Offset: 0x00004E44
 		public float ExpToNextLevel
 		{
 			get
@@ -265,8 +265,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the minions killed of the object.
 		/// </summary>
-		// Token: 0x1700010F RID: 271
-		// (get) Token: 0x060004CA RID: 1226 RVA: 0x000059E4 File Offset: 0x00004DE4
+		// Token: 0x17000113 RID: 275
+		// (get) Token: 0x060004D5 RID: 1237 RVA: 0x00005A64 File Offset: 0x00004E64
 		public unsafe int MinionsKilled
 		{
 			get
@@ -283,8 +283,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the neutral minions killed of the object.
 		/// </summary>
-		// Token: 0x1700010E RID: 270
-		// (get) Token: 0x060004CB RID: 1227 RVA: 0x00005A10 File Offset: 0x00004E10
+		// Token: 0x17000112 RID: 274
+		// (get) Token: 0x060004D6 RID: 1238 RVA: 0x00005A90 File Offset: 0x00004E90
 		public unsafe int NeutralMinionsKilled
 		{
 			get
@@ -301,8 +301,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the champions killed of the object.
 		/// </summary>
-		// Token: 0x1700010D RID: 269
-		// (get) Token: 0x060004CC RID: 1228 RVA: 0x00005A3C File Offset: 0x00004E3C
+		// Token: 0x17000111 RID: 273
+		// (get) Token: 0x060004D7 RID: 1239 RVA: 0x00005ABC File Offset: 0x00004EBC
 		public unsafe int ChampionsKilled
 		{
 			get
@@ -319,8 +319,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the deaths of the object.
 		/// </summary>
-		// Token: 0x1700010C RID: 268
-		// (get) Token: 0x060004CD RID: 1229 RVA: 0x00005A68 File Offset: 0x00004E68
+		// Token: 0x17000110 RID: 272
+		// (get) Token: 0x060004D8 RID: 1240 RVA: 0x00005AE8 File Offset: 0x00004EE8
 		public unsafe int Deaths
 		{
 			get
@@ -337,8 +337,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the assists of the object.
 		/// </summary>
-		// Token: 0x1700010B RID: 267
-		// (get) Token: 0x060004CE RID: 1230 RVA: 0x00005A94 File Offset: 0x00004E94
+		// Token: 0x1700010F RID: 271
+		// (get) Token: 0x060004D9 RID: 1241 RVA: 0x00005B14 File Offset: 0x00004F14
 		public unsafe int Assists
 		{
 			get
@@ -357,7 +357,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="itemId">The item id.</param>
 		/// <returns>The <see cref="T:EnsoulSharp.BuyItemResult" /> of the given item id.</returns>
-		// Token: 0x060004CF RID: 1231 RVA: 0x00005AC0 File Offset: 0x00004EC0
+		// Token: 0x060004DA RID: 1242 RVA: 0x00005B40 File Offset: 0x00004F40
 		public BuyItemResult BuyItem(ItemId itemId)
 		{
 			return (BuyItemResult)<Module>.EnsoulSharp.Native.HeroInventoryCommon.BuyItem(<Module>.EnsoulSharp.Native.AIHero.GetHeroInventory(this.GetPtr()), (int)itemId);
@@ -367,7 +367,7 @@ namespace EnsoulSharp
 		/// 	Sells an item.
 		/// </summary>
 		/// <param name="slot">The inventory slot.</param>
-		// Token: 0x060004D0 RID: 1232 RVA: 0x00005AE0 File Offset: 0x00004EE0
+		// Token: 0x060004DB RID: 1243 RVA: 0x00005B60 File Offset: 0x00004F60
 		public void SellItem(int slot)
 		{
 			<Module>.EnsoulSharp.Native.HeroInventoryClient.RemoveItemClient(<Module>.EnsoulSharp.Native.AIHero.GetHeroInventory(this.GetPtr()), slot);
@@ -383,7 +383,7 @@ namespace EnsoulSharp
 		internal static List<AIHeroClientLevelUp> LevelUpHandlers = new List<AIHeroClientLevelUp>();
 
 		// Token: 0x020000B9 RID: 185
-		// (Invoke) Token: 0x060004D2 RID: 1234
+		// (Invoke) Token: 0x060004DD RID: 1245
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnLevelUpNativeDelegate(AIHeroClient* aiHeroClient, int level);
 	}

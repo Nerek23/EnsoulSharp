@@ -9,16 +9,16 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to each item data.
 	/// </summary>
-	// Token: 0x02000145 RID: 325
+	// Token: 0x02000147 RID: 327
 	public class ItemData
 	{
-		// Token: 0x06000636 RID: 1590 RVA: 0x0000CAC4 File Offset: 0x0000BEC4
+		// Token: 0x06000643 RID: 1603 RVA: 0x0000CBB4 File Offset: 0x0000BFB4
 		internal unsafe ItemData(ItemData* itemData)
 		{
 			this.m_itemData = itemData;
 		}
 
-		// Token: 0x06000637 RID: 1591 RVA: 0x0000CAE0 File Offset: 0x0000BEE0
+		// Token: 0x06000644 RID: 1604 RVA: 0x0000CBD0 File Offset: 0x0000BFD0
 		internal unsafe ItemData* GetPtr()
 		{
 			return this.m_itemData;
@@ -27,8 +27,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the required level of the item.
 		/// </summary>
-		// Token: 0x17000154 RID: 340
-		// (get) Token: 0x06000638 RID: 1592 RVA: 0x0000CAF4 File Offset: 0x0000BEF4
+		// Token: 0x1700015A RID: 346
+		// (get) Token: 0x06000645 RID: 1605 RVA: 0x0000CBE4 File Offset: 0x0000BFE4
 		public unsafe int RequiredLevel
 		{
 			get
@@ -40,8 +40,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the id of the item.
 		/// </summary>
-		// Token: 0x17000153 RID: 339
-		// (get) Token: 0x06000639 RID: 1593 RVA: 0x0000CB10 File Offset: 0x0000BF10
+		// Token: 0x17000159 RID: 345
+		// (get) Token: 0x06000646 RID: 1606 RVA: 0x0000CC00 File Offset: 0x0000C000
 		public unsafe ItemId Id
 		{
 			get
@@ -53,8 +53,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the max stack of the item.
 		/// </summary>
-		// Token: 0x17000152 RID: 338
-		// (get) Token: 0x0600063A RID: 1594 RVA: 0x0000CB2C File Offset: 0x0000BF2C
+		// Token: 0x17000158 RID: 344
+		// (get) Token: 0x06000647 RID: 1607 RVA: 0x0000CC1C File Offset: 0x0000C01C
 		public unsafe int MaxStack
 		{
 			get
@@ -66,8 +66,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the price of the item.
 		/// </summary>
-		// Token: 0x17000151 RID: 337
-		// (get) Token: 0x0600063B RID: 1595 RVA: 0x0000CB48 File Offset: 0x0000BF48
+		// Token: 0x17000157 RID: 343
+		// (get) Token: 0x06000648 RID: 1608 RVA: 0x0000CC38 File Offset: 0x0000C038
 		public unsafe int Price
 		{
 			get
@@ -79,8 +79,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the item is usable in store.
 		/// </summary>
-		// Token: 0x17000150 RID: 336
-		// (get) Token: 0x0600063C RID: 1596 RVA: 0x0000CB64 File Offset: 0x0000BF64
+		// Token: 0x17000156 RID: 342
+		// (get) Token: 0x06000649 RID: 1609 RVA: 0x0000CC54 File Offset: 0x0000C054
 		public unsafe bool UsableInStore
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -93,8 +93,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the item can be sold.
 		/// </summary>
-		// Token: 0x1700014F RID: 335
-		// (get) Token: 0x0600063D RID: 1597 RVA: 0x0000CB80 File Offset: 0x0000BF80
+		// Token: 0x17000155 RID: 341
+		// (get) Token: 0x0600064A RID: 1610 RVA: 0x0000CC70 File Offset: 0x0000C070
 		public unsafe bool CanBeSold
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -107,8 +107,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the sell back modifier of the item.
 		/// </summary>
-		// Token: 0x1700014E RID: 334
-		// (get) Token: 0x0600063E RID: 1598 RVA: 0x0000CB9C File Offset: 0x0000BF9C
+		// Token: 0x17000154 RID: 340
+		// (get) Token: 0x0600064B RID: 1611 RVA: 0x0000CC8C File Offset: 0x0000C08C
 		public unsafe float SellBackModifier
 		{
 			get
@@ -120,8 +120,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the display name of the item.
 		/// </summary>
-		// Token: 0x1700014D RID: 333
-		// (get) Token: 0x0600063F RID: 1599 RVA: 0x0000CBB8 File Offset: 0x0000BFB8
+		// Token: 0x17000153 RID: 339
+		// (get) Token: 0x0600064C RID: 1612 RVA: 0x0000CCA8 File Offset: 0x0000C0A8
 		public unsafe string DisplayName
 		{
 			get
@@ -138,8 +138,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the translated display name of the item.
 		/// </summary>
-		// Token: 0x1700014C RID: 332
-		// (get) Token: 0x06000640 RID: 1600 RVA: 0x0000CBE4 File Offset: 0x0000BFE4
+		// Token: 0x17000152 RID: 338
+		// (get) Token: 0x0600064D RID: 1613 RVA: 0x0000CCD4 File Offset: 0x0000C0D4
 		public unsafe string TranslatedDisplayName
 		{
 			get
@@ -170,8 +170,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell name of the item.
 		/// </summary>
-		// Token: 0x1700014B RID: 331
-		// (get) Token: 0x06000641 RID: 1601 RVA: 0x0000CC30 File Offset: 0x0000C030
+		// Token: 0x17000151 RID: 337
+		// (get) Token: 0x0600064E RID: 1614 RVA: 0x0000CD20 File Offset: 0x0000C120
 		public unsafe string SpellName
 		{
 			get
@@ -188,8 +188,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the entries of all items.
 		/// </summary>
-		// Token: 0x1700014A RID: 330
-		// (get) Token: 0x06000642 RID: 1602 RVA: 0x0000CC88 File Offset: 0x0000C088
+		// Token: 0x17000150 RID: 336
+		// (get) Token: 0x0600064F RID: 1615 RVA: 0x0000CD78 File Offset: 0x0000C178
 		public unsafe static IEnumerable<ItemData> Entries
 		{
 			get
@@ -227,7 +227,7 @@ namespace EnsoulSharp
 		/// <param name="itemId">The item id.</param>
 		/// <returns>The <see cref="T:EnsoulSharp.ItemData" /> instance.</returns>
 		/// <remarks>Returns null if the specified item id is invalid.</remarks>
-		// Token: 0x06000643 RID: 1603 RVA: 0x0000CC5C File Offset: 0x0000C05C
+		// Token: 0x06000650 RID: 1616 RVA: 0x0000CD4C File Offset: 0x0000C14C
 		public unsafe static ItemData GetIData(ItemId itemId)
 		{
 			ItemManager* ptr = <Module>.EnsoulSharp.Native.ItemManager.GetInstance();

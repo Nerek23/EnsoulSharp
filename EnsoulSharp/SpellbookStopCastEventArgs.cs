@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x0200006C RID: 108
 	public class SpellbookStopCastEventArgs : EventArgs
 	{
-		// Token: 0x0600043D RID: 1085 RVA: 0x0000F1B8 File Offset: 0x0000E5B8
+		// Token: 0x06000448 RID: 1096 RVA: 0x0000F2A8 File Offset: 0x0000E6A8
 		internal SpellbookStopCastEventArgs([MarshalAs(UnmanagedType.U1)] bool keepAnimationPlaying, [MarshalAs(UnmanagedType.U1)] bool hasBeenCast, [MarshalAs(UnmanagedType.U1)] bool spellStopCancelled, [MarshalAs(UnmanagedType.U1)] bool destroyMissile, int missileNetworkId, int spellCastId)
 		{
 			this.m_keepAnimationPlaying = keepAnimationPlaying;
@@ -23,8 +23,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether keep spell animation playing.
 		/// </summary>
-		// Token: 0x170000D1 RID: 209
-		// (get) Token: 0x0600043E RID: 1086 RVA: 0x0000F1F8 File Offset: 0x0000E5F8
+		// Token: 0x170000D5 RID: 213
+		// (get) Token: 0x06000449 RID: 1097 RVA: 0x0000F2E8 File Offset: 0x0000E6E8
 		public bool KeepAnimationPlaying
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -37,8 +37,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell has been cast.
 		/// </summary>
-		// Token: 0x170000D0 RID: 208
-		// (get) Token: 0x0600043F RID: 1087 RVA: 0x0000F20C File Offset: 0x0000E60C
+		// Token: 0x170000D4 RID: 212
+		// (get) Token: 0x0600044A RID: 1098 RVA: 0x0000F2FC File Offset: 0x0000E6FC
 		public bool HasBeenCast
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -51,8 +51,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell stop cancelled.
 		/// </summary>
-		// Token: 0x170000CF RID: 207
-		// (get) Token: 0x06000440 RID: 1088 RVA: 0x0000F220 File Offset: 0x0000E620
+		// Token: 0x170000D3 RID: 211
+		// (get) Token: 0x0600044B RID: 1099 RVA: 0x0000F310 File Offset: 0x0000E710
 		public bool SpellStopCancelled
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -65,8 +65,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell destroy missile.
 		/// </summary>
-		// Token: 0x170000CE RID: 206
-		// (get) Token: 0x06000441 RID: 1089 RVA: 0x0000F234 File Offset: 0x0000E634
+		// Token: 0x170000D2 RID: 210
+		// (get) Token: 0x0600044C RID: 1100 RVA: 0x0000F324 File Offset: 0x0000E724
 		public bool DestroyMissile
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -79,8 +79,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the destroy missile network id.
 		/// </summary>
-		// Token: 0x170000CD RID: 205
-		// (get) Token: 0x06000442 RID: 1090 RVA: 0x0000F248 File Offset: 0x0000E648
+		// Token: 0x170000D1 RID: 209
+		// (get) Token: 0x0600044D RID: 1101 RVA: 0x0000F338 File Offset: 0x0000E738
 		public int MissileNetworkId
 		{
 			get
@@ -92,8 +92,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell cast id.
 		/// </summary>
-		// Token: 0x170000CC RID: 204
-		// (get) Token: 0x06000443 RID: 1091 RVA: 0x0000F25C File Offset: 0x0000E65C
+		// Token: 0x170000D0 RID: 208
+		// (get) Token: 0x0600044E RID: 1102 RVA: 0x0000F34C File Offset: 0x0000E74C
 		public int SpellCastId
 		{
 			get

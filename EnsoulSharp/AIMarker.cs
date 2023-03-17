@@ -8,12 +8,12 @@ namespace EnsoulSharp
 	// Token: 0x020000CA RID: 202
 	public class AIMarker : AIBaseClient
 	{
-		// Token: 0x060004D8 RID: 1240 RVA: 0x000055E4 File Offset: 0x000049E4
+		// Token: 0x060004E3 RID: 1251 RVA: 0x00005664 File Offset: 0x00004A64
 		internal AIMarker()
 		{
 		}
 
-		// Token: 0x060004D9 RID: 1241 RVA: 0x000055CC File Offset: 0x000049CC
+		// Token: 0x060004E4 RID: 1252 RVA: 0x0000564C File Offset: 0x00004A4C
 		internal AIMarker(uint networkId, uint index) : base(networkId, index)
 		{
 		}

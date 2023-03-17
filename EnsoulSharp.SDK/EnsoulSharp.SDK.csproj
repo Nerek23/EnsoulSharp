@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{E370FCAE-FCE1-45EE-824C-6168D5139E33}</ProjectGuid>
+    <ProjectGuid>{672CB1C8-B34A-4B18-953B-0F1E778A09A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EnsoulSharp.SDK</RootNamespace>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -29,32 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EnsoulSharp">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\EnsoulSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct2D1">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct2D1.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D11">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D11.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D9">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D9.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.DXGI">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.DXGI.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Mathematics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -1099,6 +1077,44 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EnsoulSharp\EnsoulSharp.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A3}</Project>
+      <Name>EnsoulSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AD}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A6}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Direct2D1\SharpDX.Direct2D1.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A7}</Project>
+      <Name>SharpDX.Direct2D1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Direct3D11\SharpDX.Direct3D11.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A8}</Project>
+      <Name>SharpDX.Direct3D11</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Direct3D9\SharpDX.Direct3D9.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A9}</Project>
+      <Name>SharpDX.Direct3D9</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.DXGI\SharpDX.DXGI.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AB}</Project>
+      <Name>SharpDX.DXGI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Mathematics\SharpDX.Mathematics.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AC}</Project>
+      <Name>SharpDX.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX\SharpDX.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AA}</Project>
+      <Name>SharpDX</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

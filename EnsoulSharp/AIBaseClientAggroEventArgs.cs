@@ -8,7 +8,7 @@ namespace EnsoulSharp
 	// Token: 0x0200004C RID: 76
 	public class AIBaseClientAggroEventArgs : EventArgs
 	{
-		// Token: 0x0600030B RID: 779 RVA: 0x00005268 File Offset: 0x00004668
+		// Token: 0x06000312 RID: 786 RVA: 0x000052E8 File Offset: 0x000046E8
 		internal AIBaseClientAggroEventArgs(int networkId)
 		{
 			this.m_networkId = networkId;
@@ -18,7 +18,7 @@ namespace EnsoulSharp
 		/// 	Gets the target network id.
 		/// </summary>
 		// Token: 0x17000038 RID: 56
-		// (get) Token: 0x0600030C RID: 780 RVA: 0x00005284 File Offset: 0x00004684
+		// (get) Token: 0x06000313 RID: 787 RVA: 0x00005304 File Offset: 0x00004704
 		public int NetworkId
 		{
 			get

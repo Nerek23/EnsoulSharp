@@ -247,16 +247,16 @@ namespace EnsoulSharp.SDK
 				this.m_lParam = lParam;
 			}
 
-			// Token: 0x04000B4B RID: 2891
+			// Token: 0x04000B4A RID: 2890
 			private readonly int m_lParam;
 
-			// Token: 0x04000B4C RID: 2892
+			// Token: 0x04000B4B RID: 2891
 			private readonly uint m_uMsg;
 
-			// Token: 0x04000B4D RID: 2893
+			// Token: 0x04000B4C RID: 2892
 			private readonly uint m_wParam;
 
-			// Token: 0x04000B4E RID: 2894
+			// Token: 0x04000B4D RID: 2893
 			private readonly IntPtr m_hWnd;
 		}
 	}

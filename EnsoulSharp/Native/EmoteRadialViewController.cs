@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x02000125 RID: 293
+	// Token: 0x02000127 RID: 295
 	[NativeCppClass]
 	internal struct EmoteRadialViewController
 	{

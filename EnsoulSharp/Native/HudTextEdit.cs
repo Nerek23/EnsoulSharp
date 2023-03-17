@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x0200014E RID: 334
+	// Token: 0x02000150 RID: 336
 	[NativeCppClass]
 	internal struct HudTextEdit
 	{

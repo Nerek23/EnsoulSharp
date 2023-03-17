@@ -310,10 +310,10 @@ namespace EnsoulSharp.SDK
 		// Token: 0x0200043C RID: 1084
 		internal class PossibleTarget
 		{
-			// Token: 0x04000B10 RID: 2832
+			// Token: 0x04000B0F RID: 2831
 			public Vector2 Position;
 
-			// Token: 0x04000B11 RID: 2833
+			// Token: 0x04000B10 RID: 2832
 			public AIHeroClient Unit;
 		}
 	}

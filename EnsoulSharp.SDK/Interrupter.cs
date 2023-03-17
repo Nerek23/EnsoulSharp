@@ -146,11 +146,11 @@ namespace EnsoulSharp.SDK
 		// Token: 0x02000471 RID: 1137
 		public enum DangerLevel
 		{
-			// Token: 0x04000B75 RID: 2933
+			// Token: 0x04000B74 RID: 2932
 			High,
-			// Token: 0x04000B76 RID: 2934
+			// Token: 0x04000B75 RID: 2933
 			Medium,
-			// Token: 0x04000B77 RID: 2935
+			// Token: 0x04000B76 RID: 2934
 			Low
 		}
 

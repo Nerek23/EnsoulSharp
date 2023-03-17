@@ -15,23 +15,23 @@ namespace EnsoulSharp
 	// Token: 0x0200004A RID: 74
 	public class AttackableUnit : GameObject
 	{
-		// Token: 0x060002E4 RID: 740 RVA: 0x00005C8C File Offset: 0x0000508C
+		// Token: 0x060002EB RID: 747 RVA: 0x00005D0C File Offset: 0x0000510C
 		internal AttackableUnit()
 		{
 		}
 
-		// Token: 0x060002E5 RID: 741 RVA: 0x00005C74 File Offset: 0x00005074
+		// Token: 0x060002EC RID: 748 RVA: 0x00005CF4 File Offset: 0x000050F4
 		internal AttackableUnit(uint networkId, uint index) : base(networkId, index)
 		{
 		}
 
-		// Token: 0x060002E6 RID: 742 RVA: 0x000016D8 File Offset: 0x00000AD8
+		// Token: 0x060002ED RID: 749 RVA: 0x000016D8 File Offset: 0x00000AD8
 		internal new unsafe AttackableUnit* GetPtr()
 		{
 			return (AttackableUnit*)base.GetPtr();
 		}
 
-		// Token: 0x060002E7 RID: 743 RVA: 0x000063C8 File Offset: 0x000057C8
+		// Token: 0x060002EE RID: 750 RVA: 0x00006460 File Offset: 0x00005860
 		static AttackableUnit()
 		{
 			AppDomain.CurrentDomain.DomainUnload += AttackableUnit.DomainUnloadEventHandler;
@@ -40,13 +40,13 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::AttackableUnit\u0020*,EnsoulSharp::Native::StlString\u0020*,EnsoulSharp::Native::StlString\u0020*)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetAttackableUnitTeleportHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), AttackableUnit.m_TeleportNative.ToPointer());
 		}
 
-		// Token: 0x060002E8 RID: 744 RVA: 0x00005CA0 File Offset: 0x000050A0
+		// Token: 0x060002EF RID: 751 RVA: 0x00005D20 File Offset: 0x00005120
 		internal new static void DomainUnloadEventHandler(object sender, EventArgs e)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::AttackableUnit\u0020*,EnsoulSharp::Native::StlString\u0020*,EnsoulSharp::Native::StlString\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetAttackableUnitTeleportHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), AttackableUnit.m_TeleportNative.ToPointer());
 		}
 
-		// Token: 0x060002E9 RID: 745 RVA: 0x00005CC8 File Offset: 0x000050C8
+		// Token: 0x060002F0 RID: 752 RVA: 0x00005D48 File Offset: 0x00005148
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnTeleportNative(AttackableUnit* attackableUnit, StlString* recallType, StlString* recallName)
@@ -141,8 +141,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before a object teleport.
 		/// </summary>
 		// Token: 0x14000005 RID: 5
-		// (add) Token: 0x060002EA RID: 746 RVA: 0x00005FAC File Offset: 0x000053AC
-		// (remove) Token: 0x060002EB RID: 747 RVA: 0x00005FC4 File Offset: 0x000053C4
+		// (add) Token: 0x060002F1 RID: 753 RVA: 0x0000602C File Offset: 0x0000542C
+		// (remove) Token: 0x060002F2 RID: 754 RVA: 0x00006044 File Offset: 0x00005444
 		public static event AttackableUnitTeleport OnTeleport
 		{
 			add
@@ -159,7 +159,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is physical immune.
 		/// </summary>
 		// Token: 0x17000037 RID: 55
-		// (get) Token: 0x060002EC RID: 748 RVA: 0x00005FE0 File Offset: 0x000053E0
+		// (get) Token: 0x060002F3 RID: 755 RVA: 0x00006060 File Offset: 0x00005460
 		public bool IsPhysicalImmune
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -173,7 +173,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is magical immune.
 		/// </summary>
 		// Token: 0x17000036 RID: 54
-		// (get) Token: 0x060002ED RID: 749 RVA: 0x00006008 File Offset: 0x00005408
+		// (get) Token: 0x060002F4 RID: 756 RVA: 0x00006088 File Offset: 0x00005488
 		public bool IsMagicalImmune
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -187,7 +187,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is lifesteal immune.
 		/// </summary>
 		// Token: 0x17000035 RID: 53
-		// (get) Token: 0x060002EE RID: 750 RVA: 0x00006030 File Offset: 0x00005430
+		// (get) Token: 0x060002F5 RID: 757 RVA: 0x000060B0 File Offset: 0x000054B0
 		public bool IsLifestealImmune
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -201,7 +201,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is invulnerable.
 		/// </summary>
 		// Token: 0x17000034 RID: 52
-		// (get) Token: 0x060002EF RID: 751 RVA: 0x00006058 File Offset: 0x00005458
+		// (get) Token: 0x060002F6 RID: 758 RVA: 0x000060D8 File Offset: 0x000054D8
 		public bool IsInvulnerable
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -215,7 +215,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is targetable.
 		/// </summary>
 		// Token: 0x17000033 RID: 51
-		// (get) Token: 0x060002F0 RID: 752 RVA: 0x00006070 File Offset: 0x00005470
+		// (get) Token: 0x060002F7 RID: 759 RVA: 0x000060F0 File Offset: 0x000054F0
 		public bool IsTargetable
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -229,7 +229,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is visible.
 		/// </summary>
 		// Token: 0x17000032 RID: 50
-		// (get) Token: 0x060002F1 RID: 753 RVA: 0x00006088 File Offset: 0x00005488
+		// (get) Token: 0x060002F8 RID: 760 RVA: 0x00006108 File Offset: 0x00005508
 		public unsafe bool IsVisible
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -243,7 +243,7 @@ namespace EnsoulSharp
 		/// 	Gets the time of death of the object.
 		/// </summary>
 		// Token: 0x17000031 RID: 49
-		// (get) Token: 0x060002F2 RID: 754 RVA: 0x000060A8 File Offset: 0x000054A8
+		// (get) Token: 0x060002F9 RID: 761 RVA: 0x00006128 File Offset: 0x00005528
 		public float DeathTime
 		{
 			get
@@ -256,12 +256,12 @@ namespace EnsoulSharp
 		/// 	Gets the override collision height of the object.
 		/// </summary>
 		// Token: 0x17000030 RID: 48
-		// (get) Token: 0x060002F3 RID: 755 RVA: 0x000060CC File Offset: 0x000054CC
-		public unsafe float OverrideCollisionHeight
+		// (get) Token: 0x060002FA RID: 762 RVA: 0x0000614C File Offset: 0x0000554C
+		public float OverrideCollisionHeight
 		{
 			get
 			{
-				return *<Module>.EnsoulSharp.Native.AttackableUnit.GetOverrideCollisionHeight(this.GetPtr());
+				return <Module>.EnsoulSharp.Native.TScrambleWrapper<float,float,unsigned\u0020int,0>.Get(<Module>.EnsoulSharp.Native.AttackableUnit.GetOverrideCollisionHeight(this.GetPtr()), 0f);
 			}
 		}
 
@@ -269,12 +269,12 @@ namespace EnsoulSharp
 		/// 	Gets the override collision radius of the object.
 		/// </summary>
 		// Token: 0x1700002F RID: 47
-		// (get) Token: 0x060002F4 RID: 756 RVA: 0x000060E8 File Offset: 0x000054E8
-		public unsafe float OverrideCollisionRadius
+		// (get) Token: 0x060002FB RID: 763 RVA: 0x00006170 File Offset: 0x00005570
+		public float OverrideCollisionRadius
 		{
 			get
 			{
-				return *<Module>.EnsoulSharp.Native.AttackableUnit.GetOverrideCollisionRadius(this.GetPtr());
+				return <Module>.EnsoulSharp.Native.TScrambleWrapper<float,float,unsigned\u0020int,0>.Get(<Module>.EnsoulSharp.Native.AttackableUnit.GetOverrideCollisionRadius(this.GetPtr()), 0f);
 			}
 		}
 
@@ -282,12 +282,12 @@ namespace EnsoulSharp
 		/// 	Gets the pathfinding collision radius of the object.
 		/// </summary>
 		// Token: 0x1700002E RID: 46
-		// (get) Token: 0x060002F5 RID: 757 RVA: 0x00006104 File Offset: 0x00005504
-		public unsafe float PathfindingCollisionRadius
+		// (get) Token: 0x060002FC RID: 764 RVA: 0x00006194 File Offset: 0x00005594
+		public float PathfindingCollisionRadius
 		{
 			get
 			{
-				return *<Module>.EnsoulSharp.Native.AttackableUnit.GetPathfindingCollisionRadius(this.GetPtr());
+				return <Module>.EnsoulSharp.Native.TScrambleWrapper<float,float,unsigned\u0020int,0>.Get(<Module>.EnsoulSharp.Native.AttackableUnit.GetPathfindingCollisionRadius(this.GetPtr()), 0f);
 			}
 		}
 
@@ -295,7 +295,7 @@ namespace EnsoulSharp
 		/// 	Gets the health of the object.
 		/// </summary>
 		// Token: 0x1700002D RID: 45
-		// (get) Token: 0x060002F6 RID: 758 RVA: 0x00006120 File Offset: 0x00005520
+		// (get) Token: 0x060002FD RID: 765 RVA: 0x000061B8 File Offset: 0x000055B8
 		public unsafe float Health
 		{
 			get
@@ -308,7 +308,7 @@ namespace EnsoulSharp
 		/// 	Gets the max health of the object.
 		/// </summary>
 		// Token: 0x1700002C RID: 44
-		// (get) Token: 0x060002F7 RID: 759 RVA: 0x00006140 File Offset: 0x00005540
+		// (get) Token: 0x060002FE RID: 766 RVA: 0x000061D8 File Offset: 0x000055D8
 		public unsafe float MaxHealth
 		{
 			get
@@ -321,7 +321,7 @@ namespace EnsoulSharp
 		/// 	Gets the mana of the object.
 		/// </summary>
 		// Token: 0x1700002B RID: 43
-		// (get) Token: 0x060002F8 RID: 760 RVA: 0x00006160 File Offset: 0x00005560
+		// (get) Token: 0x060002FF RID: 767 RVA: 0x000061F8 File Offset: 0x000055F8
 		public unsafe float Mana
 		{
 			get
@@ -334,7 +334,7 @@ namespace EnsoulSharp
 		/// 	Gets the max mana of the object.
 		/// </summary>
 		// Token: 0x1700002A RID: 42
-		// (get) Token: 0x060002F9 RID: 761 RVA: 0x00006180 File Offset: 0x00005580
+		// (get) Token: 0x06000300 RID: 768 RVA: 0x00006218 File Offset: 0x00005618
 		public unsafe float MaxMana
 		{
 			get
@@ -347,7 +347,7 @@ namespace EnsoulSharp
 		/// 	Gets the ability resource of the object.
 		/// </summary>
 		// Token: 0x17000029 RID: 41
-		// (get) Token: 0x060002FA RID: 762 RVA: 0x000061A0 File Offset: 0x000055A0
+		// (get) Token: 0x06000301 RID: 769 RVA: 0x00006238 File Offset: 0x00005638
 		public unsafe float AbilityResource
 		{
 			get
@@ -360,7 +360,7 @@ namespace EnsoulSharp
 		/// 	Gets the max ability resource of the object.
 		/// </summary>
 		// Token: 0x17000028 RID: 40
-		// (get) Token: 0x060002FB RID: 763 RVA: 0x000061C4 File Offset: 0x000055C4
+		// (get) Token: 0x06000302 RID: 770 RVA: 0x0000625C File Offset: 0x0000565C
 		public unsafe float MaxAbilityResource
 		{
 			get
@@ -373,7 +373,7 @@ namespace EnsoulSharp
 		/// 	Gets the all shield of the object.
 		/// </summary>
 		// Token: 0x17000027 RID: 39
-		// (get) Token: 0x060002FC RID: 764 RVA: 0x000061E8 File Offset: 0x000055E8
+		// (get) Token: 0x06000303 RID: 771 RVA: 0x00006280 File Offset: 0x00005680
 		public unsafe float AllShield
 		{
 			get
@@ -386,7 +386,7 @@ namespace EnsoulSharp
 		/// 	Gets the physical shield of the object.
 		/// </summary>
 		// Token: 0x17000026 RID: 38
-		// (get) Token: 0x060002FD RID: 765 RVA: 0x00006208 File Offset: 0x00005608
+		// (get) Token: 0x06000304 RID: 772 RVA: 0x000062A0 File Offset: 0x000056A0
 		public unsafe float PhysicalShield
 		{
 			get
@@ -399,7 +399,7 @@ namespace EnsoulSharp
 		/// 	Gets the magical shield of the object.
 		/// </summary>
 		// Token: 0x17000025 RID: 37
-		// (get) Token: 0x060002FE RID: 766 RVA: 0x00006228 File Offset: 0x00005628
+		// (get) Token: 0x06000305 RID: 773 RVA: 0x000062C0 File Offset: 0x000056C0
 		public unsafe float MagicalShield
 		{
 			get
@@ -412,7 +412,7 @@ namespace EnsoulSharp
 		/// 	Gets the health percent of the object.
 		/// </summary>
 		// Token: 0x17000024 RID: 36
-		// (get) Token: 0x060002FF RID: 767 RVA: 0x00006248 File Offset: 0x00005648
+		// (get) Token: 0x06000306 RID: 774 RVA: 0x000062E0 File Offset: 0x000056E0
 		public unsafe float HealthPercent
 		{
 			get
@@ -428,7 +428,7 @@ namespace EnsoulSharp
 		/// 	Gets the mana percent of the object.
 		/// </summary>
 		// Token: 0x17000023 RID: 35
-		// (get) Token: 0x06000300 RID: 768 RVA: 0x00006284 File Offset: 0x00005684
+		// (get) Token: 0x06000307 RID: 775 RVA: 0x0000631C File Offset: 0x0000571C
 		public unsafe float ManaPercent
 		{
 			get
@@ -444,7 +444,7 @@ namespace EnsoulSharp
 		/// 	Gets the ability resource percent of the object.
 		/// </summary>
 		// Token: 0x17000022 RID: 34
-		// (get) Token: 0x06000301 RID: 769 RVA: 0x000062C0 File Offset: 0x000056C0
+		// (get) Token: 0x06000308 RID: 776 RVA: 0x00006358 File Offset: 0x00005758
 		public unsafe float AbilityResourcePercent
 		{
 			get
@@ -460,7 +460,7 @@ namespace EnsoulSharp
 		/// 	Gets the armor material of the object.
 		/// </summary>
 		// Token: 0x17000021 RID: 33
-		// (get) Token: 0x06000302 RID: 770 RVA: 0x000062FC File Offset: 0x000056FC
+		// (get) Token: 0x06000309 RID: 777 RVA: 0x00006394 File Offset: 0x00005794
 		public unsafe string ArmorMaterial
 		{
 			get
@@ -474,7 +474,7 @@ namespace EnsoulSharp
 		/// 	Gets the weapon material of the object.
 		/// </summary>
 		// Token: 0x17000020 RID: 32
-		// (get) Token: 0x06000303 RID: 771 RVA: 0x0000632C File Offset: 0x0000572C
+		// (get) Token: 0x0600030A RID: 778 RVA: 0x000063C4 File Offset: 0x000057C4
 		public unsafe string WeaponMaterial
 		{
 			get
@@ -488,7 +488,7 @@ namespace EnsoulSharp
 		/// 	Gets the owner of the object.
 		/// </summary>
 		// Token: 0x1700001F RID: 31
-		// (get) Token: 0x06000304 RID: 772 RVA: 0x0000635C File Offset: 0x0000575C
+		// (get) Token: 0x0600030B RID: 779 RVA: 0x000063F4 File Offset: 0x000057F4
 		public unsafe GameObject Owner
 		{
 			get
@@ -512,7 +512,7 @@ namespace EnsoulSharp
 		/// <param name="color">The color.</param>
 		/// <param name="size">The size.</param>
 		/// <param name="blurFactor">The blur factor.</param>
-		// Token: 0x06000305 RID: 773 RVA: 0x00006388 File Offset: 0x00005788
+		// Token: 0x0600030C RID: 780 RVA: 0x00006420 File Offset: 0x00005820
 		public void Glow(Color color, int size, int blurFactor)
 		{
 			<Module>.EnsoulSharp.Native.AttackableUnit.Glow(this.GetPtr(), color.ToArgb(), size, blurFactor);
@@ -523,7 +523,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="attackingTeam">The attacking team.</param>
 		/// <returns>A value indicating whether the object is targetable to specified team.</returns>
-		// Token: 0x06000306 RID: 774 RVA: 0x000063AC File Offset: 0x000057AC
+		// Token: 0x0600030D RID: 781 RVA: 0x00006444 File Offset: 0x00005844
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool IsTargetableToTeam(GameObjectTeam attackingTeam)
 		{
@@ -540,7 +540,7 @@ namespace EnsoulSharp
 		internal static List<AttackableUnitTeleport> TeleportHandlers = new List<AttackableUnitTeleport>();
 
 		// Token: 0x0200004B RID: 75
-		// (Invoke) Token: 0x06000308 RID: 776
+		// (Invoke) Token: 0x0600030F RID: 783
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnTeleportNativeDelegate(AttackableUnit* attackableUnit, StlString* recallType, StlString* recallName);
 	}

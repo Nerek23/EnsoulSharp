@@ -8,12 +8,12 @@ namespace EnsoulSharp
 	// Token: 0x020000D5 RID: 213
 	public class Barracks : BuildingClient
 	{
-		// Token: 0x060004E4 RID: 1252 RVA: 0x00005C60 File Offset: 0x00005060
+		// Token: 0x060004EF RID: 1263 RVA: 0x00005CE0 File Offset: 0x000050E0
 		internal Barracks()
 		{
 		}
 
-		// Token: 0x060004E5 RID: 1253 RVA: 0x00005C48 File Offset: 0x00005048
+		// Token: 0x060004F0 RID: 1264 RVA: 0x00005CC8 File Offset: 0x000050C8
 		internal Barracks(uint networkId, uint index) : base(networkId, index)
 		{
 		}

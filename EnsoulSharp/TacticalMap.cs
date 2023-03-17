@@ -7,14 +7,14 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to tactical map.
 	/// </summary>
-	// Token: 0x02000170 RID: 368
+	// Token: 0x02000172 RID: 370
 	public class TacticalMap
 	{
 		/// <summary>
 		/// 	Gets the center world position.
 		/// </summary>
-		// Token: 0x17000173 RID: 371
-		// (get) Token: 0x060006A7 RID: 1703 RVA: 0x0000FAF0 File Offset: 0x0000EEF0
+		// Token: 0x17000179 RID: 377
+		// (get) Token: 0x060006B4 RID: 1716 RVA: 0x0000FBE0 File Offset: 0x0000EFE0
 		public unsafe static Vector3 CenterWorldPos
 		{
 			get
@@ -33,8 +33,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the tactical map's top left offset.
 		/// </summary>
-		// Token: 0x17000172 RID: 370
-		// (get) Token: 0x060006A8 RID: 1704 RVA: 0x0000FB30 File Offset: 0x0000EF30
+		// Token: 0x17000178 RID: 376
+		// (get) Token: 0x060006B5 RID: 1717 RVA: 0x0000FC20 File Offset: 0x0000F020
 		public unsafe static Vector2 Offset
 		{
 			get
@@ -54,8 +54,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the tactical map's size.
 		/// </summary>
-		// Token: 0x17000171 RID: 369
-		// (get) Token: 0x060006A9 RID: 1705 RVA: 0x0000FB68 File Offset: 0x0000EF68
+		// Token: 0x17000177 RID: 375
+		// (get) Token: 0x060006B6 RID: 1718 RVA: 0x0000FC58 File Offset: 0x0000F058
 		public unsafe static Vector2 Size
 		{
 			get

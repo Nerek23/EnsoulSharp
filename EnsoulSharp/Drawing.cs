@@ -19,7 +19,7 @@ namespace EnsoulSharp
 	// Token: 0x02000101 RID: 257
 	public class Drawing
 	{
-		// Token: 0x060005AD RID: 1453 RVA: 0x000091B4 File Offset: 0x000085B4
+		// Token: 0x060005B8 RID: 1464 RVA: 0x0000924C File Offset: 0x0000864C
 		static Drawing()
 		{
 			AppDomain.CurrentDomain.DomainUnload += Drawing.DomainUnloadEventHandler;
@@ -61,7 +61,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(void)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetDrawingD3D11PostResizeBuffersHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Drawing.m_D3D11PostResizeBuffersNative.ToPointer());
 		}
 
-		// Token: 0x060005AE RID: 1454 RVA: 0x000067E4 File Offset: 0x00005BE4
+		// Token: 0x060005B9 RID: 1465 RVA: 0x0000687C File Offset: 0x00005C7C
 		internal static void DomainUnloadEventHandler(object sender, EventArgs e)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(void)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetDrawingDrawHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Drawing.m_DrawNative.ToPointer());
@@ -78,7 +78,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(void)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetDrawingD3D11PostResizeBuffersHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Drawing.m_D3D11PostResizeBuffersNative.ToPointer());
 		}
 
-		// Token: 0x060005AF RID: 1455 RVA: 0x00006920 File Offset: 0x00005D20
+		// Token: 0x060005BA RID: 1466 RVA: 0x000069B8 File Offset: 0x00005DB8
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal static void OnDrawNative()
@@ -164,7 +164,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B0 RID: 1456 RVA: 0x00006BCC File Offset: 0x00005FCC
+		// Token: 0x060005BB RID: 1467 RVA: 0x00006C64 File Offset: 0x00006064
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal static void OnBeginSceneNative()
@@ -250,7 +250,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B1 RID: 1457 RVA: 0x00006E78 File Offset: 0x00006278
+		// Token: 0x060005BC RID: 1468 RVA: 0x00006F10 File Offset: 0x00006310
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal static void OnEndSceneNative()
@@ -336,7 +336,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B2 RID: 1458 RVA: 0x00007124 File Offset: 0x00006524
+		// Token: 0x060005BD RID: 1469 RVA: 0x000071BC File Offset: 0x000065BC
 		[HandleProcessCorruptedStateExceptions]
 		[SecurityCritical]
 		internal static void OnFlushDrawNative()
@@ -422,9 +422,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B3 RID: 1459 RVA: 0x000073D0 File Offset: 0x000067D0
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x060005BE RID: 1470 RVA: 0x00007468 File Offset: 0x00006868
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal static void OnFlushEndSceneNative()
 		{
 			DrawingFlushEndScene[] array = null;
@@ -508,9 +508,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B4 RID: 1460 RVA: 0x0000767C File Offset: 0x00006A7C
-		[SecurityCritical]
+		// Token: 0x060005BF RID: 1471 RVA: 0x00007714 File Offset: 0x00006B14
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal static void OnPreResetNative()
 		{
 			DrawingPreReset[] array = null;
@@ -594,9 +594,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B5 RID: 1461 RVA: 0x00007928 File Offset: 0x00006D28
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x060005C0 RID: 1472 RVA: 0x000079C0 File Offset: 0x00006DC0
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal static void OnPostResetNative()
 		{
 			DrawingPostReset[] array = null;
@@ -680,9 +680,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B6 RID: 1462 RVA: 0x00007BD4 File Offset: 0x00006FD4
-		[SecurityCritical]
+		// Token: 0x060005C1 RID: 1473 RVA: 0x00007C6C File Offset: 0x0000706C
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal static void OnPresentNative()
 		{
 			DrawingPresent[] array = null;
@@ -766,7 +766,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B7 RID: 1463 RVA: 0x00007E80 File Offset: 0x00007280
+		// Token: 0x060005C2 RID: 1474 RVA: 0x00007F18 File Offset: 0x00007318
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal static void OnRenderMouseOversNative()
@@ -852,9 +852,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B8 RID: 1464 RVA: 0x0000812C File Offset: 0x0000752C
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x060005C3 RID: 1475 RVA: 0x000081C4 File Offset: 0x000075C4
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal static void OnD3D11PresentNative()
 		{
 			DrawingD3D11Present[] array = null;
@@ -938,9 +938,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005B9 RID: 1465 RVA: 0x000083D8 File Offset: 0x000077D8
-		[SecurityCritical]
+		// Token: 0x060005C4 RID: 1476 RVA: 0x00008470 File Offset: 0x00007870
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal static void OnD3D11PreResizeBuffersNative()
 		{
 			DrawingD3D11PreResizeBuffers[] array = null;
@@ -1024,9 +1024,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060005BA RID: 1466 RVA: 0x00008684 File Offset: 0x00007A84
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x060005C5 RID: 1477 RVA: 0x0000871C File Offset: 0x00007B1C
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal static void OnD3D11PostResizeBuffersNative()
 		{
 			DrawingD3D11PostResizeBuffers[] array = null;
@@ -1114,8 +1114,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before game hud and menu gui draw.
 		/// </summary>
 		// Token: 0x14000025 RID: 37
-		// (add) Token: 0x060005BB RID: 1467 RVA: 0x00008930 File Offset: 0x00007D30
-		// (remove) Token: 0x060005BC RID: 1468 RVA: 0x00008948 File Offset: 0x00007D48
+		// (add) Token: 0x060005C6 RID: 1478 RVA: 0x000089C8 File Offset: 0x00007DC8
+		// (remove) Token: 0x060005C7 RID: 1479 RVA: 0x000089E0 File Offset: 0x00007DE0
 		public static event DrawingDraw OnDraw
 		{
 			add
@@ -1132,8 +1132,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after D3D9.BeginScene.
 		/// </summary>
 		// Token: 0x14000024 RID: 36
-		// (add) Token: 0x060005BD RID: 1469 RVA: 0x00008964 File Offset: 0x00007D64
-		// (remove) Token: 0x060005BE RID: 1470 RVA: 0x0000897C File Offset: 0x00007D7C
+		// (add) Token: 0x060005C8 RID: 1480 RVA: 0x000089FC File Offset: 0x00007DFC
+		// (remove) Token: 0x060005C9 RID: 1481 RVA: 0x00008A14 File Offset: 0x00007E14
 		public static event DrawingBeginScene OnBeginScene
 		{
 			add
@@ -1150,8 +1150,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before D3D9.EndScene.
 		/// </summary>
 		// Token: 0x14000023 RID: 35
-		// (add) Token: 0x060005BF RID: 1471 RVA: 0x00008998 File Offset: 0x00007D98
-		// (remove) Token: 0x060005C0 RID: 1472 RVA: 0x000089B0 File Offset: 0x00007DB0
+		// (add) Token: 0x060005CA RID: 1482 RVA: 0x00008A30 File Offset: 0x00007E30
+		// (remove) Token: 0x060005CB RID: 1483 RVA: 0x00008A48 File Offset: 0x00007E48
 		public static event DrawingEndScene OnEndScene
 		{
 			add
@@ -1168,8 +1168,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after game draw and isn't controlled by Hacks.DisableDrawings and Hacks.HideDrawingsFromCapture.
 		/// </summary>
 		// Token: 0x14000022 RID: 34
-		// (add) Token: 0x060005C1 RID: 1473 RVA: 0x000089CC File Offset: 0x00007DCC
-		// (remove) Token: 0x060005C2 RID: 1474 RVA: 0x000089E4 File Offset: 0x00007DE4
+		// (add) Token: 0x060005CC RID: 1484 RVA: 0x00008A64 File Offset: 0x00007E64
+		// (remove) Token: 0x060005CD RID: 1485 RVA: 0x00008A7C File Offset: 0x00007E7C
 		public static event DrawingFlushDraw OnFlushDraw
 		{
 			add
@@ -1186,8 +1186,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after OnEndScene and isn't controlled by Hacks.DisableDrawings and Hacks.HideDrawingsFromCapture.
 		/// </summary>
 		// Token: 0x14000021 RID: 33
-		// (add) Token: 0x060005C3 RID: 1475 RVA: 0x00008A00 File Offset: 0x00007E00
-		// (remove) Token: 0x060005C4 RID: 1476 RVA: 0x00008A18 File Offset: 0x00007E18
+		// (add) Token: 0x060005CE RID: 1486 RVA: 0x00008A98 File Offset: 0x00007E98
+		// (remove) Token: 0x060005CF RID: 1487 RVA: 0x00008AB0 File Offset: 0x00007EB0
 		[Obsolete("This event doesn't work on Direct3D11. Please use Drawing.OnFlushDraw instead.", false)]
 		public static event DrawingFlushEndScene OnFlushEndScene
 		{
@@ -1205,8 +1205,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before D3D9.Reset.
 		/// </summary>
 		// Token: 0x14000020 RID: 32
-		// (add) Token: 0x060005C5 RID: 1477 RVA: 0x00008A34 File Offset: 0x00007E34
-		// (remove) Token: 0x060005C6 RID: 1478 RVA: 0x00008A4C File Offset: 0x00007E4C
+		// (add) Token: 0x060005D0 RID: 1488 RVA: 0x00008ACC File Offset: 0x00007ECC
+		// (remove) Token: 0x060005D1 RID: 1489 RVA: 0x00008AE4 File Offset: 0x00007EE4
 		public static event DrawingPreReset OnPreReset
 		{
 			add
@@ -1223,8 +1223,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after D3D9.Reset.
 		/// </summary>
 		// Token: 0x1400001F RID: 31
-		// (add) Token: 0x060005C7 RID: 1479 RVA: 0x00008A68 File Offset: 0x00007E68
-		// (remove) Token: 0x060005C8 RID: 1480 RVA: 0x00008A80 File Offset: 0x00007E80
+		// (add) Token: 0x060005D2 RID: 1490 RVA: 0x00008B00 File Offset: 0x00007F00
+		// (remove) Token: 0x060005D3 RID: 1491 RVA: 0x00008B18 File Offset: 0x00007F18
 		public static event DrawingPostReset OnPostReset
 		{
 			add
@@ -1241,8 +1241,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before D3D9.Present.
 		/// </summary>
 		// Token: 0x1400001E RID: 30
-		// (add) Token: 0x060005C9 RID: 1481 RVA: 0x00008A9C File Offset: 0x00007E9C
-		// (remove) Token: 0x060005CA RID: 1482 RVA: 0x00008AB4 File Offset: 0x00007EB4
+		// (add) Token: 0x060005D4 RID: 1492 RVA: 0x00008B34 File Offset: 0x00007F34
+		// (remove) Token: 0x060005D5 RID: 1493 RVA: 0x00008B4C File Offset: 0x00007F4C
 		public static event DrawingPresent OnPresent
 		{
 			add
@@ -1259,8 +1259,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after game render mouse overs and it's only used for AttackableUnit.Glow.
 		/// </summary>
 		// Token: 0x1400001D RID: 29
-		// (add) Token: 0x060005CB RID: 1483 RVA: 0x00008AD0 File Offset: 0x00007ED0
-		// (remove) Token: 0x060005CC RID: 1484 RVA: 0x00008AE8 File Offset: 0x00007EE8
+		// (add) Token: 0x060005D6 RID: 1494 RVA: 0x00008B68 File Offset: 0x00007F68
+		// (remove) Token: 0x060005D7 RID: 1495 RVA: 0x00008B80 File Offset: 0x00007F80
 		public static event DrawingRenderMouseOvers OnRenderMouseOvers
 		{
 			add
@@ -1277,8 +1277,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before D3D11.Present.
 		/// </summary>
 		// Token: 0x1400001C RID: 28
-		// (add) Token: 0x060005CD RID: 1485 RVA: 0x00008B04 File Offset: 0x00007F04
-		// (remove) Token: 0x060005CE RID: 1486 RVA: 0x00008B1C File Offset: 0x00007F1C
+		// (add) Token: 0x060005D8 RID: 1496 RVA: 0x00008B9C File Offset: 0x00007F9C
+		// (remove) Token: 0x060005D9 RID: 1497 RVA: 0x00008BB4 File Offset: 0x00007FB4
 		public static event DrawingD3D11Present OnD3D11Present
 		{
 			add
@@ -1295,8 +1295,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before D3D11.ResizeBuffers.
 		/// </summary>
 		// Token: 0x1400001B RID: 27
-		// (add) Token: 0x060005CF RID: 1487 RVA: 0x00008B38 File Offset: 0x00007F38
-		// (remove) Token: 0x060005D0 RID: 1488 RVA: 0x00008B50 File Offset: 0x00007F50
+		// (add) Token: 0x060005DA RID: 1498 RVA: 0x00008BD0 File Offset: 0x00007FD0
+		// (remove) Token: 0x060005DB RID: 1499 RVA: 0x00008BE8 File Offset: 0x00007FE8
 		public static event DrawingD3D11PreResizeBuffers OnD3D11PreResizeBuffers
 		{
 			add
@@ -1313,8 +1313,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after D3D11.ResizeBuffers.
 		/// </summary>
 		// Token: 0x1400001A RID: 26
-		// (add) Token: 0x060005D1 RID: 1489 RVA: 0x00008B6C File Offset: 0x00007F6C
-		// (remove) Token: 0x060005D2 RID: 1490 RVA: 0x00008B84 File Offset: 0x00007F84
+		// (add) Token: 0x060005DC RID: 1500 RVA: 0x00008C04 File Offset: 0x00008004
+		// (remove) Token: 0x060005DD RID: 1501 RVA: 0x00008C1C File Offset: 0x0000801C
 		public static event DrawingD3D11PostResizeBuffers OnD3D11PostResizeBuffers
 		{
 			add
@@ -1330,8 +1330,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the x3d platform of the game.
 		/// </summary>
-		// Token: 0x17000144 RID: 324
-		// (get) Token: 0x060005D3 RID: 1491 RVA: 0x00008BA0 File Offset: 0x00007FA0
+		// Token: 0x17000148 RID: 328
+		// (get) Token: 0x060005DE RID: 1502 RVA: 0x00008C38 File Offset: 0x00008038
 		public unsafe static X3DPlatform Platform
 		{
 			get
@@ -1348,8 +1348,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the direct3d9 device of the game.
 		/// </summary>
-		// Token: 0x17000143 RID: 323
-		// (get) Token: 0x060005D4 RID: 1492 RVA: 0x00008BC0 File Offset: 0x00007FC0
+		// Token: 0x17000147 RID: 327
+		// (get) Token: 0x060005DF RID: 1503 RVA: 0x00008C58 File Offset: 0x00008058
 		public unsafe static SharpDX.Direct3D9.Device Direct3DDevice9
 		{
 			get
@@ -1371,8 +1371,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the direct3d11 device of the game.
 		/// </summary>
-		// Token: 0x17000142 RID: 322
-		// (get) Token: 0x060005D5 RID: 1493 RVA: 0x00008BF4 File Offset: 0x00007FF4
+		// Token: 0x17000146 RID: 326
+		// (get) Token: 0x060005E0 RID: 1504 RVA: 0x00008C8C File Offset: 0x0000808C
 		public unsafe static SharpDX.Direct3D11.Device Direct3DDevice11
 		{
 			get
@@ -1394,8 +1394,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the direct3d11 device context of the game.
 		/// </summary>
-		// Token: 0x17000141 RID: 321
-		// (get) Token: 0x060005D6 RID: 1494 RVA: 0x00008C28 File Offset: 0x00008028
+		// Token: 0x17000145 RID: 325
+		// (get) Token: 0x060005E1 RID: 1505 RVA: 0x00008CC0 File Offset: 0x000080C0
 		public unsafe static DeviceContext Direct3DDevice11Context
 		{
 			get
@@ -1417,8 +1417,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the dxgi swap chain of the game.
 		/// </summary>
-		// Token: 0x17000140 RID: 320
-		// (get) Token: 0x060005D7 RID: 1495 RVA: 0x00008C60 File Offset: 0x00008060
+		// Token: 0x17000144 RID: 324
+		// (get) Token: 0x060005E2 RID: 1506 RVA: 0x00008CF8 File Offset: 0x000080F8
 		public unsafe static SharpDX.DXGI.SwapChain SwapChain
 		{
 			get
@@ -1440,8 +1440,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the projection of the game.
 		/// </summary>
-		// Token: 0x1700013F RID: 319
-		// (get) Token: 0x060005D8 RID: 1496 RVA: 0x00008C98 File Offset: 0x00008098
+		// Token: 0x17000143 RID: 323
+		// (get) Token: 0x060005E3 RID: 1507 RVA: 0x00008D30 File Offset: 0x00008130
 		public unsafe static Matrix Projection
 		{
 			get
@@ -1461,8 +1461,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the view of the game.
 		/// </summary>
-		// Token: 0x1700013E RID: 318
-		// (get) Token: 0x060005D9 RID: 1497 RVA: 0x00008D20 File Offset: 0x00008120
+		// Token: 0x17000142 RID: 322
+		// (get) Token: 0x060005E4 RID: 1508 RVA: 0x00008DB8 File Offset: 0x000081B8
 		public unsafe static Matrix View
 		{
 			get
@@ -1482,8 +1482,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the width of the game.
 		/// </summary>
-		// Token: 0x1700013D RID: 317
-		// (get) Token: 0x060005DA RID: 1498 RVA: 0x00008DA8 File Offset: 0x000081A8
+		// Token: 0x17000141 RID: 321
+		// (get) Token: 0x060005E5 RID: 1509 RVA: 0x00008E40 File Offset: 0x00008240
 		public unsafe static int Width
 		{
 			get
@@ -1500,8 +1500,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the height of the game.
 		/// </summary>
-		// Token: 0x1700013C RID: 316
-		// (get) Token: 0x060005DB RID: 1499 RVA: 0x00008DCC File Offset: 0x000081CC
+		// Token: 0x17000140 RID: 320
+		// (get) Token: 0x060005E6 RID: 1510 RVA: 0x00008E64 File Offset: 0x00008264
 		public unsafe static int Height
 		{
 			get
@@ -1524,7 +1524,7 @@ namespace EnsoulSharp
 		/// <param name="segments">The segments.</param>
 		/// <param name="centerZ">A value indicating whether use center z as default.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005DC RID: 1500 RVA: 0x00008E88 File Offset: 0x00008288
+		// Token: 0x060005E7 RID: 1511 RVA: 0x00008F20 File Offset: 0x00008320
 		public static void DrawCircle(Vector3 position, float radius, float thickness, int segments, [MarshalAs(UnmanagedType.U1)] bool centerZ, System.Drawing.Color color)
 		{
 			byte b = (!centerZ) ? 1 : 0;
@@ -1538,7 +1538,7 @@ namespace EnsoulSharp
 		/// <param name="radius">The radius.</param>
 		/// <param name="thickness">The thickness.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005DD RID: 1501 RVA: 0x00008E54 File Offset: 0x00008254
+		// Token: 0x060005E8 RID: 1512 RVA: 0x00008EEC File Offset: 0x000082EC
 		public static void DrawCircle(Vector3 position, float radius, float thickness, System.Drawing.Color color)
 		{
 			<Module>.EnsoulSharp.Native.Drawing.DrawCircle(position.X, position.Y, position.Z, radius, thickness, false, color.ToArgb());
@@ -1552,7 +1552,7 @@ namespace EnsoulSharp
 		/// <param name="thickness">The thickness.</param>
 		/// <param name="segments">The segments.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005DE RID: 1502 RVA: 0x00008E20 File Offset: 0x00008220
+		// Token: 0x060005E9 RID: 1513 RVA: 0x00008EB8 File Offset: 0x000082B8
 		public static void DrawCircle(Vector2 position, float radius, float thickness, int segments, System.Drawing.Color color)
 		{
 			<Module>.EnsoulSharp.Native.Drawing.DrawCircle(position.X, position.Y, 0f, radius, thickness, segments, true, false, color.ToArgb());
@@ -1565,7 +1565,7 @@ namespace EnsoulSharp
 		/// <param name="radius">The radius.</param>
 		/// <param name="thickness">The thickness.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005DF RID: 1503 RVA: 0x00008DF0 File Offset: 0x000081F0
+		// Token: 0x060005EA RID: 1514 RVA: 0x00008E88 File Offset: 0x00008288
 		public static void DrawCircle(Vector2 position, float radius, float thickness, System.Drawing.Color color)
 		{
 			<Module>.EnsoulSharp.Native.Drawing.DrawCircle(position.X, position.Y, 0f, radius, thickness, true, color.ToArgb());
@@ -1577,7 +1577,7 @@ namespace EnsoulSharp
 		/// <param name="position">The 3D world position.</param>
 		/// <param name="radius">The radius.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005E0 RID: 1504 RVA: 0x00008EC4 File Offset: 0x000082C4
+		// Token: 0x060005EB RID: 1515 RVA: 0x00008F5C File Offset: 0x0000835C
 		public static void DrawCircleIndicator(Vector3 position, float radius, System.Drawing.Color color)
 		{
 			Vector3f vector3f;
@@ -1591,7 +1591,7 @@ namespace EnsoulSharp
 		/// <param name="end">The screen end position.</param>
 		/// <param name="thickness">The thickness.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005E1 RID: 1505 RVA: 0x00008F1C File Offset: 0x0000831C
+		// Token: 0x060005EC RID: 1516 RVA: 0x00008FB4 File Offset: 0x000083B4
 		public static void DrawLine(Vector2 start, Vector2 end, float thickness, System.Drawing.Color color)
 		{
 			Drawing.DrawLine(start.X, start.Y, end.X, end.Y, thickness, color);
@@ -1606,7 +1606,7 @@ namespace EnsoulSharp
 		/// <param name="endY">The scrren end y.</param>
 		/// <param name="thickness">The thickness.</param>
 		/// <param name="color">The color.</param>
-		// Token: 0x060005E2 RID: 1506 RVA: 0x00008EFC File Offset: 0x000082FC
+		// Token: 0x060005ED RID: 1517 RVA: 0x00008F94 File Offset: 0x00008394
 		public static void DrawLine(float startX, float startY, float endX, float endY, float thickness, System.Drawing.Color color)
 		{
 			<Module>.EnsoulSharp.Native.Drawing.DrawLine(startX, startY, endX, endY, thickness, color.ToArgb());
@@ -1619,7 +1619,7 @@ namespace EnsoulSharp
 		/// <param name="color">The color.</param>
 		/// <param name="format">The format.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x060005E3 RID: 1507 RVA: 0x00008FCC File Offset: 0x000083CC
+		// Token: 0x060005EE RID: 1518 RVA: 0x00009064 File Offset: 0x00008464
 		public static void DrawText(Vector2 position, System.Drawing.Color color, string format, params object[] @params)
 		{
 			Drawing.DrawText(position.X, position.Y, color, format, @params);
@@ -1633,7 +1633,7 @@ namespace EnsoulSharp
 		/// <param name="color">The color.</param>
 		/// <param name="format">The format.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x060005E4 RID: 1508 RVA: 0x00008FA0 File Offset: 0x000083A0
+		// Token: 0x060005EF RID: 1519 RVA: 0x00009038 File Offset: 0x00008438
 		public static void DrawText(float x, float y, System.Drawing.Color color, string format, params object[] @params)
 		{
 			StringBuilder stringBuilder = new StringBuilder();
@@ -1647,7 +1647,7 @@ namespace EnsoulSharp
 		/// <param name="position">The screen position.</param>
 		/// <param name="color">The color.</param>
 		/// <param name="text">The text.</param>
-		// Token: 0x060005E5 RID: 1509 RVA: 0x00008F7C File Offset: 0x0000837C
+		// Token: 0x060005F0 RID: 1520 RVA: 0x00009014 File Offset: 0x00008414
 		public static void DrawText(Vector2 position, System.Drawing.Color color, string text)
 		{
 			Drawing.DrawText(position.X, position.Y, color, text);
@@ -1660,7 +1660,7 @@ namespace EnsoulSharp
 		/// <param name="y">The screen y.</param>
 		/// <param name="color">The color.</param>
 		/// <param name="text">The text.</param>
-		// Token: 0x060005E6 RID: 1510 RVA: 0x00008F4C File Offset: 0x0000834C
+		// Token: 0x060005F1 RID: 1521 RVA: 0x00008FE4 File Offset: 0x000083E4
 		public unsafe static void DrawText(float x, float y, System.Drawing.Color color, string text)
 		{
 			IntPtr hglobal = Marshal.StringToHGlobalUni(text);
@@ -1673,7 +1673,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="text">The text.</param>
 		/// <returns>The size of the given text.</returns>
-		// Token: 0x060005E7 RID: 1511 RVA: 0x00008FF0 File Offset: 0x000083F0
+		// Token: 0x060005F2 RID: 1522 RVA: 0x00009088 File Offset: 0x00008488
 		public unsafe static Size GetTextExtent(string text)
 		{
 			IntPtr hglobal = Marshal.StringToHGlobalUni(text);
@@ -1688,7 +1688,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The minimap position.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x060005E8 RID: 1512 RVA: 0x00009074 File Offset: 0x00008474
+		// Token: 0x060005F3 RID: 1523 RVA: 0x0000910C File Offset: 0x0000850C
 		public static Vector3 MinimapToWorld(Vector2 position)
 		{
 			return Drawing.MinimapToWorld(position.X, position.Y);
@@ -1700,7 +1700,7 @@ namespace EnsoulSharp
 		/// <param name="x">The minimap x.</param>
 		/// <param name="y">The minimap y.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x060005E9 RID: 1513 RVA: 0x00009028 File Offset: 0x00008428
+		// Token: 0x060005F4 RID: 1524 RVA: 0x000090C0 File Offset: 0x000084C0
 		public unsafe static Vector3 MinimapToWorld(float x, float y)
 		{
 			TacticalMap* ptr = <Module>.EnsoulSharp.Native.TacticalMap.GetInstance();
@@ -1720,7 +1720,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The screen position.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x060005EA RID: 1514 RVA: 0x000090D0 File Offset: 0x000084D0
+		// Token: 0x060005F5 RID: 1525 RVA: 0x00009168 File Offset: 0x00008568
 		public static Vector3 ScreenToWorld(Vector2 position)
 		{
 			return Drawing.ScreenToWorld(position.X, position.Y);
@@ -1732,7 +1732,7 @@ namespace EnsoulSharp
 		/// <param name="x">The screen x.</param>
 		/// <param name="y">The screen y.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x060005EB RID: 1515 RVA: 0x00009094 File Offset: 0x00008494
+		// Token: 0x060005F6 RID: 1526 RVA: 0x0000912C File Offset: 0x0000852C
 		public unsafe static Vector3 ScreenToWorld(float x, float y)
 		{
 			Vector3f vector3f;
@@ -1748,7 +1748,7 @@ namespace EnsoulSharp
 		/// <param name="worldCoord">The world position.</param>
 		/// <param name="mapCoord">The minimap position result.</param>
 		/// <returns>A value indicating whether the conversion is successful and whether the coordinates is valid.</returns>
-		// Token: 0x060005EC RID: 1516 RVA: 0x000090F0 File Offset: 0x000084F0
+		// Token: 0x060005F7 RID: 1527 RVA: 0x00009188 File Offset: 0x00008588
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool WorldToMinimap(Vector3 worldCoord, out Vector2 mapCoord)
 		{
@@ -1771,7 +1771,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="worldCoord">The world position.</param>
 		/// <returns>The minimap coordinates result.</returns>
-		// Token: 0x060005ED RID: 1517 RVA: 0x00009574 File Offset: 0x00008974
+		// Token: 0x060005F8 RID: 1528 RVA: 0x0000960C File Offset: 0x00008A0C
 		public static Vector2 WorldToMinimap(Vector3 worldCoord)
 		{
 			Vector2 zero = Vector2.Zero;
@@ -1785,7 +1785,7 @@ namespace EnsoulSharp
 		/// <param name="worldCoord">The world position.</param>
 		/// <param name="screenCoord">The screen position result.</param>
 		/// <returns>A value indicating whether the conversion is successful and whether the coordinates is valid.</returns>
-		// Token: 0x060005EE RID: 1518 RVA: 0x00009154 File Offset: 0x00008554
+		// Token: 0x060005F9 RID: 1529 RVA: 0x000091EC File Offset: 0x000085EC
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool WorldToScreen(Vector3 worldCoord, out Vector2 screenCoord)
 		{
@@ -1804,7 +1804,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="worldCoord">The world position.</param>
 		/// <returns>The screen coordinates result.</returns>
-		// Token: 0x060005EF RID: 1519 RVA: 0x00009594 File Offset: 0x00008994
+		// Token: 0x060005FA RID: 1530 RVA: 0x0000962C File Offset: 0x00008A2C
 		public static Vector2 WorldToScreen(Vector3 worldCoord)
 		{
 			Vector2 zero = Vector2.Zero;
@@ -1921,62 +1921,62 @@ namespace EnsoulSharp
 		internal static List<DrawingD3D11PostResizeBuffers> D3D11PostResizeBuffersHandlers = new List<DrawingD3D11PostResizeBuffers>();
 
 		// Token: 0x02000102 RID: 258
-		// (Invoke) Token: 0x060005F2 RID: 1522
+		// (Invoke) Token: 0x060005FD RID: 1533
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnDrawNativeDelegate();
 
 		// Token: 0x02000103 RID: 259
-		// (Invoke) Token: 0x060005F6 RID: 1526
+		// (Invoke) Token: 0x06000601 RID: 1537
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnBeginSceneNativeDelegate();
 
 		// Token: 0x02000104 RID: 260
-		// (Invoke) Token: 0x060005FA RID: 1530
+		// (Invoke) Token: 0x06000605 RID: 1541
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnEndSceneNativeDelegate();
 
 		// Token: 0x02000105 RID: 261
-		// (Invoke) Token: 0x060005FE RID: 1534
+		// (Invoke) Token: 0x06000609 RID: 1545
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnFlushDrawNativeDelegate();
 
 		// Token: 0x02000106 RID: 262
-		// (Invoke) Token: 0x06000602 RID: 1538
+		// (Invoke) Token: 0x0600060D RID: 1549
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnFlushEndSceneNativeDelegate();
 
 		// Token: 0x02000107 RID: 263
-		// (Invoke) Token: 0x06000606 RID: 1542
+		// (Invoke) Token: 0x06000611 RID: 1553
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnPreResetNativeDelegate();
 
 		// Token: 0x02000108 RID: 264
-		// (Invoke) Token: 0x0600060A RID: 1546
+		// (Invoke) Token: 0x06000615 RID: 1557
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnPostResetNativeDelegate();
 
 		// Token: 0x02000109 RID: 265
-		// (Invoke) Token: 0x0600060E RID: 1550
+		// (Invoke) Token: 0x06000619 RID: 1561
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnPresentNativeDelegate();
 
 		// Token: 0x0200010A RID: 266
-		// (Invoke) Token: 0x06000612 RID: 1554
+		// (Invoke) Token: 0x0600061D RID: 1565
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnRenderMouseOversNativeDelegate();
 
 		// Token: 0x0200010B RID: 267
-		// (Invoke) Token: 0x06000616 RID: 1558
+		// (Invoke) Token: 0x06000621 RID: 1569
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnD3D11PresentNativeDelegate();
 
 		// Token: 0x0200010C RID: 268
-		// (Invoke) Token: 0x0600061A RID: 1562
+		// (Invoke) Token: 0x06000625 RID: 1573
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnD3D11PreResizeBuffersNativeDelegate();
 
 		// Token: 0x0200010D RID: 269
-		// (Invoke) Token: 0x0600061E RID: 1566
+		// (Invoke) Token: 0x06000629 RID: 1577
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnD3D11PostResizeBuffersNativeDelegate();
 	}

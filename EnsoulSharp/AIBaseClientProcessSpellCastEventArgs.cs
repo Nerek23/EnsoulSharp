@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x02000052 RID: 82
 	public class AIBaseClientProcessSpellCastEventArgs : EventArgs
 	{
-		// Token: 0x06000321 RID: 801 RVA: 0x0000548C File Offset: 0x0000488C
+		// Token: 0x06000328 RID: 808 RVA: 0x0000550C File Offset: 0x0000490C
 		internal AIBaseClientProcessSpellCastEventArgs(SpellData sdata, int level, Vector3 start, Vector3 to, Vector3 end, int targetLocalId, int missileNetworkId, float castTime, float totalTime, SpellSlot slot)
 		{
 			this.m_sdata = sdata;
@@ -28,7 +28,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell data.
 		/// </summary>
 		// Token: 0x1700004F RID: 79
-		// (get) Token: 0x06000322 RID: 802 RVA: 0x000054EC File Offset: 0x000048EC
+		// (get) Token: 0x06000329 RID: 809 RVA: 0x0000556C File Offset: 0x0000496C
 		public SpellData SData
 		{
 			get
@@ -41,7 +41,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell level.
 		/// </summary>
 		// Token: 0x1700004E RID: 78
-		// (get) Token: 0x06000323 RID: 803 RVA: 0x00005500 File Offset: 0x00004900
+		// (get) Token: 0x0600032A RID: 810 RVA: 0x00005580 File Offset: 0x00004980
 		public int Level
 		{
 			get
@@ -54,7 +54,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell start position.
 		/// </summary>
 		// Token: 0x1700004D RID: 77
-		// (get) Token: 0x06000324 RID: 804 RVA: 0x00005514 File Offset: 0x00004914
+		// (get) Token: 0x0600032B RID: 811 RVA: 0x00005594 File Offset: 0x00004994
 		public Vector3 Start
 		{
 			get
@@ -67,7 +67,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell target position.
 		/// </summary>
 		// Token: 0x1700004C RID: 76
-		// (get) Token: 0x06000325 RID: 805 RVA: 0x0000552C File Offset: 0x0000492C
+		// (get) Token: 0x0600032C RID: 812 RVA: 0x000055AC File Offset: 0x000049AC
 		public Vector3 To
 		{
 			get
@@ -80,7 +80,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell target end position.
 		/// </summary>
 		// Token: 0x1700004B RID: 75
-		// (get) Token: 0x06000326 RID: 806 RVA: 0x00005544 File Offset: 0x00004944
+		// (get) Token: 0x0600032D RID: 813 RVA: 0x000055C4 File Offset: 0x000049C4
 		public Vector3 End
 		{
 			get
@@ -93,7 +93,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell target.
 		/// </summary>
 		// Token: 0x1700004A RID: 74
-		// (get) Token: 0x06000327 RID: 807 RVA: 0x0000555C File Offset: 0x0000495C
+		// (get) Token: 0x0600032E RID: 814 RVA: 0x000055DC File Offset: 0x000049DC
 		public GameObject Target
 		{
 			get
@@ -106,7 +106,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell missile network id.
 		/// </summary>
 		// Token: 0x17000049 RID: 73
-		// (get) Token: 0x06000328 RID: 808 RVA: 0x0000557C File Offset: 0x0000497C
+		// (get) Token: 0x0600032F RID: 815 RVA: 0x000055FC File Offset: 0x000049FC
 		public int MissileNetworkId
 		{
 			get
@@ -119,7 +119,7 @@ namespace EnsoulSharp
 		/// 	Gets the cast spell time.
 		/// </summary>
 		// Token: 0x17000048 RID: 72
-		// (get) Token: 0x06000329 RID: 809 RVA: 0x00005590 File Offset: 0x00004990
+		// (get) Token: 0x06000330 RID: 816 RVA: 0x00005610 File Offset: 0x00004A10
 		public float CastTime
 		{
 			get
@@ -132,7 +132,7 @@ namespace EnsoulSharp
 		/// 	Gets the total spell time.
 		/// </summary>
 		// Token: 0x17000047 RID: 71
-		// (get) Token: 0x0600032A RID: 810 RVA: 0x000055A4 File Offset: 0x000049A4
+		// (get) Token: 0x06000331 RID: 817 RVA: 0x00005624 File Offset: 0x00004A24
 		public float TotalTime
 		{
 			get
@@ -145,7 +145,7 @@ namespace EnsoulSharp
 		/// 	Gets the spell slot.
 		/// </summary>
 		// Token: 0x17000046 RID: 70
-		// (get) Token: 0x0600032B RID: 811 RVA: 0x000055B8 File Offset: 0x000049B8
+		// (get) Token: 0x06000332 RID: 818 RVA: 0x00005638 File Offset: 0x00004A38
 		public SpellSlot Slot
 		{
 			get

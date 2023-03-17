@@ -28,75 +28,75 @@ namespace EnsoulSharp.SDK.Rendering.Caches
 		// Token: 0x020004DD RID: 1245
 		public class DrawFontDescription
 		{
-			// Token: 0x04000C8F RID: 3215
+			// Token: 0x04000C8E RID: 3214
 			public int Height;
 
-			// Token: 0x04000C90 RID: 3216
+			// Token: 0x04000C8F RID: 3215
 			public int Width;
 
-			// Token: 0x04000C91 RID: 3217
+			// Token: 0x04000C90 RID: 3216
 			public FontCache.DrawFontWeight Weight = FontCache.DrawFontWeight.DoNotCare;
 
-			// Token: 0x04000C92 RID: 3218
+			// Token: 0x04000C91 RID: 3217
 			public int MipLevels;
 
-			// Token: 0x04000C93 RID: 3219
+			// Token: 0x04000C92 RID: 3218
 			public RawBool Italic = false;
 
-			// Token: 0x04000C94 RID: 3220
+			// Token: 0x04000C93 RID: 3219
 			public FontCharacterSet CharacterSet = FontCharacterSet.Default;
 
-			// Token: 0x04000C95 RID: 3221
+			// Token: 0x04000C94 RID: 3220
 			public FontPrecision OutputPrecision = FontPrecision.TrueType;
 
-			// Token: 0x04000C96 RID: 3222
+			// Token: 0x04000C95 RID: 3221
 			public FontQuality Quality = FontQuality.ClearTypeNatural;
 
-			// Token: 0x04000C97 RID: 3223
+			// Token: 0x04000C96 RID: 3222
 			public FontPitchAndFamily PitchAndFamily = FontPitchAndFamily.Decorative | FontPitchAndFamily.Swiss;
 
-			// Token: 0x04000C98 RID: 3224
+			// Token: 0x04000C97 RID: 3223
 			public string FaceName;
 		}
 
 		// Token: 0x020004DE RID: 1246
 		public enum DrawFontWeight
 		{
-			// Token: 0x04000C9A RID: 3226
+			// Token: 0x04000C99 RID: 3225
 			DoNotCare = 400,
-			// Token: 0x04000C9B RID: 3227
+			// Token: 0x04000C9A RID: 3226
 			Thin = 100,
-			// Token: 0x04000C9C RID: 3228
+			// Token: 0x04000C9B RID: 3227
 			ExtraLight = 200,
-			// Token: 0x04000C9D RID: 3229
+			// Token: 0x04000C9C RID: 3228
 			UltraLight = 200,
-			// Token: 0x04000C9E RID: 3230
+			// Token: 0x04000C9D RID: 3229
 			Light = 300,
-			// Token: 0x04000C9F RID: 3231
+			// Token: 0x04000C9E RID: 3230
 			SemiLight = 350,
-			// Token: 0x04000CA0 RID: 3232
+			// Token: 0x04000C9F RID: 3231
 			Normal = 400,
-			// Token: 0x04000CA1 RID: 3233
+			// Token: 0x04000CA0 RID: 3232
 			Regular = 400,
-			// Token: 0x04000CA2 RID: 3234
+			// Token: 0x04000CA1 RID: 3233
 			Medium = 500,
-			// Token: 0x04000CA3 RID: 3235
+			// Token: 0x04000CA2 RID: 3234
 			DemiBold = 600,
-			// Token: 0x04000CA4 RID: 3236
+			// Token: 0x04000CA3 RID: 3235
 			SemiBold = 600,
-			// Token: 0x04000CA5 RID: 3237
+			// Token: 0x04000CA4 RID: 3236
 			Bold = 700,
-			// Token: 0x04000CA6 RID: 3238
+			// Token: 0x04000CA5 RID: 3237
 			ExtraBold = 800,
-			// Token: 0x04000CA7 RID: 3239
+			// Token: 0x04000CA6 RID: 3238
 			UltraBold = 800,
-			// Token: 0x04000CA8 RID: 3240
+			// Token: 0x04000CA7 RID: 3239
 			Black = 900,
-			// Token: 0x04000CA9 RID: 3241
+			// Token: 0x04000CA8 RID: 3240
 			Heavy = 900,
-			// Token: 0x04000CAA RID: 3242
+			// Token: 0x04000CA9 RID: 3241
 			ExtraBlack = 950,
-			// Token: 0x04000CAB RID: 3243
+			// Token: 0x04000CAA RID: 3242
 			UltraBlack = 950
 		}
 
@@ -104,17 +104,17 @@ namespace EnsoulSharp.SDK.Rendering.Caches
 		[Flags]
 		public enum DrawFontFlags
 		{
-			// Token: 0x04000CAD RID: 3245
+			// Token: 0x04000CAC RID: 3244
 			Left = 0,
-			// Token: 0x04000CAE RID: 3246
+			// Token: 0x04000CAD RID: 3245
 			Top = 0,
-			// Token: 0x04000CAF RID: 3247
+			// Token: 0x04000CAE RID: 3246
 			Center = 1,
-			// Token: 0x04000CB0 RID: 3248
+			// Token: 0x04000CAF RID: 3247
 			Right = 2,
-			// Token: 0x04000CB1 RID: 3249
+			// Token: 0x04000CB0 RID: 3248
 			VerticalCenter = 4,
-			// Token: 0x04000CB2 RID: 3250
+			// Token: 0x04000CB1 RID: 3249
 			Bottom = 8
 		}
 	}

@@ -59,10 +59,10 @@ namespace EnsoulSharp.SDK.Utility
 				this.CallbackObject = callback;
 			}
 
-			// Token: 0x04000C6B RID: 3179
+			// Token: 0x04000C6A RID: 3178
 			public DelayAction.Callback CallbackObject;
 
-			// Token: 0x04000C6C RID: 3180
+			// Token: 0x04000C6B RID: 3179
 			public int Time;
 		}
 	}

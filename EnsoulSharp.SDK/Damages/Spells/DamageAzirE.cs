@@ -18,7 +18,7 @@ namespace EnsoulSharp.SDK.Damages.Spells
 		// Token: 0x060009B2 RID: 2482 RVA: 0x00039685 File Offset: 0x00037885
 		protected override double GetDamage(AIHeroClient source, AIBaseClient target, int level)
 		{
-			return DamageAzirE.damages[level] + 0.55 * (double)source.TotalMagicalDamage;
+			return DamageAzirE.damages[level] + 0.4 * (double)source.TotalMagicalDamage;
 		}
 
 		// Token: 0x04000623 RID: 1571

@@ -5,15 +5,15 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to each Obj_SpawnPoint object.
 	/// </summary>
-	// Token: 0x02000163 RID: 355
+	// Token: 0x02000165 RID: 357
 	public class Obj_SpawnPoint : BuildingClient
 	{
-		// Token: 0x0600069C RID: 1692 RVA: 0x00005C60 File Offset: 0x00005060
+		// Token: 0x060006A9 RID: 1705 RVA: 0x00005CE0 File Offset: 0x000050E0
 		internal Obj_SpawnPoint()
 		{
 		}
 
-		// Token: 0x0600069D RID: 1693 RVA: 0x00005C48 File Offset: 0x00005048
+		// Token: 0x060006AA RID: 1706 RVA: 0x00005CC8 File Offset: 0x000050C8
 		internal Obj_SpawnPoint(uint networkId, uint index) : base(networkId, index)
 		{
 		}

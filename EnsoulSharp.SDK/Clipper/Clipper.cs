@@ -3327,11 +3327,11 @@ namespace EnsoulSharp.SDK.Clipper
 		// Token: 0x020004C4 RID: 1220
 		internal enum NodeType
 		{
-			// Token: 0x04000C62 RID: 3170
+			// Token: 0x04000C61 RID: 3169
 			ntAny,
-			// Token: 0x04000C63 RID: 3171
+			// Token: 0x04000C62 RID: 3170
 			ntOpen,
-			// Token: 0x04000C64 RID: 3172
+			// Token: 0x04000C63 RID: 3171
 			ntClosed
 		}
 	}

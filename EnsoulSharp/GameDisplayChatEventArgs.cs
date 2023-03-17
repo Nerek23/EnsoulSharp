@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x020000D9 RID: 217
 	public class GameDisplayChatEventArgs : EventArgs
 	{
-		// Token: 0x060004F2 RID: 1266 RVA: 0x0000B210 File Offset: 0x0000A610
+		// Token: 0x060004FD RID: 1277 RVA: 0x0000B300 File Offset: 0x0000A700
 		internal GameDisplayChatEventArgs([MarshalAs(UnmanagedType.U1)] bool process, string msg, int flags)
 		{
 			this.m_process = process;
@@ -20,9 +20,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x17000122 RID: 290
-		// (get) Token: 0x060004F3 RID: 1267 RVA: 0x0000B238 File Offset: 0x0000A638
-		// (set) Token: 0x060004F4 RID: 1268 RVA: 0x0000B24C File Offset: 0x0000A64C
+		// Token: 0x17000126 RID: 294
+		// (get) Token: 0x060004FE RID: 1278 RVA: 0x0000B328 File Offset: 0x0000A728
+		// (set) Token: 0x060004FF RID: 1279 RVA: 0x0000B33C File Offset: 0x0000A73C
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -40,8 +40,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the message.
 		/// </summary>
-		// Token: 0x17000121 RID: 289
-		// (get) Token: 0x060004F5 RID: 1269 RVA: 0x0000B260 File Offset: 0x0000A660
+		// Token: 0x17000125 RID: 293
+		// (get) Token: 0x06000500 RID: 1280 RVA: 0x0000B350 File Offset: 0x0000A750
 		public string Msg
 		{
 			get
@@ -53,8 +53,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the flags.
 		/// </summary>
-		// Token: 0x17000120 RID: 288
-		// (get) Token: 0x060004F6 RID: 1270 RVA: 0x0000B274 File Offset: 0x0000A674
+		// Token: 0x17000124 RID: 292
+		// (get) Token: 0x06000501 RID: 1281 RVA: 0x0000B364 File Offset: 0x0000A764
 		public int Flags
 		{
 			get

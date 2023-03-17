@@ -5,15 +5,15 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to each ShopClient object.
 	/// </summary>
-	// Token: 0x02000165 RID: 357
+	// Token: 0x02000167 RID: 359
 	public class ShopClient : BuildingClient
 	{
-		// Token: 0x060006A0 RID: 1696 RVA: 0x00005C60 File Offset: 0x00005060
+		// Token: 0x060006AD RID: 1709 RVA: 0x00005CE0 File Offset: 0x000050E0
 		internal ShopClient()
 		{
 		}
 
-		// Token: 0x060006A1 RID: 1697 RVA: 0x00005C48 File Offset: 0x00005048
+		// Token: 0x060006AE RID: 1710 RVA: 0x00005CC8 File Offset: 0x000050C8
 		internal ShopClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}

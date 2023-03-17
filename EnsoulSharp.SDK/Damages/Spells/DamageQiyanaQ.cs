@@ -25,10 +25,10 @@ namespace EnsoulSharp.SDK.Damages.Spells
 		private static readonly double[] damages = new double[]
 		{
 			50.0,
-			80.0,
-			110.0,
-			140.0,
-			170.0
+			85.0,
+			120.0,
+			155.0,
+			190.0
 		};
 	}
 }

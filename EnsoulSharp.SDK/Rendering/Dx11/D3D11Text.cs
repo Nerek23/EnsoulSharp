@@ -110,7 +110,7 @@ namespace EnsoulSharp.SDK.Rendering.Dx11
 			{
 			}
 
-			// Token: 0x04000C8E RID: 3214
+			// Token: 0x04000C8D RID: 3213
 			public TextFormat TextFormat;
 		}
 	}

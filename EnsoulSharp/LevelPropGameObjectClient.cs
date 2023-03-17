@@ -5,15 +5,15 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to each LevelPropGameObjectClient object.
 	/// </summary>
-	// Token: 0x0200014A RID: 330
+	// Token: 0x0200014C RID: 332
 	public class LevelPropGameObjectClient : GameObject
 	{
-		// Token: 0x06000647 RID: 1607 RVA: 0x00005C8C File Offset: 0x0000508C
+		// Token: 0x06000654 RID: 1620 RVA: 0x00005D0C File Offset: 0x0000510C
 		internal LevelPropGameObjectClient()
 		{
 		}
 
-		// Token: 0x06000648 RID: 1608 RVA: 0x00005C74 File Offset: 0x00005074
+		// Token: 0x06000655 RID: 1621 RVA: 0x00005CF4 File Offset: 0x000050F4
 		internal LevelPropGameObjectClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}

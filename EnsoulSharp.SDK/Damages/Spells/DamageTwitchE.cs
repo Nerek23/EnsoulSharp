@@ -21,7 +21,7 @@ namespace EnsoulSharp.SDK.Damages.Spells
 			double num = DamageTwitchE.buffdamages[level] + 0.35 * (double)source.GetBonusPhysicalDamage();
 			int buffCount = target.GetBuffCount("twitchdeadlyvenom");
 			double num2 = source.CalculatePhysicalDamage(target, DamageTwitchE.damages[level] + num * (double)buffCount);
-			double num3 = source.CalculateMagicDamage(target, 0.35 * (double)source.TotalMagicalDamage * (double)buffCount);
+			double num3 = source.CalculateMagicDamage(target, 0.3 * (double)source.TotalMagicalDamage * (double)buffCount);
 			return num2 + num3;
 		}
 

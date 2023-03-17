@@ -8,10 +8,10 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to navigation mesh cell.
 	/// </summary>
-	// Token: 0x02000158 RID: 344
+	// Token: 0x0200015A RID: 346
 	public class NavMeshCell
 	{
-		// Token: 0x06000683 RID: 1667 RVA: 0x0000D6D4 File Offset: 0x0000CAD4
+		// Token: 0x06000690 RID: 1680 RVA: 0x0000D7C4 File Offset: 0x0000CBC4
 		internal NavMeshCell(int x, int y)
 		{
 			this.m_x = x;
@@ -21,9 +21,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the collision flags of the grid.
 		/// </summary>
-		// Token: 0x1700016B RID: 363
-		// (get) Token: 0x06000684 RID: 1668 RVA: 0x0000D76C File Offset: 0x0000CB6C
-		// (set) Token: 0x06000685 RID: 1669 RVA: 0x0000D784 File Offset: 0x0000CB84
+		// Token: 0x17000171 RID: 369
+		// (get) Token: 0x06000691 RID: 1681 RVA: 0x0000D85C File Offset: 0x0000CC5C
+		// (set) Token: 0x06000692 RID: 1682 RVA: 0x0000D874 File Offset: 0x0000CC74
 		public CollisionFlags CollFlags
 		{
 			get
@@ -40,8 +40,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Get the grid x.
 		/// </summary>
-		// Token: 0x1700016A RID: 362
-		// (get) Token: 0x06000686 RID: 1670 RVA: 0x0000D6F8 File Offset: 0x0000CAF8
+		// Token: 0x17000170 RID: 368
+		// (get) Token: 0x06000693 RID: 1683 RVA: 0x0000D7E8 File Offset: 0x0000CBE8
 		public int GridX
 		{
 			get
@@ -53,8 +53,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the grid y.
 		/// </summary>
-		// Token: 0x17000169 RID: 361
-		// (get) Token: 0x06000687 RID: 1671 RVA: 0x0000D70C File Offset: 0x0000CB0C
+		// Token: 0x1700016F RID: 367
+		// (get) Token: 0x06000694 RID: 1684 RVA: 0x0000D7FC File Offset: 0x0000CBFC
 		public int GridY
 		{
 			get
@@ -66,8 +66,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the grid is water.
 		/// </summary>
-		// Token: 0x17000168 RID: 360
-		// (get) Token: 0x06000688 RID: 1672 RVA: 0x0000D720 File Offset: 0x0000CB20
+		// Token: 0x1700016E RID: 366
+		// (get) Token: 0x06000695 RID: 1685 RVA: 0x0000D810 File Offset: 0x0000CC10
 		public unsafe bool IsWater
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -81,8 +81,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the world position of the grid.
 		/// </summary>
-		// Token: 0x17000167 RID: 359
-		// (get) Token: 0x06000689 RID: 1673 RVA: 0x0000D74C File Offset: 0x0000CB4C
+		// Token: 0x1700016D RID: 365
+		// (get) Token: 0x06000696 RID: 1686 RVA: 0x0000D83C File Offset: 0x0000CC3C
 		public Vector3 WorldPosition
 		{
 			get

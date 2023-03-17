@@ -63,10 +63,10 @@ namespace EnsoulSharp.SDK
 				}
 			}
 
-			// Token: 0x04000B3C RID: 2876
+			// Token: 0x04000B3B RID: 2875
 			public List<Vector2> Path;
 
-			// Token: 0x04000B3D RID: 2877
+			// Token: 0x04000B3C RID: 2876
 			public int Tick;
 		}
 	}

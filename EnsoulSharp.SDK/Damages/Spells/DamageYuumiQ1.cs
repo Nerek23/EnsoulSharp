@@ -19,18 +19,18 @@ namespace EnsoulSharp.SDK.Damages.Spells
 		// Token: 0x06000F9B RID: 3995 RVA: 0x00043B7A File Offset: 0x00041D7A
 		protected override double GetDamage(AIHeroClient source, AIBaseClient target, int level)
 		{
-			return DamageYuumiQ1.damages[level] + 0.4 * (double)source.TotalMagicalDamage;
+			return DamageYuumiQ1.damages[level] + 0.35 * (double)source.TotalMagicalDamage;
 		}
 
 		// Token: 0x0400084D RID: 2125
 		private static readonly double[] damages = new double[]
 		{
-			60.0,
-			100.0,
+			80.0,
 			140.0,
-			180.0,
-			220.0,
-			260.0
+			200.0,
+			260.0,
+			320.0,
+			280.0
 		};
 	}
 }

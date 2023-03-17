@@ -11,26 +11,26 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to each MissileClient object.
 	/// </summary>
-	// Token: 0x02000151 RID: 337
+	// Token: 0x02000153 RID: 339
 	public class MissileClient : GameObject
 	{
-		// Token: 0x06000659 RID: 1625 RVA: 0x00005C8C File Offset: 0x0000508C
+		// Token: 0x06000666 RID: 1638 RVA: 0x00005D0C File Offset: 0x0000510C
 		internal MissileClient()
 		{
 		}
 
-		// Token: 0x0600065A RID: 1626 RVA: 0x00005C74 File Offset: 0x00005074
+		// Token: 0x06000667 RID: 1639 RVA: 0x00005CF4 File Offset: 0x000050F4
 		internal MissileClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}
 
-		// Token: 0x0600065B RID: 1627 RVA: 0x000016D8 File Offset: 0x00000AD8
+		// Token: 0x06000668 RID: 1640 RVA: 0x000016D8 File Offset: 0x00000AD8
 		internal new unsafe MissileClient* GetPtr()
 		{
 			return (MissileClient*)base.GetPtr();
 		}
 
-		// Token: 0x0600065C RID: 1628 RVA: 0x0000D3CC File Offset: 0x0000C7CC
+		// Token: 0x06000669 RID: 1641 RVA: 0x0000D4BC File Offset: 0x0000C8BC
 		static MissileClient()
 		{
 			AppDomain.CurrentDomain.DomainUnload += MissileClient.DomainUnloadEventHandler;
@@ -39,15 +39,15 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::MissileClient\u0020*,int\u0020*,int\u0020*)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetMissileClientCommitMovementHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), MissileClient.m_CommitMovementNative.ToPointer());
 		}
 
-		// Token: 0x0600065D RID: 1629 RVA: 0x0000CD70 File Offset: 0x0000C170
+		// Token: 0x0600066A RID: 1642 RVA: 0x0000CE60 File Offset: 0x0000C260
 		internal new static void DomainUnloadEventHandler(object sender, EventArgs args)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::MissileClient\u0020*,int\u0020*,int\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetMissileClientCommitMovementHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), MissileClient.m_CommitMovementNative.ToPointer());
 		}
 
-		// Token: 0x0600065E RID: 1630 RVA: 0x0000CD98 File Offset: 0x0000C198
-		[SecurityCritical]
+		// Token: 0x0600066B RID: 1643 RVA: 0x0000CE88 File Offset: 0x0000C288
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnCommitMovementNative(MissileClient* missileClient, int* x, int* y)
 		{
 			MissileClientCommitMovement[] array = null;
@@ -143,8 +143,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before committing movement.
 		/// </summary>
 		// Token: 0x14000026 RID: 38
-		// (add) Token: 0x0600065F RID: 1631 RVA: 0x0000D09C File Offset: 0x0000C49C
-		// (remove) Token: 0x06000660 RID: 1632 RVA: 0x0000D0B4 File Offset: 0x0000C4B4
+		// (add) Token: 0x0600066C RID: 1644 RVA: 0x0000D18C File Offset: 0x0000C58C
+		// (remove) Token: 0x0600066D RID: 1645 RVA: 0x0000D1A4 File Offset: 0x0000C5A4
 		public static event MissileClientCommitMovement OnCommitMovement
 		{
 			add
@@ -160,8 +160,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell cast info of the object.
 		/// </summary>
-		// Token: 0x17000166 RID: 358
-		// (get) Token: 0x06000661 RID: 1633 RVA: 0x0000D0D0 File Offset: 0x0000C4D0
+		// Token: 0x1700016C RID: 364
+		// (get) Token: 0x0600066E RID: 1646 RVA: 0x0000D1C0 File Offset: 0x0000C5C0
 		public unsafe AIBaseClientProcessSpellCastEventArgs CastInfo
 		{
 			get
@@ -193,8 +193,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell data of the object.
 		/// </summary>
-		// Token: 0x17000165 RID: 357
-		// (get) Token: 0x06000662 RID: 1634 RVA: 0x0000D1E0 File Offset: 0x0000C5E0
+		// Token: 0x1700016B RID: 363
+		// (get) Token: 0x0600066F RID: 1647 RVA: 0x0000D2D0 File Offset: 0x0000C6D0
 		public unsafe SpellData SData
 		{
 			get
@@ -211,8 +211,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell caster of the object.
 		/// </summary>
-		// Token: 0x17000164 RID: 356
-		// (get) Token: 0x06000663 RID: 1635 RVA: 0x0000D20C File Offset: 0x0000C60C
+		// Token: 0x1700016A RID: 362
+		// (get) Token: 0x06000670 RID: 1648 RVA: 0x0000D2FC File Offset: 0x0000C6FC
 		public unsafe AIBaseClient SpellCaster
 		{
 			get
@@ -224,8 +224,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the start position of the object.
 		/// </summary>
-		// Token: 0x17000163 RID: 355
-		// (get) Token: 0x06000664 RID: 1636 RVA: 0x0000D234 File Offset: 0x0000C634
+		// Token: 0x17000169 RID: 361
+		// (get) Token: 0x06000671 RID: 1649 RVA: 0x0000D324 File Offset: 0x0000C724
 		public unsafe Vector3 StartPosition
 		{
 			get
@@ -244,8 +244,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the end position of the object.
 		/// </summary>
-		// Token: 0x17000162 RID: 354
-		// (get) Token: 0x06000665 RID: 1637 RVA: 0x0000D278 File Offset: 0x0000C678
+		// Token: 0x17000168 RID: 360
+		// (get) Token: 0x06000672 RID: 1650 RVA: 0x0000D368 File Offset: 0x0000C768
 		public unsafe Vector3 EndPosition
 		{
 			get
@@ -264,8 +264,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell target of the object.
 		/// </summary>
-		// Token: 0x17000161 RID: 353
-		// (get) Token: 0x06000666 RID: 1638 RVA: 0x0000D2BC File Offset: 0x0000C6BC
+		// Token: 0x17000167 RID: 359
+		// (get) Token: 0x06000673 RID: 1651 RVA: 0x0000D3AC File Offset: 0x0000C7AC
 		public unsafe GameObject Target
 		{
 			get
@@ -282,8 +282,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell slot of the object.
 		/// </summary>
-		// Token: 0x17000160 RID: 352
-		// (get) Token: 0x06000667 RID: 1639 RVA: 0x0000D2EC File Offset: 0x0000C6EC
+		// Token: 0x17000166 RID: 358
+		// (get) Token: 0x06000674 RID: 1652 RVA: 0x0000D3DC File Offset: 0x0000C7DC
 		public unsafe SpellSlot Slot
 		{
 			get
@@ -295,8 +295,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the start time of the object.
 		/// </summary>
-		// Token: 0x1700015F RID: 351
-		// (get) Token: 0x06000668 RID: 1640 RVA: 0x0000D30C File Offset: 0x0000C70C
+		// Token: 0x17000165 RID: 357
+		// (get) Token: 0x06000675 RID: 1653 RVA: 0x0000D3FC File Offset: 0x0000C7FC
 		public unsafe float StartTime
 		{
 			get
@@ -308,8 +308,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the speed of the object.
 		/// </summary>
-		// Token: 0x1700015E RID: 350
-		// (get) Token: 0x06000669 RID: 1641 RVA: 0x0000D328 File Offset: 0x0000C728
+		// Token: 0x17000164 RID: 356
+		// (get) Token: 0x06000676 RID: 1654 RVA: 0x0000D418 File Offset: 0x0000C818
 		public unsafe float Speed
 		{
 			get
@@ -326,8 +326,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the width of the object.
 		/// </summary>
-		// Token: 0x1700015D RID: 349
-		// (get) Token: 0x0600066A RID: 1642 RVA: 0x0000D354 File Offset: 0x0000C754
+		// Token: 0x17000163 RID: 355
+		// (get) Token: 0x06000677 RID: 1655 RVA: 0x0000D444 File Offset: 0x0000C844
 		public unsafe float Width
 		{
 			get
@@ -339,8 +339,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the object is complete.
 		/// </summary>
-		// Token: 0x1700015C RID: 348
-		// (get) Token: 0x0600066B RID: 1643 RVA: 0x0000D370 File Offset: 0x0000C770
+		// Token: 0x17000162 RID: 354
+		// (get) Token: 0x06000678 RID: 1656 RVA: 0x0000D460 File Offset: 0x0000C860
 		public unsafe bool IsComplete
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -354,8 +354,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the object is destroyed.
 		/// </summary>
-		// Token: 0x1700015B RID: 347
-		// (get) Token: 0x0600066C RID: 1644 RVA: 0x0000D398 File Offset: 0x0000C798
+		// Token: 0x17000161 RID: 353
+		// (get) Token: 0x06000679 RID: 1657 RVA: 0x0000D488 File Offset: 0x0000C888
 		public unsafe bool IsDestroyed
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -368,8 +368,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the object is visible.
 		/// </summary>
-		// Token: 0x1700015A RID: 346
-		// (get) Token: 0x0600066D RID: 1645 RVA: 0x0000D3B4 File Offset: 0x0000C7B4
+		// Token: 0x17000160 RID: 352
+		// (get) Token: 0x0600067A RID: 1658 RVA: 0x0000D4A4 File Offset: 0x0000C8A4
 		public bool IsVisible
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -388,8 +388,8 @@ namespace EnsoulSharp
 		// Token: 0x0400040C RID: 1036
 		internal static List<MissileClientCommitMovement> CommitMovementHandlers = new List<MissileClientCommitMovement>();
 
-		// Token: 0x02000152 RID: 338
-		// (Invoke) Token: 0x0600066F RID: 1647
+		// Token: 0x02000154 RID: 340
+		// (Invoke) Token: 0x0600067C RID: 1660
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnCommitMovementNativeDelegate(MissileClient* missileClient, int* x, int* y);
 	}

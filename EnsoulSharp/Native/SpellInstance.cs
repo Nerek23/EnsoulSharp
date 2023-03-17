@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x0200016B RID: 363
+	// Token: 0x0200016D RID: 365
 	[NativeCppClass]
 	internal struct SpellInstance
 	{

@@ -11,14 +11,14 @@ namespace EnsoulSharp
 	// Token: 0x02000076 RID: 118
 	public class SpellDataInst
 	{
-		// Token: 0x060004A3 RID: 1187 RVA: 0x0000F7D0 File Offset: 0x0000EBD0
+		// Token: 0x060004AE RID: 1198 RVA: 0x0000F8C0 File Offset: 0x0000ECC0
 		internal SpellDataInst(uint networkId, uint slot)
 		{
 			this.m_networkId = networkId;
 			this.m_slot = slot;
 		}
 
-		// Token: 0x060004A4 RID: 1188 RVA: 0x0000F7F4 File Offset: 0x0000EBF4
+		// Token: 0x060004AF RID: 1199 RVA: 0x0000F8E4 File Offset: 0x0000ECE4
 		internal unsafe SpellDataInstClient* GetPtr()
 		{
 			AIBaseClient* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByNetworkId(this.m_networkId);
@@ -32,8 +32,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the level of the spell.
 		/// </summary>
-		// Token: 0x17000109 RID: 265
-		// (get) Token: 0x060004A5 RID: 1189 RVA: 0x0000F830 File Offset: 0x0000EC30
+		// Token: 0x1700010D RID: 269
+		// (get) Token: 0x060004B0 RID: 1200 RVA: 0x0000F920 File Offset: 0x0000ED20
 		public unsafe int Level
 		{
 			get
@@ -50,8 +50,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell is learned.
 		/// </summary>
-		// Token: 0x17000108 RID: 264
-		// (get) Token: 0x060004A6 RID: 1190 RVA: 0x0000F850 File Offset: 0x0000EC50
+		// Token: 0x1700010C RID: 268
+		// (get) Token: 0x060004B1 RID: 1201 RVA: 0x0000F940 File Offset: 0x0000ED40
 		public unsafe bool Learned
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -65,8 +65,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the cooldown expires time of the spell.
 		/// </summary>
-		// Token: 0x17000107 RID: 263
-		// (get) Token: 0x060004A7 RID: 1191 RVA: 0x0000F870 File Offset: 0x0000EC70
+		// Token: 0x1700010B RID: 267
+		// (get) Token: 0x060004B2 RID: 1202 RVA: 0x0000F960 File Offset: 0x0000ED60
 		public unsafe float CooldownExpires
 		{
 			get
@@ -83,8 +83,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the display numerical of the spell.
 		/// </summary>
-		// Token: 0x17000106 RID: 262
-		// (get) Token: 0x060004A8 RID: 1192 RVA: 0x0000F894 File Offset: 0x0000EC94
+		// Token: 0x1700010A RID: 266
+		// (get) Token: 0x060004B3 RID: 1203 RVA: 0x0000F984 File Offset: 0x0000ED84
 		public unsafe int NumericalDisplay
 		{
 			get
@@ -101,8 +101,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the current ammo of the spell.
 		/// </summary>
-		// Token: 0x17000105 RID: 261
-		// (get) Token: 0x060004A9 RID: 1193 RVA: 0x0000F8C8 File Offset: 0x0000ECC8
+		// Token: 0x17000109 RID: 265
+		// (get) Token: 0x060004B4 RID: 1204 RVA: 0x0000F9B8 File Offset: 0x0000EDB8
 		public unsafe int Ammo
 		{
 			get
@@ -119,8 +119,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the time for next ammo recharge.
 		/// </summary>
-		// Token: 0x17000104 RID: 260
-		// (get) Token: 0x060004AA RID: 1194 RVA: 0x0000F8E8 File Offset: 0x0000ECE8
+		// Token: 0x17000108 RID: 264
+		// (get) Token: 0x060004B5 RID: 1205 RVA: 0x0000F9D8 File Offset: 0x0000EDD8
 		public unsafe float NextAmmoRechargeTime
 		{
 			get
@@ -137,8 +137,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the total ammo recharge time.
 		/// </summary>
-		// Token: 0x17000103 RID: 259
-		// (get) Token: 0x060004AB RID: 1195 RVA: 0x0000F90C File Offset: 0x0000ED0C
+		// Token: 0x17000107 RID: 263
+		// (get) Token: 0x060004B6 RID: 1206 RVA: 0x0000F9FC File Offset: 0x0000EDFC
 		public unsafe float AmmoRechargeTime
 		{
 			get
@@ -155,8 +155,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the toggle state of the spell.
 		/// </summary>
-		// Token: 0x17000102 RID: 258
-		// (get) Token: 0x060004AC RID: 1196 RVA: 0x0000F930 File Offset: 0x0000ED30
+		// Token: 0x17000106 RID: 262
+		// (get) Token: 0x060004B7 RID: 1207 RVA: 0x0000FA20 File Offset: 0x0000EE20
 		public unsafe SpellToggleState ToggleState
 		{
 			get
@@ -173,8 +173,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the total cooldown time of the spell.
 		/// </summary>
-		// Token: 0x17000101 RID: 257
-		// (get) Token: 0x060004AD RID: 1197 RVA: 0x0000F950 File Offset: 0x0000ED50
+		// Token: 0x17000105 RID: 261
+		// (get) Token: 0x060004B8 RID: 1208 RVA: 0x0000FA40 File Offset: 0x0000EE40
 		public unsafe float Cooldown
 		{
 			get
@@ -192,8 +192,8 @@ namespace EnsoulSharp
 		/// 	Gets the tooltip vars of the spell.
 		/// </summary>
 		/// <remarks>The max count is 16.</remarks>
-		// Token: 0x17000100 RID: 256
-		// (get) Token: 0x060004AE RID: 1198 RVA: 0x0000F974 File Offset: 0x0000ED74
+		// Token: 0x17000104 RID: 260
+		// (get) Token: 0x060004B9 RID: 1209 RVA: 0x0000FA64 File Offset: 0x0000EE64
 		public unsafe float[] TooltipVars
 		{
 			get
@@ -218,8 +218,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the icon used index of the spell.
 		/// </summary>
-		// Token: 0x170000FF RID: 255
-		// (get) Token: 0x060004AF RID: 1199 RVA: 0x0000F9B0 File Offset: 0x0000EDB0
+		// Token: 0x17000103 RID: 259
+		// (get) Token: 0x060004BA RID: 1210 RVA: 0x0000FAA0 File Offset: 0x0000EEA0
 		public unsafe int IconUsed
 		{
 			get
@@ -236,8 +236,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the name of the spell.
 		/// </summary>
-		// Token: 0x170000FE RID: 254
-		// (get) Token: 0x060004B0 RID: 1200 RVA: 0x0000F9D0 File Offset: 0x0000EDD0
+		// Token: 0x17000102 RID: 258
+		// (get) Token: 0x060004BB RID: 1211 RVA: 0x0000FAC0 File Offset: 0x0000EEC0
 		public unsafe string Name
 		{
 			get
@@ -260,8 +260,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the mana cost of the spell.
 		/// </summary>
-		// Token: 0x170000FD RID: 253
-		// (get) Token: 0x060004B1 RID: 1201 RVA: 0x0000FA1C File Offset: 0x0000EE1C
+		// Token: 0x17000101 RID: 257
+		// (get) Token: 0x060004BC RID: 1212 RVA: 0x0000FB0C File Offset: 0x0000EF0C
 		public unsafe float ManaCost
 		{
 			get
@@ -288,8 +288,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the data of the spell.
 		/// </summary>
-		// Token: 0x170000FC RID: 252
-		// (get) Token: 0x060004B2 RID: 1202 RVA: 0x0000FA74 File Offset: 0x0000EE74
+		// Token: 0x17000100 RID: 256
+		// (get) Token: 0x060004BD RID: 1213 RVA: 0x0000FB64 File Offset: 0x0000EF64
 		public unsafe SpellData SData
 		{
 			get
@@ -311,8 +311,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the slot of the spell.
 		/// </summary>
-		// Token: 0x170000FB RID: 251
-		// (get) Token: 0x060004B3 RID: 1203 RVA: 0x0000FAAC File Offset: 0x0000EEAC
+		// Token: 0x170000FF RID: 255
+		// (get) Token: 0x060004BE RID: 1214 RVA: 0x0000FB9C File Offset: 0x0000EF9C
 		public SpellSlot Slot
 		{
 			get
@@ -324,8 +324,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the state of the spell.
 		/// </summary>
-		// Token: 0x170000FA RID: 250
-		// (get) Token: 0x060004B4 RID: 1204 RVA: 0x0000FAC0 File Offset: 0x0000EEC0
+		// Token: 0x170000FE RID: 254
+		// (get) Token: 0x060004BF RID: 1215 RVA: 0x0000FBB0 File Offset: 0x0000EFB0
 		public unsafe SpellState State
 		{
 			get

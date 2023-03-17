@@ -8,12 +8,12 @@ namespace EnsoulSharp
 	// Token: 0x020000D6 RID: 214
 	public class BarracksDampenerClient : AnimatedBuildingClient
 	{
-		// Token: 0x060004E6 RID: 1254 RVA: 0x0000649C File Offset: 0x0000589C
+		// Token: 0x060004F1 RID: 1265 RVA: 0x00006534 File Offset: 0x00005934
 		internal BarracksDampenerClient()
 		{
 		}
 
-		// Token: 0x060004E7 RID: 1255 RVA: 0x00006484 File Offset: 0x00005884
+		// Token: 0x060004F2 RID: 1266 RVA: 0x0000651C File Offset: 0x0000591C
 		internal BarracksDampenerClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}

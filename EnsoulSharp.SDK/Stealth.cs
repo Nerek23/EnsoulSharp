@@ -68,13 +68,13 @@ namespace EnsoulSharp.SDK
 		// Token: 0x02000478 RID: 1144
 		public class OnStealthEventArgs : EventArgs
 		{
-			// Token: 0x04000B83 RID: 2947
+			// Token: 0x04000B82 RID: 2946
 			public bool IsStealthed;
 
-			// Token: 0x04000B84 RID: 2948
+			// Token: 0x04000B83 RID: 2947
 			public AIHeroClient Sender;
 
-			// Token: 0x04000B85 RID: 2949
+			// Token: 0x04000B84 RID: 2948
 			public float Time;
 		}
 	}

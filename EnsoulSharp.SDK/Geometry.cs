@@ -177,19 +177,19 @@ namespace EnsoulSharp.SDK
 				}
 			}
 
-			// Token: 0x04000BC2 RID: 3010
+			// Token: 0x04000BC1 RID: 3009
 			private readonly int _quality;
 
-			// Token: 0x04000BC3 RID: 3011
+			// Token: 0x04000BC2 RID: 3010
 			public float Angle;
 
-			// Token: 0x04000BC4 RID: 3012
+			// Token: 0x04000BC3 RID: 3011
 			public Vector2 EndPos;
 
-			// Token: 0x04000BC5 RID: 3013
+			// Token: 0x04000BC4 RID: 3012
 			public float Radius;
 
-			// Token: 0x04000BC6 RID: 3014
+			// Token: 0x04000BC5 RID: 3013
 			public Vector2 StartPos;
 		}
 
@@ -223,13 +223,13 @@ namespace EnsoulSharp.SDK
 				}
 			}
 
-			// Token: 0x04000BC7 RID: 3015
+			// Token: 0x04000BC6 RID: 3014
 			private readonly int _quality;
 
-			// Token: 0x04000BC8 RID: 3016
+			// Token: 0x04000BC7 RID: 3015
 			public Vector2 Center;
 
-			// Token: 0x04000BC9 RID: 3017
+			// Token: 0x04000BC8 RID: 3016
 			public float Radius;
 		}
 
@@ -276,10 +276,10 @@ namespace EnsoulSharp.SDK
 				this.Points.Add(this.LineEnd);
 			}
 
-			// Token: 0x04000BCA RID: 3018
+			// Token: 0x04000BC9 RID: 3017
 			public Vector2 LineEnd;
 
-			// Token: 0x04000BCB RID: 3019
+			// Token: 0x04000BCA RID: 3018
 			public Vector2 LineStart;
 		}
 
@@ -355,7 +355,7 @@ namespace EnsoulSharp.SDK
 				return list;
 			}
 
-			// Token: 0x04000BCC RID: 3020
+			// Token: 0x04000BCB RID: 3019
 			public List<Vector2> Points = new List<Vector2>();
 		}
 
@@ -406,13 +406,13 @@ namespace EnsoulSharp.SDK
 				this.Points.Add(this.End + ((overrideWidth > 0f) ? overrideWidth : (this.Width + (float)offset)) * this.Perpendicular + (float)offset * this.Direction);
 			}
 
-			// Token: 0x04000BCD RID: 3021
+			// Token: 0x04000BCC RID: 3020
 			public Vector2 End;
 
-			// Token: 0x04000BCE RID: 3022
+			// Token: 0x04000BCD RID: 3021
 			public Vector2 Start;
 
-			// Token: 0x04000BCF RID: 3023
+			// Token: 0x04000BCE RID: 3022
 			public float Width;
 		}
 
@@ -454,16 +454,16 @@ namespace EnsoulSharp.SDK
 				}
 			}
 
-			// Token: 0x04000BD0 RID: 3024
+			// Token: 0x04000BCF RID: 3023
 			private readonly int _quality;
 
-			// Token: 0x04000BD1 RID: 3025
+			// Token: 0x04000BD0 RID: 3024
 			public Vector2 Center;
 
-			// Token: 0x04000BD2 RID: 3026
+			// Token: 0x04000BD1 RID: 3025
 			public float InnerRadius;
 
-			// Token: 0x04000BD3 RID: 3027
+			// Token: 0x04000BD2 RID: 3026
 			public float OuterRadius;
 		}
 
@@ -512,19 +512,19 @@ namespace EnsoulSharp.SDK
 				}
 			}
 
-			// Token: 0x04000BD4 RID: 3028
+			// Token: 0x04000BD3 RID: 3027
 			private readonly int _quality;
 
-			// Token: 0x04000BD5 RID: 3029
+			// Token: 0x04000BD4 RID: 3028
 			public float Angle;
 
-			// Token: 0x04000BD6 RID: 3030
+			// Token: 0x04000BD5 RID: 3029
 			public Vector2 Center;
 
-			// Token: 0x04000BD7 RID: 3031
+			// Token: 0x04000BD6 RID: 3030
 			public Vector2 Direction;
 
-			// Token: 0x04000BD8 RID: 3032
+			// Token: 0x04000BD7 RID: 3031
 			public float Radius;
 		}
 	}

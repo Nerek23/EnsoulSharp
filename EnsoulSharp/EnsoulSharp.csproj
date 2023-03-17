@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{FC0DEFBA-7C6E-4209-8850-4D106E947994}</ProjectGuid>
+    <ProjectGuid>{672CB1C8-B34A-4B18-953B-0F1E778A09A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EnsoulSharp</RootNamespace>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -30,26 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D11">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D11.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct3D9">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Direct3D9.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.DXGI">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.DXGI.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\..\..\..\EnsoulSharp\Reference\SharpDX.Mathematics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -270,6 +254,7 @@
     <Compile Include="Native\FramerateInformation.cs" />
     <Compile Include="Native\GameClient.cs" />
     <Compile Include="Native\GameObject.cs" />
+    <Compile Include="Native\GameObjectAttachment.cs" />
     <Compile Include="Native\GameObjectContainer.cs" />
     <Compile Include="Native\GameObjectVtbl.cs" />
     <Compile Include="Native\GameSessionInfo.cs" />
@@ -338,6 +323,7 @@
     <Compile Include="Native\StlArray-unsigned int-.cs" />
     <Compile Include="Native\StlAString.cs" />
     <Compile Include="Native\StlSharedPtr-EnsoulSharp.2.cs" />
+    <Compile Include="Native\StlSharedPtr-EnsoulSharp.3.cs" />
     <Compile Include="Native\StlSharedPtr-EnsoulSharp.cs" />
     <Compile Include="Native\StlString.cs" />
     <Compile Include="Native\StlUniquePtr-EnsoulSharp.cs" />
@@ -409,6 +395,36 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="log4net.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\log4net\log4net.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A5}</Project>
+      <Name>log4net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AD}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Direct3D11\SharpDX.Direct3D11.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A8}</Project>
+      <Name>SharpDX.Direct3D11</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Direct3D9\SharpDX.Direct3D9.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09A9}</Project>
+      <Name>SharpDX.Direct3D9</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.DXGI\SharpDX.DXGI.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AB}</Project>
+      <Name>SharpDX.DXGI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX.Mathematics\SharpDX.Mathematics.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AC}</Project>
+      <Name>SharpDX.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpDX\SharpDX.csproj">
+      <Project>{672CB1C8-B34A-4B18-953B-0F1E778A09AA}</Project>
+      <Name>SharpDX</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.manifest" />

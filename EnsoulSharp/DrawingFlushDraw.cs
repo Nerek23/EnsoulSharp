@@ -3,6 +3,6 @@
 namespace EnsoulSharp
 {
 	// Token: 0x020000F8 RID: 248
-	// (Invoke) Token: 0x0600058A RID: 1418
+	// (Invoke) Token: 0x06000595 RID: 1429
 	public delegate void DrawingFlushDraw(EventArgs args);
 }

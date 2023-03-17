@@ -11,7 +11,7 @@ namespace Newtonsoft.Json.Utilities
 	// Token: 0x02000045 RID: 69
 	[NullableContext(1)]
 	[Nullable(0)]
-	internal class CollectionWrapper<[Nullable(2)] T> : ICollection<T>, IEnumerable<T>, IEnumerable, IWrappedCollection, IList, ICollection
+	internal class CollectionWrapper<[Nullable(2)] T> : ICollection<T>, IEnumerable<!0>, IEnumerable, IWrappedCollection, IList, ICollection
 	{
 		// Token: 0x0600044A RID: 1098 RVA: 0x00010B9C File Offset: 0x0000ED9C
 		public CollectionWrapper(IList list)

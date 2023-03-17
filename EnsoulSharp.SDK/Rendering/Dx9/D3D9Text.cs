@@ -155,7 +155,7 @@ namespace EnsoulSharp.SDK.Rendering.Dx9
 				cacheFont.Dispose();
 			}
 
-			// Token: 0x04000C87 RID: 3207
+			// Token: 0x04000C86 RID: 3206
 			public Font CacheFont;
 		}
 	}

@@ -147,7 +147,7 @@ namespace EnsoulSharp.SDK.Rendering.Dx9
 		// Token: 0x020004D7 RID: 1239
 		public class D3D9LineCache : LineCache
 		{
-			// Token: 0x04000C81 RID: 3201
+			// Token: 0x04000C80 RID: 3200
 			public Line CacheLine;
 		}
 	}

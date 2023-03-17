@@ -8,12 +8,12 @@ namespace EnsoulSharp
 	// Token: 0x020000CF RID: 207
 	public class AnimatedBuildingClient : BuildingClient
 	{
-		// Token: 0x060004E2 RID: 1250 RVA: 0x00005C60 File Offset: 0x00005060
+		// Token: 0x060004ED RID: 1261 RVA: 0x00005CE0 File Offset: 0x000050E0
 		internal AnimatedBuildingClient()
 		{
 		}
 
-		// Token: 0x060004E3 RID: 1251 RVA: 0x00005C48 File Offset: 0x00005048
+		// Token: 0x060004EE RID: 1262 RVA: 0x00005CC8 File Offset: 0x000050C8
 		internal AnimatedBuildingClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}

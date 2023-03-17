@@ -3,6 +3,6 @@
 namespace EnsoulSharp
 {
 	// Token: 0x020000DD RID: 221
-	// (Invoke) Token: 0x06000508 RID: 1288
+	// (Invoke) Token: 0x06000513 RID: 1299
 	public delegate void GameProcessPacket(GamePacketEventArgs args);
 }

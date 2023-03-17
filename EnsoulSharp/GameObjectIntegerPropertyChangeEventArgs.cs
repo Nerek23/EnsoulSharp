@@ -8,7 +8,7 @@ namespace EnsoulSharp
 	// Token: 0x0200003E RID: 62
 	public class GameObjectIntegerPropertyChangeEventArgs : EventArgs
 	{
-		// Token: 0x06000293 RID: 659 RVA: 0x0000C58C File Offset: 0x0000B98C
+		// Token: 0x0600029A RID: 666 RVA: 0x0000C67C File Offset: 0x0000BA7C
 		internal GameObjectIntegerPropertyChangeEventArgs(string property, int oldValue, int newValue)
 		{
 			this.m_property = property;
@@ -20,7 +20,7 @@ namespace EnsoulSharp
 		/// 	Gets the property name.
 		/// </summary>
 		// Token: 0x1700000D RID: 13
-		// (get) Token: 0x06000294 RID: 660 RVA: 0x0000C5B4 File Offset: 0x0000B9B4
+		// (get) Token: 0x0600029B RID: 667 RVA: 0x0000C6A4 File Offset: 0x0000BAA4
 		public string Property
 		{
 			get
@@ -33,7 +33,7 @@ namespace EnsoulSharp
 		/// 	Gets the old property value.
 		/// </summary>
 		// Token: 0x1700000C RID: 12
-		// (get) Token: 0x06000295 RID: 661 RVA: 0x0000C5C8 File Offset: 0x0000B9C8
+		// (get) Token: 0x0600029C RID: 668 RVA: 0x0000C6B8 File Offset: 0x0000BAB8
 		public int OldValue
 		{
 			get
@@ -46,7 +46,7 @@ namespace EnsoulSharp
 		/// 	Gets the new property value.
 		/// </summary>
 		// Token: 0x1700000B RID: 11
-		// (get) Token: 0x06000296 RID: 662 RVA: 0x0000C5DC File Offset: 0x0000B9DC
+		// (get) Token: 0x0600029D RID: 669 RVA: 0x0000C6CC File Offset: 0x0000BACC
 		public int NewValue
 		{
 			get

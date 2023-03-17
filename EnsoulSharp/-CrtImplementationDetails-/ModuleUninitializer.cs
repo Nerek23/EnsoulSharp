@@ -7,10 +7,10 @@ using System.Threading;
 
 namespace <CrtImplementationDetails>
 {
-	// Token: 0x02000173 RID: 371
+	// Token: 0x02000175 RID: 373
 	internal class ModuleUninitializer : Stack
 	{
-		// Token: 0x060006B4 RID: 1716 RVA: 0x0001095C File Offset: 0x0000FD5C
+		// Token: 0x060006C1 RID: 1729 RVA: 0x00010A4C File Offset: 0x0000FE4C
 		[SecuritySafeCritical]
 		internal void AddHandler(EventHandler handler)
 		{
@@ -32,7 +32,7 @@ namespace <CrtImplementationDetails>
 			}
 		}
 
-		// Token: 0x060006B6 RID: 1718 RVA: 0x00010F50 File Offset: 0x00010350
+		// Token: 0x060006C3 RID: 1731 RVA: 0x00011040 File Offset: 0x00010440
 		[SecuritySafeCritical]
 		private ModuleUninitializer()
 		{
@@ -41,7 +41,7 @@ namespace <CrtImplementationDetails>
 			AppDomain.CurrentDomain.ProcessExit += value;
 		}
 
-		// Token: 0x060006B7 RID: 1719 RVA: 0x000109BC File Offset: 0x0000FDBC
+		// Token: 0x060006C4 RID: 1732 RVA: 0x00010AAC File Offset: 0x0000FEAC
 		[PrePrepareMethod]
 		[SecurityCritical]
 		private void SingletonDomainUnload(object source, EventArgs arguments)

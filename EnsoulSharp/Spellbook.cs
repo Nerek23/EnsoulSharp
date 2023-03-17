@@ -15,13 +15,13 @@ namespace EnsoulSharp
 	// Token: 0x02000071 RID: 113
 	public class Spellbook
 	{
-		// Token: 0x06000456 RID: 1110 RVA: 0x0000E0A4 File Offset: 0x0000D4A4
+		// Token: 0x06000461 RID: 1121 RVA: 0x0000E194 File Offset: 0x0000D594
 		internal Spellbook(uint networkId)
 		{
 			this.m_networkId = networkId;
 		}
 
-		// Token: 0x06000457 RID: 1111 RVA: 0x0000E0C0 File Offset: 0x0000D4C0
+		// Token: 0x06000462 RID: 1122 RVA: 0x0000E1B0 File Offset: 0x0000D5B0
 		internal unsafe SpellbookClient* GetPtr()
 		{
 			AIBaseClient* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByNetworkId(this.m_networkId);
@@ -32,7 +32,7 @@ namespace EnsoulSharp
 			throw new SpellbookNotFoundException();
 		}
 
-		// Token: 0x06000458 RID: 1112 RVA: 0x0000EFF4 File Offset: 0x0000E3F4
+		// Token: 0x06000463 RID: 1123 RVA: 0x0000F0E4 File Offset: 0x0000E4E4
 		static Spellbook()
 		{
 			AppDomain.CurrentDomain.DomainUnload += Spellbook.DomainUnloadEventHandler;
@@ -47,7 +47,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::SpellbookClient\u0020*,enum\u0020EnsoulSharp::Native::Enums::SpellSlot,EnsoulSharp::Native::Vector3f\u0020*,bool,bool\u0020*)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetSpellbookUpdateChargedSpellHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Spellbook.m_UpdateChargedSpellNative.ToPointer());
 		}
 
-		// Token: 0x06000459 RID: 1113 RVA: 0x0000E0EC File Offset: 0x0000D4EC
+		// Token: 0x06000464 RID: 1124 RVA: 0x0000E1DC File Offset: 0x0000D5DC
 		internal static void DomainUnloadEventHandler(object sender, EventArgs e)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::SpellbookClient\u0020*,enum\u0020EnsoulSharp::Native::Enums::SpellSlot,EnsoulSharp::Native::Vector3f\u0020*,EnsoulSharp::Native::Vector3f\u0020*,unsigned\u0020int,bool\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetSpellbookCastSpellHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Spellbook.m_CastSpellNative.ToPointer());
@@ -55,9 +55,9 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::SpellbookClient\u0020*,enum\u0020EnsoulSharp::Native::Enums::SpellSlot,EnsoulSharp::Native::Vector3f\u0020*,bool,bool\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetSpellbookUpdateChargedSpellHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Spellbook.m_UpdateChargedSpellNative.ToPointer());
 		}
 
-		// Token: 0x0600045A RID: 1114 RVA: 0x0000E144 File Offset: 0x0000D544
-		[SecurityCritical]
+		// Token: 0x06000465 RID: 1125 RVA: 0x0000E234 File Offset: 0x0000D634
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnCastSpellNative(SpellbookClient* spellBook, SpellSlot slot, Vector3f* startPosition, Vector3f* endPosition, uint targetNetworkId, bool* process)
 		{
 			SpellbookCastSpell[] array = null;
@@ -159,9 +159,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x0600045B RID: 1115 RVA: 0x0000E46C File Offset: 0x0000D86C
-		[HandleProcessCorruptedStateExceptions]
+		// Token: 0x06000466 RID: 1126 RVA: 0x0000E55C File Offset: 0x0000D95C
 		[SecurityCritical]
+		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnStopCastNative(SpellbookClient* spellBook, [MarshalAs(UnmanagedType.U1)] bool keepAnimationPlaying, [MarshalAs(UnmanagedType.U1)] bool hasBeenCast, bool* spellStopCancelled, [MarshalAs(UnmanagedType.U1)] bool destroyMissile, uint missileToDestroy, uint spellCastId)
 		{
 			SpellbookStopCast[] array = null;
@@ -251,7 +251,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x0600045C RID: 1116 RVA: 0x0000E748 File Offset: 0x0000DB48
+		// Token: 0x06000467 RID: 1127 RVA: 0x0000E838 File Offset: 0x0000DC38
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnUpdateChargedSpellNative(SpellbookClient* spellBook, SpellSlot slot, Vector3f* position, [MarshalAs(UnmanagedType.U1)] bool releaseCast, bool* process)
@@ -349,8 +349,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before cast a spell.
 		/// </summary>
 		// Token: 0x14000012 RID: 18
-		// (add) Token: 0x0600045D RID: 1117 RVA: 0x0000EA44 File Offset: 0x0000DE44
-		// (remove) Token: 0x0600045E RID: 1118 RVA: 0x0000EA5C File Offset: 0x0000DE5C
+		// (add) Token: 0x06000468 RID: 1128 RVA: 0x0000EB34 File Offset: 0x0000DF34
+		// (remove) Token: 0x06000469 RID: 1129 RVA: 0x0000EB4C File Offset: 0x0000DF4C
 		public static event SpellbookCastSpell OnCastSpell
 		{
 			add
@@ -367,8 +367,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after stop cast a spell.
 		/// </summary>
 		// Token: 0x14000011 RID: 17
-		// (add) Token: 0x0600045F RID: 1119 RVA: 0x0000EA78 File Offset: 0x0000DE78
-		// (remove) Token: 0x06000460 RID: 1120 RVA: 0x0000EA90 File Offset: 0x0000DE90
+		// (add) Token: 0x0600046A RID: 1130 RVA: 0x0000EB68 File Offset: 0x0000DF68
+		// (remove) Token: 0x0600046B RID: 1131 RVA: 0x0000EB80 File Offset: 0x0000DF80
 		public static event SpellbookStopCast OnStopCast
 		{
 			add
@@ -385,8 +385,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before update a charged spell.
 		/// </summary>
 		// Token: 0x14000010 RID: 16
-		// (add) Token: 0x06000461 RID: 1121 RVA: 0x0000EAAC File Offset: 0x0000DEAC
-		// (remove) Token: 0x06000462 RID: 1122 RVA: 0x0000EAC4 File Offset: 0x0000DEC4
+		// (add) Token: 0x0600046C RID: 1132 RVA: 0x0000EB9C File Offset: 0x0000DF9C
+		// (remove) Token: 0x0600046D RID: 1133 RVA: 0x0000EBB4 File Offset: 0x0000DFB4
 		public static event SpellbookUpdateChargedSpell OnUpdateChargedSpell
 		{
 			add
@@ -402,8 +402,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the all spells.
 		/// </summary>
-		// Token: 0x170000E1 RID: 225
-		// (get) Token: 0x06000463 RID: 1123 RVA: 0x0000EAE0 File Offset: 0x0000DEE0
+		// Token: 0x170000E5 RID: 229
+		// (get) Token: 0x0600046E RID: 1134 RVA: 0x0000EBD0 File Offset: 0x0000DFD0
 		public unsafe SpellDataInst[] Spells
 		{
 			get
@@ -428,8 +428,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the active spell if exist, otherwise null.
 		/// </summary>
-		// Token: 0x170000E0 RID: 224
-		// (get) Token: 0x06000464 RID: 1124 RVA: 0x0000EB38 File Offset: 0x0000DF38
+		// Token: 0x170000E4 RID: 228
+		// (get) Token: 0x0600046F RID: 1135 RVA: 0x0000EC28 File Offset: 0x0000E028
 		public unsafe AIBaseClientProcessSpellCastEventArgs ActiveSpell
 		{
 			get
@@ -466,8 +466,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the book owner.
 		/// </summary>
-		// Token: 0x170000DF RID: 223
-		// (get) Token: 0x06000465 RID: 1125 RVA: 0x0000EC5C File Offset: 0x0000E05C
+		// Token: 0x170000E3 RID: 227
+		// (get) Token: 0x06000470 RID: 1136 RVA: 0x0000ED4C File Offset: 0x0000E14C
 		public AIBaseClient Owner
 		{
 			get
@@ -479,8 +479,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell cast time.
 		/// </summary>
-		// Token: 0x170000DE RID: 222
-		// (get) Token: 0x06000466 RID: 1126 RVA: 0x0000EC74 File Offset: 0x0000E074
+		// Token: 0x170000E2 RID: 226
+		// (get) Token: 0x06000471 RID: 1137 RVA: 0x0000ED64 File Offset: 0x0000E164
 		public unsafe float CastTime
 		{
 			get
@@ -497,8 +497,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell end time.
 		/// </summary>
-		// Token: 0x170000DD RID: 221
-		// (get) Token: 0x06000467 RID: 1127 RVA: 0x0000ECA0 File Offset: 0x0000E0A0
+		// Token: 0x170000E1 RID: 225
+		// (get) Token: 0x06000472 RID: 1138 RVA: 0x0000ED90 File Offset: 0x0000E190
 		public unsafe float CastEndTime
 		{
 			get
@@ -515,8 +515,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is casting spell now.
 		/// </summary>
-		// Token: 0x170000DC RID: 220
-		// (get) Token: 0x06000468 RID: 1128 RVA: 0x0000ECCC File Offset: 0x0000E0CC
+		// Token: 0x170000E0 RID: 224
+		// (get) Token: 0x06000473 RID: 1139 RVA: 0x0000EDBC File Offset: 0x0000E1BC
 		public unsafe bool IsCastingSpell
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -529,8 +529,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is winding up now.
 		/// </summary>
-		// Token: 0x170000DB RID: 219
-		// (get) Token: 0x06000469 RID: 1129 RVA: 0x0000ECE8 File Offset: 0x0000E0E8
+		// Token: 0x170000DF RID: 223
+		// (get) Token: 0x06000474 RID: 1140 RVA: 0x0000EDD8 File Offset: 0x0000E1D8
 		public bool IsWindingUp
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -543,8 +543,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is auto attacking now.
 		/// </summary>
-		// Token: 0x170000DA RID: 218
-		// (get) Token: 0x0600046A RID: 1130 RVA: 0x0000ED00 File Offset: 0x0000E100
+		// Token: 0x170000DE RID: 222
+		// (get) Token: 0x06000475 RID: 1141 RVA: 0x0000EDF0 File Offset: 0x0000E1F0
 		public unsafe bool IsAutoAttack
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -558,8 +558,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is channeling now.
 		/// </summary>
-		// Token: 0x170000D9 RID: 217
-		// (get) Token: 0x0600046B RID: 1131 RVA: 0x0000ED28 File Offset: 0x0000E128
+		// Token: 0x170000DD RID: 221
+		// (get) Token: 0x06000476 RID: 1142 RVA: 0x0000EE18 File Offset: 0x0000E218
 		public unsafe bool IsChanneling
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -573,8 +573,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is charging now.
 		/// </summary>
-		// Token: 0x170000D8 RID: 216
-		// (get) Token: 0x0600046C RID: 1132 RVA: 0x0000ED50 File Offset: 0x0000E150
+		// Token: 0x170000DC RID: 220
+		// (get) Token: 0x06000477 RID: 1143 RVA: 0x0000EE40 File Offset: 0x0000E240
 		public unsafe bool IsCharging
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -588,8 +588,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether is stopped now.
 		/// </summary>
-		// Token: 0x170000D7 RID: 215
-		// (get) Token: 0x0600046D RID: 1133 RVA: 0x0000ED78 File Offset: 0x0000E178
+		// Token: 0x170000DB RID: 219
+		// (get) Token: 0x06000478 RID: 1144 RVA: 0x0000EE68 File Offset: 0x0000E268
 		public unsafe bool IsStopped
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -603,8 +603,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell was cast.
 		/// </summary>
-		// Token: 0x170000D6 RID: 214
-		// (get) Token: 0x0600046E RID: 1134 RVA: 0x0000EDA0 File Offset: 0x0000E1A0
+		// Token: 0x170000DA RID: 218
+		// (get) Token: 0x06000479 RID: 1145 RVA: 0x0000EE90 File Offset: 0x0000E290
 		public unsafe bool SpellWasCast
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -621,7 +621,7 @@ namespace EnsoulSharp
 		/// <param name="slot">The spell slot.</param>
 		/// <param name="position">The spell target position.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x0600046F RID: 1135 RVA: 0x0000EEF0 File Offset: 0x0000E2F0
+		// Token: 0x0600047A RID: 1146 RVA: 0x0000EFE0 File Offset: 0x0000E3E0
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool CastSpell(SpellSlot slot, Vector3 position)
 		{
@@ -635,7 +635,7 @@ namespace EnsoulSharp
 		/// <param name="position">The spell target position.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000470 RID: 1136 RVA: 0x0000EEB4 File Offset: 0x0000E2B4
+		// Token: 0x0600047B RID: 1147 RVA: 0x0000EFA4 File Offset: 0x0000E3A4
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe bool CastSpell(SpellSlot slot, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
@@ -650,7 +650,7 @@ namespace EnsoulSharp
 		/// <param name="startPosition">The spell start position.</param>
 		/// <param name="endPosition">The spell end position.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000471 RID: 1137 RVA: 0x0000EE9C File Offset: 0x0000E29C
+		// Token: 0x0600047C RID: 1148 RVA: 0x0000EF8C File Offset: 0x0000E38C
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool CastSpell(SpellSlot slot, Vector3 startPosition, Vector3 endPosition)
 		{
@@ -665,7 +665,7 @@ namespace EnsoulSharp
 		/// <param name="endPosition">The spell end position.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000472 RID: 1138 RVA: 0x0000EE3C File Offset: 0x0000E23C
+		// Token: 0x0600047D RID: 1149 RVA: 0x0000EF2C File Offset: 0x0000E32C
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe bool CastSpell(SpellSlot slot, Vector3 startPosition, Vector3 endPosition, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
@@ -680,7 +680,7 @@ namespace EnsoulSharp
 		/// <param name="slot">The spell slot.</param>
 		/// <param name="target">The spell target unit.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000473 RID: 1139 RVA: 0x0000EE24 File Offset: 0x0000E224
+		// Token: 0x0600047E RID: 1150 RVA: 0x0000EF14 File Offset: 0x0000E314
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool CastSpell(SpellSlot slot, GameObject target)
 		{
@@ -694,7 +694,7 @@ namespace EnsoulSharp
 		/// <param name="target">The spell target unit.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000474 RID: 1140 RVA: 0x0000EDFC File Offset: 0x0000E1FC
+		// Token: 0x0600047F RID: 1151 RVA: 0x0000EEEC File Offset: 0x0000E2EC
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe bool CastSpell(SpellSlot slot, GameObject target, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
@@ -707,7 +707,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="slot">The spell slot.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000475 RID: 1141 RVA: 0x0000EDE4 File Offset: 0x0000E1E4
+		// Token: 0x06000480 RID: 1152 RVA: 0x0000EED4 File Offset: 0x0000E2D4
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool CastSpell(SpellSlot slot)
 		{
@@ -720,7 +720,7 @@ namespace EnsoulSharp
 		/// <param name="slot">The spell slot.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000476 RID: 1142 RVA: 0x0000EDC8 File Offset: 0x0000E1C8
+		// Token: 0x06000481 RID: 1153 RVA: 0x0000EEB8 File Offset: 0x0000E2B8
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool CastSpell(SpellSlot slot, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
@@ -734,7 +734,7 @@ namespace EnsoulSharp
 		/// <param name="position">The spell target position.</param>
 		/// <param name="releaseCast">A value indicating whether the cast is release.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000477 RID: 1143 RVA: 0x0000EF48 File Offset: 0x0000E348
+		// Token: 0x06000482 RID: 1154 RVA: 0x0000F038 File Offset: 0x0000E438
 		[return: MarshalAs(UnmanagedType.U1)]
 		public bool UpdateChargedSpell(SpellSlot slot, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool releaseCast)
 		{
@@ -749,7 +749,7 @@ namespace EnsoulSharp
 		/// <param name="releaseCast">A value indicating whether the cast is release.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <returns>A value indicating whether the spell is successfully cast.</returns>
-		// Token: 0x06000478 RID: 1144 RVA: 0x0000EF08 File Offset: 0x0000E308
+		// Token: 0x06000483 RID: 1155 RVA: 0x0000EFF8 File Offset: 0x0000E3F8
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe bool UpdateChargedSpell(SpellSlot slot, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool releaseCast, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
@@ -761,7 +761,7 @@ namespace EnsoulSharp
 		/// 	Evolves a spell.
 		/// </summary>
 		/// <param name="slot">The spell slot.</param>
-		// Token: 0x06000479 RID: 1145 RVA: 0x0000EF60 File Offset: 0x0000E360
+		// Token: 0x06000484 RID: 1156 RVA: 0x0000F050 File Offset: 0x0000E450
 		public void EvolveSpell(SpellSlot slot)
 		{
 			<Module>.EnsoulSharp.Native.SpellbookClient.EvolveSpell(this.GetPtr(), (SpellSlot)slot);
@@ -771,7 +771,7 @@ namespace EnsoulSharp
 		/// 	Upgrades a spell.
 		/// </summary>
 		/// <param name="slot">The spell slot.</param>
-		// Token: 0x0600047A RID: 1146 RVA: 0x0000EF7C File Offset: 0x0000E37C
+		// Token: 0x06000485 RID: 1157 RVA: 0x0000F06C File Offset: 0x0000E46C
 		public void LevelSpell(SpellSlot slot)
 		{
 			<Module>.EnsoulSharp.Native.SpellbookClient.UpgradeSpell(this.GetPtr(), (SpellSlot)slot);
@@ -782,7 +782,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="slot">The spell slot.</param>
 		/// <returns>The <see cref="T:EnsoulSharp.SpellState" /> of the given spell slot.</returns>
-		// Token: 0x0600047B RID: 1147 RVA: 0x0000EF98 File Offset: 0x0000E398
+		// Token: 0x06000486 RID: 1158 RVA: 0x0000F088 File Offset: 0x0000E488
 		public SpellState CanUseSpell(SpellSlot slot)
 		{
 			return (SpellState)<Module>.EnsoulSharp.Native.SpellbookClient.CanUseSpell(this.GetPtr(), (SpellSlot)slot);
@@ -793,7 +793,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="slot">The spell slot.</param>
 		/// <returns>The spell data instance.</returns>
-		// Token: 0x0600047C RID: 1148 RVA: 0x0000EFB4 File Offset: 0x0000E3B4
+		// Token: 0x06000487 RID: 1159 RVA: 0x0000F0A4 File Offset: 0x0000E4A4
 		public unsafe SpellDataInst GetSpell(SpellSlot slot)
 		{
 			if (slot < (SpellSlot)64)
@@ -838,17 +838,17 @@ namespace EnsoulSharp
 		internal static List<SpellbookUpdateChargedSpell> UpdateChargedSpellHandlers = new List<SpellbookUpdateChargedSpell>();
 
 		// Token: 0x02000072 RID: 114
-		// (Invoke) Token: 0x0600047E RID: 1150
+		// (Invoke) Token: 0x06000489 RID: 1161
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnCastSpellNativeDelegate(SpellbookClient* spellBook, SpellSlot slot, Vector3f* startPosition, Vector3f* endPosition, uint targetNetworkId, bool* process);
 
 		// Token: 0x02000073 RID: 115
-		// (Invoke) Token: 0x06000482 RID: 1154
+		// (Invoke) Token: 0x0600048D RID: 1165
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnStopCastNativeDelegate(SpellbookClient* spellBook, [MarshalAs(UnmanagedType.U1)] bool keepAnimationPlaying, [MarshalAs(UnmanagedType.U1)] bool hasBeenCast, bool* spellStopCancelled, [MarshalAs(UnmanagedType.U1)] bool destroyMissile, uint missileToDestroy, uint spellCastId);
 
 		// Token: 0x02000074 RID: 116
-		// (Invoke) Token: 0x06000486 RID: 1158
+		// (Invoke) Token: 0x06000491 RID: 1169
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnUpdateChargedSpellNativeDelegate(SpellbookClient* spellBook, SpellSlot slot, Vector3f* position, [MarshalAs(UnmanagedType.U1)] bool releaseCast, bool* process);
 	}

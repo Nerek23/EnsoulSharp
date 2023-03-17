@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x020000DA RID: 218
 	public class GameSendChatEventArgs : EventArgs
 	{
-		// Token: 0x060004F7 RID: 1271 RVA: 0x0000C684 File Offset: 0x0000BA84
+		// Token: 0x06000502 RID: 1282 RVA: 0x0000C774 File Offset: 0x0000BB74
 		internal GameSendChatEventArgs([MarshalAs(UnmanagedType.U1)] bool process, string msg, [MarshalAs(UnmanagedType.U1)] bool sendToAll)
 		{
 			this.m_process = process;
@@ -20,9 +20,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x17000125 RID: 293
-		// (get) Token: 0x060004F8 RID: 1272 RVA: 0x0000C6AC File Offset: 0x0000BAAC
-		// (set) Token: 0x060004F9 RID: 1273 RVA: 0x0000C6C0 File Offset: 0x0000BAC0
+		// Token: 0x17000129 RID: 297
+		// (get) Token: 0x06000503 RID: 1283 RVA: 0x0000C79C File Offset: 0x0000BB9C
+		// (set) Token: 0x06000504 RID: 1284 RVA: 0x0000C7B0 File Offset: 0x0000BBB0
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -40,8 +40,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the message.
 		/// </summary>
-		// Token: 0x17000124 RID: 292
-		// (get) Token: 0x060004FA RID: 1274 RVA: 0x0000C6D4 File Offset: 0x0000BAD4
+		// Token: 0x17000128 RID: 296
+		// (get) Token: 0x06000505 RID: 1285 RVA: 0x0000C7C4 File Offset: 0x0000BBC4
 		public string Msg
 		{
 			get
@@ -53,8 +53,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether send message to all channel.
 		/// </summary>
-		// Token: 0x17000123 RID: 291
-		// (get) Token: 0x060004FB RID: 1275 RVA: 0x0000C6E8 File Offset: 0x0000BAE8
+		// Token: 0x17000127 RID: 295
+		// (get) Token: 0x06000506 RID: 1286 RVA: 0x0000C7D8 File Offset: 0x0000BBD8
 		public bool SendToAll
 		{
 			[return: MarshalAs(UnmanagedType.U1)]

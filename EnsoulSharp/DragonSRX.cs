@@ -10,13 +10,13 @@ namespace EnsoulSharp
 	// Token: 0x020000EF RID: 239
 	public class DragonSRX
 	{
-		// Token: 0x06000571 RID: 1393 RVA: 0x0000666C File Offset: 0x00005A6C
+		// Token: 0x0600057C RID: 1404 RVA: 0x00006704 File Offset: 0x00005B04
 		internal unsafe DragonSRX(UIMetricMultiDragonKillsSRX* srx)
 		{
 			this.m_srx = srx;
 		}
 
-		// Token: 0x06000572 RID: 1394 RVA: 0x00006688 File Offset: 0x00005A88
+		// Token: 0x0600057D RID: 1405 RVA: 0x00006720 File Offset: 0x00005B20
 		internal unsafe UIMetricMultiDragonKillsSRX* GetPtr()
 		{
 			return this.m_srx;
@@ -25,8 +25,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the center element.
 		/// </summary>
-		// Token: 0x17000138 RID: 312
-		// (get) Token: 0x06000573 RID: 1395 RVA: 0x0000669C File Offset: 0x00005A9C
+		// Token: 0x1700013C RID: 316
+		// (get) Token: 0x0600057E RID: 1406 RVA: 0x00006734 File Offset: 0x00005B34
 		public DragonSRXSlot Center
 		{
 			get
@@ -38,8 +38,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the elements one.
 		/// </summary>
-		// Token: 0x17000137 RID: 311
-		// (get) Token: 0x06000574 RID: 1396 RVA: 0x000066BC File Offset: 0x00005ABC
+		// Token: 0x1700013B RID: 315
+		// (get) Token: 0x0600057F RID: 1407 RVA: 0x00006754 File Offset: 0x00005B54
 		public unsafe DragonSRXSlot[] ElementsOne
 		{
 			get
@@ -65,8 +65,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the elements two.
 		/// </summary>
-		// Token: 0x17000136 RID: 310
-		// (get) Token: 0x06000575 RID: 1397 RVA: 0x0000670C File Offset: 0x00005B0C
+		// Token: 0x1700013A RID: 314
+		// (get) Token: 0x06000580 RID: 1408 RVA: 0x000067A4 File Offset: 0x00005BA4
 		public unsafe DragonSRXSlot[] ElementsTwo
 		{
 			get

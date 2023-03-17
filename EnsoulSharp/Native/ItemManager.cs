@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x02000148 RID: 328
+	// Token: 0x0200014A RID: 330
 	[NativeCppClass]
 	internal struct ItemManager
 	{

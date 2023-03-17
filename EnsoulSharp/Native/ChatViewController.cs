@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x02000128 RID: 296
+	// Token: 0x0200012A RID: 298
 	[NativeCppClass]
 	internal struct ChatViewController
 	{

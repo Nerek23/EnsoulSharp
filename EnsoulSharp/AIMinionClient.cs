@@ -8,12 +8,12 @@ namespace EnsoulSharp
 	// Token: 0x020000CB RID: 203
 	public class AIMinionClient : AIBaseClient
 	{
-		// Token: 0x060004DA RID: 1242 RVA: 0x000055E4 File Offset: 0x000049E4
+		// Token: 0x060004E5 RID: 1253 RVA: 0x00005664 File Offset: 0x00004A64
 		internal AIMinionClient()
 		{
 		}
 
-		// Token: 0x060004DB RID: 1243 RVA: 0x000055CC File Offset: 0x000049CC
+		// Token: 0x060004E6 RID: 1254 RVA: 0x0000564C File Offset: 0x00004A4C
 		internal AIMinionClient(uint networkId, uint index) : base(networkId, index)
 		{
 		}

@@ -24,11 +24,11 @@ namespace EnsoulSharp.SDK.Damages.Spells
 		// Token: 0x04000824 RID: 2084
 		private static readonly double[] damages = new double[]
 		{
-			55.0,
-			65.0,
-			75.0,
-			85.0,
-			95.0
+			50.0,
+			60.0,
+			70.0,
+			80.0,
+			90.0
 		};
 	}
 }

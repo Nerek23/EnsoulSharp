@@ -1163,85 +1163,85 @@ namespace EnsoulSharp.SDK
 		// Token: 0x02000466 RID: 1126
 		public enum GapcloserType
 		{
-			// Token: 0x04000B54 RID: 2900
+			// Token: 0x04000B53 RID: 2899
 			SkillShot,
-			// Token: 0x04000B55 RID: 2901
+			// Token: 0x04000B54 RID: 2900
 			Targeted,
-			// Token: 0x04000B56 RID: 2902
+			// Token: 0x04000B55 RID: 2901
 			UnknowDash
 		}
 
 		// Token: 0x02000467 RID: 1127
 		public class SpellData
 		{
-			// Token: 0x04000B57 RID: 2903
+			// Token: 0x04000B56 RID: 2902
 			public string ChampionName;
 
-			// Token: 0x04000B58 RID: 2904
+			// Token: 0x04000B57 RID: 2903
 			public int DelayTime;
 
-			// Token: 0x04000B59 RID: 2905
+			// Token: 0x04000B58 RID: 2904
 			public string DisplayName;
 
-			// Token: 0x04000B5A RID: 2906
+			// Token: 0x04000B59 RID: 2905
 			public string OriginChampionName = string.Empty;
 
-			// Token: 0x04000B5B RID: 2907
+			// Token: 0x04000B5A RID: 2906
 			public SpellSlot Slot;
 
-			// Token: 0x04000B5C RID: 2908
+			// Token: 0x04000B5B RID: 2907
 			public string SpellName;
 
-			// Token: 0x04000B5D RID: 2909
+			// Token: 0x04000B5C RID: 2908
 			public AntiGapcloser.GapcloserType SpellType;
 
-			// Token: 0x04000B5E RID: 2910
+			// Token: 0x04000B5D RID: 2909
 			public bool Reverse;
 
-			// Token: 0x04000B5F RID: 2911
+			// Token: 0x04000B5E RID: 2910
 			public float Range = -1f;
 
-			// Token: 0x04000B60 RID: 2912
+			// Token: 0x04000B5F RID: 2911
 			public bool UseEndPosition;
 		}
 
 		// Token: 0x02000468 RID: 1128
 		public class GapcloserArgs
 		{
-			// Token: 0x04000B61 RID: 2913
+			// Token: 0x04000B60 RID: 2912
 			internal int DelayTime;
 
-			// Token: 0x04000B62 RID: 2914
+			// Token: 0x04000B61 RID: 2913
 			internal AntiGapcloser.SpellData SpellData;
 
-			// Token: 0x04000B63 RID: 2915
+			// Token: 0x04000B62 RID: 2914
 			internal AIHeroClient Unit;
 
-			// Token: 0x04000B64 RID: 2916
+			// Token: 0x04000B63 RID: 2915
 			public Vector3 EndPosition;
 
-			// Token: 0x04000B65 RID: 2917
+			// Token: 0x04000B64 RID: 2916
 			public bool HaveShield;
 
-			// Token: 0x04000B66 RID: 2918
+			// Token: 0x04000B65 RID: 2917
 			public SpellSlot Slot;
 
-			// Token: 0x04000B67 RID: 2919
+			// Token: 0x04000B66 RID: 2918
 			public float Speed;
 
-			// Token: 0x04000B68 RID: 2920
+			// Token: 0x04000B67 RID: 2919
 			public string SpellName;
 
-			// Token: 0x04000B69 RID: 2921
+			// Token: 0x04000B68 RID: 2920
 			public Vector3 StartPosition;
 
-			// Token: 0x04000B6A RID: 2922
+			// Token: 0x04000B69 RID: 2921
 			public int StartTick;
 
-			// Token: 0x04000B6B RID: 2923
+			// Token: 0x04000B6A RID: 2922
 			public AIBaseClient Target;
 
-			// Token: 0x04000B6C RID: 2924
+			// Token: 0x04000B6B RID: 2923
 			public AntiGapcloser.GapcloserType Type;
 		}
 	}

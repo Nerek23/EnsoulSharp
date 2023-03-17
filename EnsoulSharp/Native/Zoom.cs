@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EnsoulSharp.Native
 {
-	// Token: 0x0200012B RID: 299
+	// Token: 0x0200012D RID: 301
 	[NativeCppClass]
 	internal struct Zoom
 	{

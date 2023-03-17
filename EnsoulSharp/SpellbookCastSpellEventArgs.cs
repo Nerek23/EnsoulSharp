@@ -10,7 +10,7 @@ namespace EnsoulSharp
 	// Token: 0x0200006B RID: 107
 	public class SpellbookCastSpellEventArgs : EventArgs
 	{
-		// Token: 0x06000436 RID: 1078 RVA: 0x0000F100 File Offset: 0x0000E500
+		// Token: 0x06000441 RID: 1089 RVA: 0x0000F1F0 File Offset: 0x0000E5F0
 		internal SpellbookCastSpellEventArgs([MarshalAs(UnmanagedType.U1)] bool process, Vector3 startPosition, Vector3 endPosition, GameObject target, SpellSlot slot)
 		{
 			this.m_process = process;
@@ -23,9 +23,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x170000CB RID: 203
-		// (get) Token: 0x06000437 RID: 1079 RVA: 0x0000F138 File Offset: 0x0000E538
-		// (set) Token: 0x06000438 RID: 1080 RVA: 0x0000F14C File Offset: 0x0000E54C
+		// Token: 0x170000CF RID: 207
+		// (get) Token: 0x06000442 RID: 1090 RVA: 0x0000F228 File Offset: 0x0000E628
+		// (set) Token: 0x06000443 RID: 1091 RVA: 0x0000F23C File Offset: 0x0000E63C
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -43,8 +43,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell start position.
 		/// </summary>
-		// Token: 0x170000CA RID: 202
-		// (get) Token: 0x06000439 RID: 1081 RVA: 0x0000F160 File Offset: 0x0000E560
+		// Token: 0x170000CE RID: 206
+		// (get) Token: 0x06000444 RID: 1092 RVA: 0x0000F250 File Offset: 0x0000E650
 		public Vector3 StartPosition
 		{
 			get
@@ -56,8 +56,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell target position.
 		/// </summary>
-		// Token: 0x170000C9 RID: 201
-		// (get) Token: 0x0600043A RID: 1082 RVA: 0x0000F178 File Offset: 0x0000E578
+		// Token: 0x170000CD RID: 205
+		// (get) Token: 0x06000445 RID: 1093 RVA: 0x0000F268 File Offset: 0x0000E668
 		public Vector3 EndPosition
 		{
 			get
@@ -69,8 +69,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell target.
 		/// </summary>
-		// Token: 0x170000C8 RID: 200
-		// (get) Token: 0x0600043B RID: 1083 RVA: 0x0000F190 File Offset: 0x0000E590
+		// Token: 0x170000CC RID: 204
+		// (get) Token: 0x06000446 RID: 1094 RVA: 0x0000F280 File Offset: 0x0000E680
 		public GameObject Target
 		{
 			get
@@ -82,8 +82,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell slot.
 		/// </summary>
-		// Token: 0x170000C7 RID: 199
-		// (get) Token: 0x0600043C RID: 1084 RVA: 0x0000F1A4 File Offset: 0x0000E5A4
+		// Token: 0x170000CB RID: 203
+		// (get) Token: 0x06000447 RID: 1095 RVA: 0x0000F294 File Offset: 0x0000E694
 		public SpellSlot Slot
 		{
 			get

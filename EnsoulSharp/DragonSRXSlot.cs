@@ -10,13 +10,13 @@ namespace EnsoulSharp
 	// Token: 0x020000F0 RID: 240
 	public class DragonSRXSlot
 	{
-		// Token: 0x06000576 RID: 1398 RVA: 0x00006760 File Offset: 0x00005B60
+		// Token: 0x06000581 RID: 1409 RVA: 0x000067F8 File Offset: 0x00005BF8
 		internal unsafe DragonSRXSlot(IconSlotInfo* icon)
 		{
 			this.m_icon = icon;
 		}
 
-		// Token: 0x06000577 RID: 1399 RVA: 0x0000677C File Offset: 0x00005B7C
+		// Token: 0x06000582 RID: 1410 RVA: 0x00006814 File Offset: 0x00005C14
 		internal unsafe IconSlotInfo* GetPtr()
 		{
 			return this.m_icon;
@@ -25,8 +25,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the id of the dragon.
 		/// </summary>
-		// Token: 0x1700013B RID: 315
-		// (get) Token: 0x06000578 RID: 1400 RVA: 0x00006790 File Offset: 0x00005B90
+		// Token: 0x1700013F RID: 319
+		// (get) Token: 0x06000583 RID: 1411 RVA: 0x00006828 File Offset: 0x00005C28
 		public unsafe int Id
 		{
 			get
@@ -38,8 +38,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the team of the dragon.
 		/// </summary>
-		// Token: 0x1700013A RID: 314
-		// (get) Token: 0x06000579 RID: 1401 RVA: 0x000067AC File Offset: 0x00005BAC
+		// Token: 0x1700013E RID: 318
+		// (get) Token: 0x06000584 RID: 1412 RVA: 0x00006844 File Offset: 0x00005C44
 		public unsafe GameObjectTeam Team
 		{
 			get
@@ -51,8 +51,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the dragon is soul.
 		/// </summary>
-		// Token: 0x17000139 RID: 313
-		// (get) Token: 0x0600057A RID: 1402 RVA: 0x000067C8 File Offset: 0x00005BC8
+		// Token: 0x1700013D RID: 317
+		// (get) Token: 0x06000585 RID: 1413 RVA: 0x00006860 File Offset: 0x00005C60
 		public unsafe bool Soul
 		{
 			[return: MarshalAs(UnmanagedType.U1)]

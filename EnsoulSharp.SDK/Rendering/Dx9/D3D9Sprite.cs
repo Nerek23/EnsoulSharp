@@ -263,7 +263,7 @@ namespace EnsoulSharp.SDK.Rendering.Dx9
 				this.CacheTexture = Texture.FromMemory(Render.D3D9Device, (byte[])new ImageConverter().ConvertTo(bitmap, typeof(byte[])), (int)base.Width, (int)base.Height, 0, Usage.None, Format.A1, Pool.Managed, Filter.Default, Filter.Default, 0);
 			}
 
-			// Token: 0x04000C84 RID: 3204
+			// Token: 0x04000C83 RID: 3203
 			internal Texture CacheTexture;
 		}
 	}

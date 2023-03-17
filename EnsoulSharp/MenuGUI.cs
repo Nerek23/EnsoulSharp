@@ -7,14 +7,14 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to menu gui.
 	/// </summary>
-	// Token: 0x0200014D RID: 333
+	// Token: 0x0200014F RID: 335
 	public class MenuGUI
 	{
 		/// <summary>
 		/// 	Gets a value indicating whether the chat is open.
 		/// </summary>
-		// Token: 0x17000158 RID: 344
-		// (get) Token: 0x0600064D RID: 1613 RVA: 0x0000CCE8 File Offset: 0x0000C0E8
+		// Token: 0x1700015E RID: 350
+		// (get) Token: 0x0600065A RID: 1626 RVA: 0x0000CDD8 File Offset: 0x0000C1D8
 		public unsafe static bool IsChatOpen
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -28,8 +28,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the chat is show.
 		/// </summary>
-		// Token: 0x17000157 RID: 343
-		// (get) Token: 0x0600064E RID: 1614 RVA: 0x0000CD0C File Offset: 0x0000C10C
+		// Token: 0x1700015D RID: 349
+		// (get) Token: 0x0600065B RID: 1627 RVA: 0x0000CDFC File Offset: 0x0000C1FC
 		public unsafe static bool IsChatShow
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -43,8 +43,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the scoreboard is open.
 		/// </summary>
-		// Token: 0x17000156 RID: 342
-		// (get) Token: 0x0600064F RID: 1615 RVA: 0x0000CD2C File Offset: 0x0000C12C
+		// Token: 0x1700015C RID: 348
+		// (get) Token: 0x0600065C RID: 1628 RVA: 0x0000CE1C File Offset: 0x0000C21C
 		public unsafe static bool IsScoreboardOpen
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -58,8 +58,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the shop is open.
 		/// </summary>
-		// Token: 0x17000155 RID: 341
-		// (get) Token: 0x06000650 RID: 1616 RVA: 0x0000CD4C File Offset: 0x0000C14C
+		// Token: 0x1700015B RID: 347
+		// (get) Token: 0x0600065D RID: 1629 RVA: 0x0000CE3C File Offset: 0x0000C23C
 		public unsafe static bool IsShopOpen
 		{
 			[return: MarshalAs(UnmanagedType.U1)]

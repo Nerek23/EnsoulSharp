@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x020000DB RID: 219
 	public class GameWndEventArgs : EventArgs
 	{
-		// Token: 0x060004FC RID: 1276 RVA: 0x0000C6FC File Offset: 0x0000BAFC
+		// Token: 0x06000507 RID: 1287 RVA: 0x0000C7EC File Offset: 0x0000BBEC
 		internal GameWndEventArgs([MarshalAs(UnmanagedType.U1)] bool process, IntPtr hWnd, uint uMsg, uint wParam, int lParam)
 		{
 			this.m_process = process;
@@ -22,9 +22,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x1700012A RID: 298
-		// (get) Token: 0x060004FD RID: 1277 RVA: 0x0000C734 File Offset: 0x0000BB34
-		// (set) Token: 0x060004FE RID: 1278 RVA: 0x0000C748 File Offset: 0x0000BB48
+		// Token: 0x1700012E RID: 302
+		// (get) Token: 0x06000508 RID: 1288 RVA: 0x0000C824 File Offset: 0x0000BC24
+		// (set) Token: 0x06000509 RID: 1289 RVA: 0x0000C838 File Offset: 0x0000BC38
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -42,8 +42,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the window handle.
 		/// </summary>
-		// Token: 0x17000129 RID: 297
-		// (get) Token: 0x060004FF RID: 1279 RVA: 0x0000C75C File Offset: 0x0000BB5C
+		// Token: 0x1700012D RID: 301
+		// (get) Token: 0x0600050A RID: 1290 RVA: 0x0000C84C File Offset: 0x0000BC4C
 		public IntPtr HWnd
 		{
 			get
@@ -55,8 +55,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the message.
 		/// </summary>
-		// Token: 0x17000128 RID: 296
-		// (get) Token: 0x06000500 RID: 1280 RVA: 0x0000C774 File Offset: 0x0000BB74
+		// Token: 0x1700012C RID: 300
+		// (get) Token: 0x0600050B RID: 1291 RVA: 0x0000C864 File Offset: 0x0000BC64
 		public uint Msg
 		{
 			get
@@ -68,8 +68,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the wparam.
 		/// </summary>
-		// Token: 0x17000127 RID: 295
-		// (get) Token: 0x06000501 RID: 1281 RVA: 0x0000C788 File Offset: 0x0000BB88
+		// Token: 0x1700012B RID: 299
+		// (get) Token: 0x0600050C RID: 1292 RVA: 0x0000C878 File Offset: 0x0000BC78
 		public uint WParam
 		{
 			get
@@ -81,8 +81,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the lparam.
 		/// </summary>
-		// Token: 0x17000126 RID: 294
-		// (get) Token: 0x06000502 RID: 1282 RVA: 0x0000C79C File Offset: 0x0000BB9C
+		// Token: 0x1700012A RID: 298
+		// (get) Token: 0x0600050D RID: 1293 RVA: 0x0000C88C File Offset: 0x0000BC8C
 		public int LParam
 		{
 			get

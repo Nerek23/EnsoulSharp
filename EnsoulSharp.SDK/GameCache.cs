@@ -187,41 +187,41 @@ namespace EnsoulSharp.SDK
 				return time - (this.LastCheckTimer + this.Index * 500) > 0;
 			}
 
-			// Token: 0x04000AAD RID: 2733
+			// Token: 0x04000AAC RID: 2732
 			public AIHeroClient Hero;
 
-			// Token: 0x04000AAE RID: 2734
+			// Token: 0x04000AAD RID: 2733
 			public HashSet<ItemId> HasItems = new HashSet<ItemId>();
 
-			// Token: 0x04000AAF RID: 2735
+			// Token: 0x04000AAE RID: 2734
 			public Perk[] Perks = Array.Empty<Perk>();
 
-			// Token: 0x04000AB0 RID: 2736
+			// Token: 0x04000AAF RID: 2735
 			public SmiteState SmiteState;
 
-			// Token: 0x04000AB1 RID: 2737
+			// Token: 0x04000AB0 RID: 2736
 			internal int Index;
 
-			// Token: 0x04000AB2 RID: 2738
+			// Token: 0x04000AB1 RID: 2737
 			internal int LastCheckTimer;
 
-			// Token: 0x04000AB3 RID: 2739
+			// Token: 0x04000AB2 RID: 2738
 			internal bool IsZeri;
 		}
 
 		// Token: 0x0200040D RID: 1037
 		public class GameWindowsValue
 		{
-			// Token: 0x04000AB4 RID: 2740
+			// Token: 0x04000AB3 RID: 2739
 			public int WindowsWidth;
 
-			// Token: 0x04000AB5 RID: 2741
+			// Token: 0x04000AB4 RID: 2740
 			public int WindowsHeight;
 
-			// Token: 0x04000AB6 RID: 2742
+			// Token: 0x04000AB5 RID: 2741
 			public float MiniMapWidth;
 
-			// Token: 0x04000AB7 RID: 2743
+			// Token: 0x04000AB6 RID: 2742
 			public float MiniMapHeight;
 		}
 	}

@@ -6,10 +6,10 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	Args for <see cref="T:EnsoulSharp.MissileClient" /> commit movement event.
 	/// </summary>
-	// Token: 0x0200014F RID: 335
+	// Token: 0x02000151 RID: 337
 	public class MissileClientCommitMovementEventArgs : EventArgs
 	{
-		// Token: 0x06000652 RID: 1618 RVA: 0x0000D43C File Offset: 0x0000C83C
+		// Token: 0x0600065F RID: 1631 RVA: 0x0000D52C File Offset: 0x0000C92C
 		internal MissileClientCommitMovementEventArgs(Vector2 position)
 		{
 			this.m_position = position;
@@ -18,9 +18,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets the screen position of mouse.
 		/// </summary>
-		// Token: 0x17000159 RID: 345
-		// (get) Token: 0x06000653 RID: 1619 RVA: 0x0000D458 File Offset: 0x0000C858
-		// (set) Token: 0x06000654 RID: 1620 RVA: 0x0000D470 File Offset: 0x0000C870
+		// Token: 0x1700015F RID: 351
+		// (get) Token: 0x06000660 RID: 1632 RVA: 0x0000D548 File Offset: 0x0000C948
+		// (set) Token: 0x06000661 RID: 1633 RVA: 0x0000D560 File Offset: 0x0000C960
 		public Vector2 Position
 		{
 			get

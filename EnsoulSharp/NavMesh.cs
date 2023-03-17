@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	/// <summary>
 	/// 	This class contains everything we can offer related to navigation mesh.
 	/// </summary>
-	// Token: 0x02000157 RID: 343
+	// Token: 0x02000159 RID: 345
 	public class NavMesh
 	{
 		/// <summary>
@@ -17,7 +17,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The grid position.</param>
 		/// <returns>An instance of the <see cref="T:EnsoulSharp.NavMeshCell" />.</returns>
-		// Token: 0x06000672 RID: 1650 RVA: 0x0000D4AC File Offset: 0x0000C8AC
+		// Token: 0x0600067F RID: 1663 RVA: 0x0000D59C File Offset: 0x0000C99C
 		public static NavMeshCell GetCell(Vector2 position)
 		{
 			return NavMesh.GetCell((int)((double)position.X), (int)((double)position.Y));
@@ -29,7 +29,7 @@ namespace EnsoulSharp
 		/// <param name="x">The grid x.</param>
 		/// <param name="y">The grid y.</param>
 		/// <returns>An instance of the <see cref="T:EnsoulSharp.NavMeshCell" />.</returns>
-		// Token: 0x06000673 RID: 1651 RVA: 0x0000D498 File Offset: 0x0000C898
+		// Token: 0x06000680 RID: 1664 RVA: 0x0000D588 File Offset: 0x0000C988
 		public static NavMeshCell GetCell(int x, int y)
 		{
 			return new NavMeshCell(x, y);
@@ -40,7 +40,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The world position.</param>
 		/// <returns>The <see cref="T:EnsoulSharp.CollisionFlags" /> of the specfied world position.</returns>
-		// Token: 0x06000674 RID: 1652 RVA: 0x0000D4E4 File Offset: 0x0000C8E4
+		// Token: 0x06000681 RID: 1665 RVA: 0x0000D5D4 File Offset: 0x0000C9D4
 		public static CollisionFlags GetCollisionFlags(Vector3 position)
 		{
 			return NavMesh.GetCollisionFlags(position.X, position.Y);
@@ -52,7 +52,7 @@ namespace EnsoulSharp
 		/// <param name="x">The world x.</param>
 		/// <param name="y">The world y.</param>
 		/// <returns>The <see cref="T:EnsoulSharp.CollisionFlags" /> of the specified world position.</returns>
-		// Token: 0x06000675 RID: 1653 RVA: 0x0000D4D0 File Offset: 0x0000C8D0
+		// Token: 0x06000682 RID: 1666 RVA: 0x0000D5C0 File Offset: 0x0000C9C0
 		public static CollisionFlags GetCollisionFlags(float x, float y)
 		{
 			return (CollisionFlags)<Module>.EnsoulSharp.Native.NavMesh.GetCollisionFlags(x, y);
@@ -63,7 +63,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="flags">The collision flags specified to set.</param>
 		/// <param name="position">The world position.</param>
-		// Token: 0x06000676 RID: 1654 RVA: 0x0000D51C File Offset: 0x0000C91C
+		// Token: 0x06000683 RID: 1667 RVA: 0x0000D60C File Offset: 0x0000CA0C
 		public static void SetCollisionFlags(CollisionFlags flags, Vector3 position)
 		{
 			NavMesh.SetCollisionFlags(flags, position.X, position.Y);
@@ -75,7 +75,7 @@ namespace EnsoulSharp
 		/// <param name="flags">The collision flags specified to set.</param>
 		/// <param name="x">The world x.</param>
 		/// <param name="y">The world y.</param>
-		// Token: 0x06000677 RID: 1655 RVA: 0x0000D504 File Offset: 0x0000C904
+		// Token: 0x06000684 RID: 1668 RVA: 0x0000D5F4 File Offset: 0x0000C9F4
 		public static void SetCollisionFlags(CollisionFlags flags, float x, float y)
 		{
 			<Module>.EnsoulSharp.Native.NavMesh.SetCollisionFlags(x, y, (CollisionFlags)flags);
@@ -88,7 +88,7 @@ namespace EnsoulSharp
 		/// <param name="flags">The collision flags specified to check.</param>
 		/// <param name="radius">The check radius.</param>
 		/// <returns>A value indicating whether there is a wall of type at the given position.</returns>
-		// Token: 0x06000678 RID: 1656 RVA: 0x0000D564 File Offset: 0x0000C964
+		// Token: 0x06000685 RID: 1669 RVA: 0x0000D654 File Offset: 0x0000CA54
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool IsWallOfType(Vector3 position, CollisionFlags flags, float radius)
 		{
@@ -103,7 +103,7 @@ namespace EnsoulSharp
 		/// <param name="flags">The collision flags specified to check.</param>
 		/// <param name="radius">The check radius.</param>
 		/// <returns>A value indicating whether there is a wall of type at the given position.</returns>
-		// Token: 0x06000679 RID: 1657 RVA: 0x0000D540 File Offset: 0x0000C940
+		// Token: 0x06000686 RID: 1670 RVA: 0x0000D630 File Offset: 0x0000CA30
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool IsWallOfType(float x, float y, CollisionFlags flags, float radius)
 		{
@@ -116,7 +116,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The world position.</param>
 		/// <returns>A value indicating whether there is water at the given position.</returns>
-		// Token: 0x0600067A RID: 1658 RVA: 0x0000D6B4 File Offset: 0x0000CAB4
+		// Token: 0x06000687 RID: 1671 RVA: 0x0000D7A4 File Offset: 0x0000CBA4
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool IsWater(Vector3 position)
 		{
@@ -129,7 +129,7 @@ namespace EnsoulSharp
 		/// <param name="x">The world x.</param>
 		/// <param name="y">The world y.</param>
 		/// <returns>A value indicating whether there is water at the given position.</returns>
-		// Token: 0x0600067B RID: 1659 RVA: 0x0000D694 File Offset: 0x0000CA94
+		// Token: 0x06000688 RID: 1672 RVA: 0x0000D784 File Offset: 0x0000CB84
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool IsWater(float x, float y)
 		{
@@ -141,7 +141,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The grid position.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x0600067C RID: 1660 RVA: 0x0000D5CC File Offset: 0x0000C9CC
+		// Token: 0x06000689 RID: 1673 RVA: 0x0000D6BC File Offset: 0x0000CABC
 		public static Vector3 GridToWorld(Vector2 position)
 		{
 			return NavMesh.GridToWorld((int)((double)position.X), (int)((double)position.Y));
@@ -153,7 +153,7 @@ namespace EnsoulSharp
 		/// <param name="x">The grid x.</param>
 		/// <param name="y">The grid y.</param>
 		/// <returns>The 3D world coordinates result.</returns>
-		// Token: 0x0600067D RID: 1661 RVA: 0x0000D588 File Offset: 0x0000C988
+		// Token: 0x0600068A RID: 1674 RVA: 0x0000D678 File Offset: 0x0000CA78
 		public unsafe static Vector3 GridToWorld(int x, int y)
 		{
 			NavGrid* ptr = <Module>.EnsoulSharp.Native.NavGrid.GetInstance();
@@ -172,7 +172,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The world position.</param>
 		/// <returns>The grid coordinates result.</returns>
-		// Token: 0x0600067E RID: 1662 RVA: 0x0000D630 File Offset: 0x0000CA30
+		// Token: 0x0600068B RID: 1675 RVA: 0x0000D720 File Offset: 0x0000CB20
 		public static Vector2 WorldToGrid(Vector3 position)
 		{
 			return NavMesh.WorldToGrid(position.X, position.Y);
@@ -184,7 +184,7 @@ namespace EnsoulSharp
 		/// <param name="x">The world x.</param>
 		/// <param name="y">The world y.</param>
 		/// <returns>The grid coordinates result.</returns>
-		// Token: 0x0600067F RID: 1663 RVA: 0x0000D5F0 File Offset: 0x0000C9F0
+		// Token: 0x0600068C RID: 1676 RVA: 0x0000D6E0 File Offset: 0x0000CAE0
 		public unsafe static Vector2 WorldToGrid(float x, float y)
 		{
 			NavGrid* ptr = <Module>.EnsoulSharp.Native.NavGrid.GetInstance();
@@ -203,7 +203,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The world position.</param>
 		/// <returns>The height of the given 3D world coordinates.</returns>
-		// Token: 0x06000680 RID: 1664 RVA: 0x0000D674 File Offset: 0x0000CA74
+		// Token: 0x0600068D RID: 1677 RVA: 0x0000D764 File Offset: 0x0000CB64
 		public static float GetHeightForPosition(Vector3 position)
 		{
 			return NavMesh.GetHeightForPosition(position.X, position.Y);
@@ -215,7 +215,7 @@ namespace EnsoulSharp
 		/// <param name="x">The world x.</param>
 		/// <param name="y">The world y.</param>
 		/// <returns>The height of the given 3D world coordinates.</returns>
-		// Token: 0x06000681 RID: 1665 RVA: 0x0000D650 File Offset: 0x0000CA50
+		// Token: 0x0600068E RID: 1678 RVA: 0x0000D740 File Offset: 0x0000CB40
 		public unsafe static float GetHeightForPosition(float x, float y)
 		{
 			NavGrid* ptr = <Module>.EnsoulSharp.Native.NavGrid.GetInstance();

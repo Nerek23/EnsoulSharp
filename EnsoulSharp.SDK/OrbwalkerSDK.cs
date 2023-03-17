@@ -1756,10 +1756,10 @@ namespace EnsoulSharp.SDK
 				this.AttackTime = time;
 			}
 
-			// Token: 0x04000BDE RID: 3038
+			// Token: 0x04000BDD RID: 3037
 			public int AttackTime;
 
-			// Token: 0x04000BDF RID: 3039
+			// Token: 0x04000BDE RID: 3038
 			public bool IsLeftPunch;
 		}
 	}

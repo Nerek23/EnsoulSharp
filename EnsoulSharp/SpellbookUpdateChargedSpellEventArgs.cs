@@ -10,7 +10,7 @@ namespace EnsoulSharp
 	// Token: 0x0200006D RID: 109
 	public class SpellbookUpdateChargedSpellEventArgs : EventArgs
 	{
-		// Token: 0x06000444 RID: 1092 RVA: 0x0000F270 File Offset: 0x0000E670
+		// Token: 0x0600044F RID: 1103 RVA: 0x0000F360 File Offset: 0x0000E760
 		internal SpellbookUpdateChargedSpellEventArgs([MarshalAs(UnmanagedType.U1)] bool process, SpellSlot slot, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool releaseCast)
 		{
 			this.m_process = process;
@@ -22,9 +22,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x170000D5 RID: 213
-		// (get) Token: 0x06000445 RID: 1093 RVA: 0x0000F2A0 File Offset: 0x0000E6A0
-		// (set) Token: 0x06000446 RID: 1094 RVA: 0x0000F2B4 File Offset: 0x0000E6B4
+		// Token: 0x170000D9 RID: 217
+		// (get) Token: 0x06000450 RID: 1104 RVA: 0x0000F390 File Offset: 0x0000E790
+		// (set) Token: 0x06000451 RID: 1105 RVA: 0x0000F3A4 File Offset: 0x0000E7A4
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -42,8 +42,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell slot.
 		/// </summary>
-		// Token: 0x170000D4 RID: 212
-		// (get) Token: 0x06000447 RID: 1095 RVA: 0x0000F2C8 File Offset: 0x0000E6C8
+		// Token: 0x170000D8 RID: 216
+		// (get) Token: 0x06000452 RID: 1106 RVA: 0x0000F3B8 File Offset: 0x0000E7B8
 		public SpellSlot Slot
 		{
 			get
@@ -55,8 +55,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell target position.
 		/// </summary>
-		// Token: 0x170000D3 RID: 211
-		// (get) Token: 0x06000448 RID: 1096 RVA: 0x0000F2DC File Offset: 0x0000E6DC
+		// Token: 0x170000D7 RID: 215
+		// (get) Token: 0x06000453 RID: 1107 RVA: 0x0000F3CC File Offset: 0x0000E7CC
 		public Vector3 Position
 		{
 			get
@@ -68,8 +68,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the spell is release cast.
 		/// </summary>
-		// Token: 0x170000D2 RID: 210
-		// (get) Token: 0x06000449 RID: 1097 RVA: 0x0000F2F4 File Offset: 0x0000E6F4
+		// Token: 0x170000D6 RID: 214
+		// (get) Token: 0x06000454 RID: 1108 RVA: 0x0000F3E4 File Offset: 0x0000E7E4
 		public bool ReleaseCast
 		{
 			[return: MarshalAs(UnmanagedType.U1)]

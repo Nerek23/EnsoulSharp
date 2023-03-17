@@ -11,7 +11,7 @@ namespace EnsoulSharp
 	// Token: 0x0200006A RID: 106
 	public class ObjectManager
 	{
-		// Token: 0x0600042D RID: 1069 RVA: 0x0000D878 File Offset: 0x0000CC78
+		// Token: 0x06000438 RID: 1080 RVA: 0x0000D968 File Offset: 0x0000CD68
 		internal static Type NativeTypeToManagedType(ClassId nativeType)
 		{
 			switch (nativeType)
@@ -79,7 +79,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x0600042E RID: 1070 RVA: 0x0000DA48 File Offset: 0x0000CE48
+		// Token: 0x06000439 RID: 1081 RVA: 0x0000DB38 File Offset: 0x0000CF38
 		internal static ClassId ManagedTypeToNativeType(Type managedType)
 		{
 			if (managedType == typeof(AIHeroClient))
@@ -197,7 +197,7 @@ namespace EnsoulSharp
 			return (managedType == typeof(UnrevealedTarget)) ? ((ClassId)29) : ((ClassId)0);
 		}
 
-		// Token: 0x0600042F RID: 1071 RVA: 0x0000DCB4 File Offset: 0x0000D0B4
+		// Token: 0x0600043A RID: 1082 RVA: 0x0000DDA4 File Offset: 0x0000D1A4
 		internal unsafe static GameObject CreateObjectFromPointer(GameObject* nativeObject)
 		{
 			if (nativeObject == null)
@@ -362,8 +362,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the local player.
 		/// </summary>
-		// Token: 0x170000C6 RID: 198
-		// (get) Token: 0x06000430 RID: 1072 RVA: 0x0000E014 File Offset: 0x0000D414
+		// Token: 0x170000CA RID: 202
+		// (get) Token: 0x0600043B RID: 1083 RVA: 0x0000E104 File Offset: 0x0000D504
 		public unsafe static AIHeroClient Player
 		{
 			get
@@ -386,7 +386,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="index">The index.</param>
 		/// <returns>The unit.</returns>
-		// Token: 0x06000431 RID: 1073 RVA: 0x0000162C File Offset: 0x00000A2C
+		// Token: 0x0600043C RID: 1084 RVA: 0x0000162C File Offset: 0x00000A2C
 		public unsafe static ObjectType GetUnitByIndex<ObjectType>(int index) where ObjectType : GameObject
 		{
 			GameObject* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByIndex((uint)index);
@@ -402,7 +402,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="networkId">The network id.</param>
 		/// <returns>The unit.</returns>
-		// Token: 0x06000432 RID: 1074 RVA: 0x00001658 File Offset: 0x00000A58
+		// Token: 0x0600043D RID: 1085 RVA: 0x00001658 File Offset: 0x00000A58
 		public unsafe static ObjectType GetUnitByNetworkId<ObjectType>(int networkId) where ObjectType : GameObject
 		{
 			GameObject* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByNetworkId((uint)networkId);
@@ -417,7 +417,7 @@ namespace EnsoulSharp
 		/// 	Gets all units can assign to specified object type.
 		/// </summary>
 		/// <returns>The units.</returns>
-		// Token: 0x06000433 RID: 1075 RVA: 0x00004BA4 File Offset: 0x00003FA4
+		// Token: 0x0600043E RID: 1086 RVA: 0x00004C24 File Offset: 0x00004024
 		public unsafe static IEnumerable<ObjectType> Get<ObjectType>() where ObjectType : GameObject
 		{
 			List<ObjectType> list = new List<ObjectType>();

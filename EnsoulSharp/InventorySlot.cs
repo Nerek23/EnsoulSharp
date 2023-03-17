@@ -9,14 +9,14 @@ namespace EnsoulSharp
 	// Token: 0x02000069 RID: 105
 	public class InventorySlot
 	{
-		// Token: 0x06000423 RID: 1059 RVA: 0x0000C924 File Offset: 0x0000BD24
+		// Token: 0x0600042E RID: 1070 RVA: 0x0000CA14 File Offset: 0x0000BE14
 		internal InventorySlot(uint networkId, uint slot)
 		{
 			this.m_networkId = networkId;
 			this.m_slot = slot;
 		}
 
-		// Token: 0x06000424 RID: 1060 RVA: 0x0000C948 File Offset: 0x0000BD48
+		// Token: 0x0600042F RID: 1071 RVA: 0x0000CA38 File Offset: 0x0000BE38
 		internal unsafe InventorySlot* GetPtr()
 		{
 			AIBaseClient* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByNetworkId(this.m_networkId);
@@ -34,8 +34,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell slot of the inventory.
 		/// </summary>
-		// Token: 0x170000C5 RID: 197
-		// (get) Token: 0x06000425 RID: 1061 RVA: 0x0000C988 File Offset: 0x0000BD88
+		// Token: 0x170000C9 RID: 201
+		// (get) Token: 0x06000430 RID: 1072 RVA: 0x0000CA78 File Offset: 0x0000BE78
 		public SpellSlot SpellSlot
 		{
 			get
@@ -47,8 +47,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the slot of the inventory.
 		/// </summary>
-		// Token: 0x170000C4 RID: 196
-		// (get) Token: 0x06000426 RID: 1062 RVA: 0x0000C9A0 File Offset: 0x0000BDA0
+		// Token: 0x170000C8 RID: 200
+		// (get) Token: 0x06000431 RID: 1073 RVA: 0x0000CA90 File Offset: 0x0000BE90
 		public int Slot
 		{
 			get
@@ -60,8 +60,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the item id of the inventory.
 		/// </summary>
-		// Token: 0x170000C3 RID: 195
-		// (get) Token: 0x06000427 RID: 1063 RVA: 0x0000C9B4 File Offset: 0x0000BDB4
+		// Token: 0x170000C7 RID: 199
+		// (get) Token: 0x06000432 RID: 1074 RVA: 0x0000CAA4 File Offset: 0x0000BEA4
 		public unsafe ItemId Id
 		{
 			get
@@ -86,8 +86,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the inventory count in slot.
 		/// </summary>
-		// Token: 0x170000C2 RID: 194
-		// (get) Token: 0x06000428 RID: 1064 RVA: 0x0000C9EC File Offset: 0x0000BDEC
+		// Token: 0x170000C6 RID: 198
+		// (get) Token: 0x06000433 RID: 1075 RVA: 0x0000CADC File Offset: 0x0000BEDC
 		public unsafe int CountInSlot
 		{
 			get
@@ -104,8 +104,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the purchase time of the inventory.
 		/// </summary>
-		// Token: 0x170000C1 RID: 193
-		// (get) Token: 0x06000429 RID: 1065 RVA: 0x0000CA0C File Offset: 0x0000BE0C
+		// Token: 0x170000C5 RID: 197
+		// (get) Token: 0x06000434 RID: 1076 RVA: 0x0000CAFC File Offset: 0x0000BEFC
 		public unsafe float PurchaseTime
 		{
 			get
@@ -122,8 +122,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the spell charges of the inventory.
 		/// </summary>
-		// Token: 0x170000C0 RID: 192
-		// (get) Token: 0x0600042A RID: 1066 RVA: 0x0000CA30 File Offset: 0x0000BE30
+		// Token: 0x170000C4 RID: 196
+		// (get) Token: 0x06000435 RID: 1077 RVA: 0x0000CB20 File Offset: 0x0000BF20
 		public unsafe int SpellCharges
 		{
 			get
@@ -144,8 +144,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the invested gold amount of the inventory.
 		/// </summary>
-		// Token: 0x170000BF RID: 191
-		// (get) Token: 0x0600042B RID: 1067 RVA: 0x0000CA5C File Offset: 0x0000BE5C
+		// Token: 0x170000C3 RID: 195
+		// (get) Token: 0x06000436 RID: 1078 RVA: 0x0000CB4C File Offset: 0x0000BF4C
 		public unsafe float InvestedGoldAmount
 		{
 			get
@@ -166,8 +166,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the item data of the inventory.
 		/// </summary>
-		// Token: 0x170000BE RID: 190
-		// (get) Token: 0x0600042C RID: 1068 RVA: 0x0000CA8C File Offset: 0x0000BE8C
+		// Token: 0x170000C2 RID: 194
+		// (get) Token: 0x06000437 RID: 1079 RVA: 0x0000CB7C File Offset: 0x0000BF7C
 		public unsafe ItemData IData
 		{
 			get

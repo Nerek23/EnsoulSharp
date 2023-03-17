@@ -121,30 +121,30 @@ namespace EnsoulSharp.SDK
 		// Token: 0x0200047A RID: 1146
 		public enum TeleportStatus
 		{
-			// Token: 0x04000B87 RID: 2951
+			// Token: 0x04000B86 RID: 2950
 			Start,
-			// Token: 0x04000B88 RID: 2952
+			// Token: 0x04000B87 RID: 2951
 			Abort,
-			// Token: 0x04000B89 RID: 2953
+			// Token: 0x04000B88 RID: 2952
 			Finish,
-			// Token: 0x04000B8A RID: 2954
+			// Token: 0x04000B89 RID: 2953
 			Unknown
 		}
 
 		// Token: 0x0200047B RID: 1147
 		public enum TeleportType
 		{
-			// Token: 0x04000B8C RID: 2956
+			// Token: 0x04000B8B RID: 2955
 			Recall,
-			// Token: 0x04000B8D RID: 2957
+			// Token: 0x04000B8C RID: 2956
 			Teleport,
-			// Token: 0x04000B8E RID: 2958
+			// Token: 0x04000B8D RID: 2957
 			TwistedFate,
-			// Token: 0x04000B8F RID: 2959
+			// Token: 0x04000B8E RID: 2958
 			Shen,
-			// Token: 0x04000B90 RID: 2960
+			// Token: 0x04000B8F RID: 2959
 			YuumiWAlly,
-			// Token: 0x04000B91 RID: 2961
+			// Token: 0x04000B90 RID: 2960
 			Unknown
 		}
 

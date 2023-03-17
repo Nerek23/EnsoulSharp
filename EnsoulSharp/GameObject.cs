@@ -16,21 +16,21 @@ namespace EnsoulSharp
 	// Token: 0x02000043 RID: 67
 	public class GameObject : IEquatable<GameObject>
 	{
-		// Token: 0x060002A7 RID: 679 RVA: 0x0000B324 File Offset: 0x0000A724
+		// Token: 0x060002AE RID: 686 RVA: 0x0000B414 File Offset: 0x0000A814
 		internal GameObject()
 		{
 			this.m_networkId = 0U;
 			this.m_index = 0U;
 		}
 
-		// Token: 0x060002A8 RID: 680 RVA: 0x0000B300 File Offset: 0x0000A700
+		// Token: 0x060002AF RID: 687 RVA: 0x0000B3F0 File Offset: 0x0000A7F0
 		internal GameObject(uint networkId, uint index)
 		{
 			this.m_networkId = networkId;
 			this.m_index = index;
 		}
 
-		// Token: 0x060002A9 RID: 681 RVA: 0x0000B348 File Offset: 0x0000A748
+		// Token: 0x060002B0 RID: 688 RVA: 0x0000B438 File Offset: 0x0000A838
 		internal unsafe GameObject* GetPtr()
 		{
 			GameObject* ptr = <Module>.EnsoulSharp.Native.ObjectManager.GetUnitByIndex(this.m_index);
@@ -48,7 +48,7 @@ namespace EnsoulSharp
 			throw new GameObjectNotFoundException();
 		}
 
-		// Token: 0x060002AA RID: 682 RVA: 0x0000C3D0 File Offset: 0x0000B7D0
+		// Token: 0x060002B1 RID: 689 RVA: 0x0000C4C0 File Offset: 0x0000B8C0
 		static GameObject()
 		{
 			AppDomain.CurrentDomain.DomainUnload += GameObject.DomainUnloadEventHandler;
@@ -66,7 +66,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::GameObject\u0020*,char\u0020const\u0020*,int,int)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetGameObjectIntegerPropertyChangeHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), GameObject.m_IntegerPropertyChangeNative.ToPointer());
 		}
 
-		// Token: 0x060002AB RID: 683 RVA: 0x0000B420 File Offset: 0x0000A820
+		// Token: 0x060002B2 RID: 690 RVA: 0x0000B510 File Offset: 0x0000A910
 		internal static void DomainUnloadEventHandler(object sender, EventArgs args)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::GameObject\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetGameObjectCreateHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), GameObject.m_CreateNative.ToPointer());
@@ -75,7 +75,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(EnsoulSharp::Native::GameObject\u0020*,char\u0020const\u0020*,int,int)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetGameObjectIntegerPropertyChangeHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), GameObject.m_IntegerPropertyChangeNative.ToPointer());
 		}
 
-		// Token: 0x060002AC RID: 684 RVA: 0x0000B8A8 File Offset: 0x0000ACA8
+		// Token: 0x060002B3 RID: 691 RVA: 0x0000B998 File Offset: 0x0000AD98
 		[HandleProcessCorruptedStateExceptions]
 		[SecurityCritical]
 		internal unsafe static void OnCreateNative(GameObject* gameObject)
@@ -165,7 +165,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060002AD RID: 685 RVA: 0x0000BB6C File Offset: 0x0000AF6C
+		// Token: 0x060002B4 RID: 692 RVA: 0x0000BC5C File Offset: 0x0000B05C
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnDeleteNative(GameObject* gameObject)
@@ -255,7 +255,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060002AE RID: 686 RVA: 0x0000BE30 File Offset: 0x0000B230
+		// Token: 0x060002B5 RID: 693 RVA: 0x0000BF20 File Offset: 0x0000B320
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnFloatPropertyChangeNative(GameObject* gameObject, sbyte* propertyName, float oldValue, float newValue)
@@ -346,9 +346,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060002AF RID: 687 RVA: 0x0000C100 File Offset: 0x0000B500
-		[SecurityCritical]
+		// Token: 0x060002B6 RID: 694 RVA: 0x0000C1F0 File Offset: 0x0000B5F0
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnIntegerPropertyChangeNative(GameObject* gameObject, sbyte* propertyName, int oldValue, int newValue)
 		{
 			GameObjectIntegerPropertyChange[] array = null;
@@ -437,28 +437,28 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x060002B0 RID: 688 RVA: 0x0000B864 File Offset: 0x0000AC64
+		// Token: 0x060002B7 RID: 695 RVA: 0x0000B954 File Offset: 0x0000AD54
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool operator ==(GameObject a, GameObject b)
 		{
 			return object.ReferenceEquals(a, b) || (!object.ReferenceEquals(a, null) && a.Equals(b));
 		}
 
-		// Token: 0x060002B1 RID: 689 RVA: 0x0000B890 File Offset: 0x0000AC90
+		// Token: 0x060002B8 RID: 696 RVA: 0x0000B980 File Offset: 0x0000AD80
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool operator !=(GameObject a, GameObject b)
 		{
 			return ((!(a == b)) ? 1 : 0) != 0;
 		}
 
-		// Token: 0x060002B2 RID: 690 RVA: 0x0000B3E4 File Offset: 0x0000A7E4
+		// Token: 0x060002B9 RID: 697 RVA: 0x0000B4D4 File Offset: 0x0000A8D4
 		[return: MarshalAs(UnmanagedType.U1)]
 		public override bool Equals(object obj)
 		{
 			return this.Equals(obj as GameObject);
 		}
 
-		// Token: 0x060002B3 RID: 691 RVA: 0x0000B39C File Offset: 0x0000A79C
+		// Token: 0x060002BA RID: 698 RVA: 0x0000B48C File Offset: 0x0000A88C
 		[return: MarshalAs(UnmanagedType.U1)]
 		public virtual bool Equals(GameObject obj)
 		{
@@ -482,7 +482,7 @@ namespace EnsoulSharp
 			return (byte)num != 0;
 		}
 
-		// Token: 0x060002B4 RID: 692 RVA: 0x0000B400 File Offset: 0x0000A800
+		// Token: 0x060002BB RID: 699 RVA: 0x0000B4F0 File Offset: 0x0000A8F0
 		public override int GetHashCode()
 		{
 			uint networkId = this.m_networkId;
@@ -493,8 +493,8 @@ namespace EnsoulSharp
 		/// 	This event is fired after an object created.
 		/// </summary>
 		// Token: 0x14000004 RID: 4
-		// (add) Token: 0x060002B5 RID: 693 RVA: 0x0000B494 File Offset: 0x0000A894
-		// (remove) Token: 0x060002B6 RID: 694 RVA: 0x0000B4AC File Offset: 0x0000A8AC
+		// (add) Token: 0x060002BC RID: 700 RVA: 0x0000B584 File Offset: 0x0000A984
+		// (remove) Token: 0x060002BD RID: 701 RVA: 0x0000B59C File Offset: 0x0000A99C
 		public static event GameObjectCreate OnCreate
 		{
 			add
@@ -511,8 +511,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before an object deleted.
 		/// </summary>
 		// Token: 0x14000003 RID: 3
-		// (add) Token: 0x060002B7 RID: 695 RVA: 0x0000B4C8 File Offset: 0x0000A8C8
-		// (remove) Token: 0x060002B8 RID: 696 RVA: 0x0000B4E0 File Offset: 0x0000A8E0
+		// (add) Token: 0x060002BE RID: 702 RVA: 0x0000B5B8 File Offset: 0x0000A9B8
+		// (remove) Token: 0x060002BF RID: 703 RVA: 0x0000B5D0 File Offset: 0x0000A9D0
 		public static event GameObjectDelete OnDelete
 		{
 			add
@@ -529,8 +529,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every time one float property of the object changed.
 		/// </summary>
 		// Token: 0x14000002 RID: 2
-		// (add) Token: 0x060002B9 RID: 697 RVA: 0x0000B4FC File Offset: 0x0000A8FC
-		// (remove) Token: 0x060002BA RID: 698 RVA: 0x0000B514 File Offset: 0x0000A914
+		// (add) Token: 0x060002C0 RID: 704 RVA: 0x0000B5EC File Offset: 0x0000A9EC
+		// (remove) Token: 0x060002C1 RID: 705 RVA: 0x0000B604 File Offset: 0x0000AA04
 		public static event GameObjectFloatPropertyChange OnFloatPropertyChange
 		{
 			add
@@ -547,8 +547,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every time one integer property of the obejct changed.
 		/// </summary>
 		// Token: 0x14000001 RID: 1
-		// (add) Token: 0x060002BB RID: 699 RVA: 0x0000B530 File Offset: 0x0000A930
-		// (remove) Token: 0x060002BC RID: 700 RVA: 0x0000B548 File Offset: 0x0000A948
+		// (add) Token: 0x060002C2 RID: 706 RVA: 0x0000B620 File Offset: 0x0000AA20
+		// (remove) Token: 0x060002C3 RID: 707 RVA: 0x0000B638 File Offset: 0x0000AA38
 		public static event GameObjectIntegerPropertyChange OnIntegerPropertyChange
 		{
 			add
@@ -565,7 +565,7 @@ namespace EnsoulSharp
 		/// 	Gets the index of the object.
 		/// </summary>
 		// Token: 0x1700001C RID: 28
-		// (get) Token: 0x060002BD RID: 701 RVA: 0x0000B564 File Offset: 0x0000A964
+		// (get) Token: 0x060002C4 RID: 708 RVA: 0x0000B654 File Offset: 0x0000AA54
 		public int Index
 		{
 			get
@@ -578,7 +578,7 @@ namespace EnsoulSharp
 		/// 	Gets the network id of the object.
 		/// </summary>
 		// Token: 0x1700001B RID: 27
-		// (get) Token: 0x060002BE RID: 702 RVA: 0x0000B578 File Offset: 0x0000A978
+		// (get) Token: 0x060002C5 RID: 709 RVA: 0x0000B668 File Offset: 0x0000AA68
 		public int NetworkId
 		{
 			get
@@ -591,7 +591,7 @@ namespace EnsoulSharp
 		/// 	Gets the bounding box of the object.
 		/// </summary>
 		// Token: 0x1700001A RID: 26
-		// (get) Token: 0x060002BF RID: 703 RVA: 0x0000B58C File Offset: 0x0000A98C
+		// (get) Token: 0x060002C6 RID: 710 RVA: 0x0000B67C File Offset: 0x0000AA7C
 		public unsafe BoundingBox BBox
 		{
 			get
@@ -610,8 +610,8 @@ namespace EnsoulSharp
 		/// 	Gets or sets the name of the object.
 		/// </summary>
 		// Token: 0x17000019 RID: 25
-		// (get) Token: 0x060002C0 RID: 704 RVA: 0x0000B5F4 File Offset: 0x0000A9F4
-		// (set) Token: 0x060002C1 RID: 705 RVA: 0x0000B648 File Offset: 0x0000AA48
+		// (get) Token: 0x060002C7 RID: 711 RVA: 0x0000B6E4 File Offset: 0x0000AAE4
+		// (set) Token: 0x060002C8 RID: 712 RVA: 0x0000B738 File Offset: 0x0000AB38
 		public unsafe string Name
 		{
 			get
@@ -659,7 +659,7 @@ namespace EnsoulSharp
 		/// 	Gets the position of the object.
 		/// </summary>
 		// Token: 0x17000018 RID: 24
-		// (get) Token: 0x060002C2 RID: 706 RVA: 0x0000B698 File Offset: 0x0000AA98
+		// (get) Token: 0x060002C9 RID: 713 RVA: 0x0000B788 File Offset: 0x0000AB88
 		public unsafe Vector3 Position
 		{
 			get
@@ -674,7 +674,7 @@ namespace EnsoulSharp
 		/// 	Gets the previous position of the object.
 		/// </summary>
 		// Token: 0x17000017 RID: 23
-		// (get) Token: 0x060002C3 RID: 707 RVA: 0x0000B6CC File Offset: 0x0000AACC
+		// (get) Token: 0x060002CA RID: 714 RVA: 0x0000B7BC File Offset: 0x0000ABBC
 		[Obsolete("Please use AIBaseClient.ServerPosition instead.", false)]
 		public unsafe Vector3 PreviousPosition
 		{
@@ -690,7 +690,7 @@ namespace EnsoulSharp
 		/// 	Gets the team of the object.
 		/// </summary>
 		// Token: 0x17000016 RID: 22
-		// (get) Token: 0x060002C4 RID: 708 RVA: 0x0000B700 File Offset: 0x0000AB00
+		// (get) Token: 0x060002CB RID: 715 RVA: 0x0000B7F0 File Offset: 0x0000ABF0
 		public unsafe GameObjectTeam Team
 		{
 			get
@@ -703,7 +703,7 @@ namespace EnsoulSharp
 		/// 	Gets the type of the object.
 		/// </summary>
 		// Token: 0x17000015 RID: 21
-		// (get) Token: 0x060002C5 RID: 709 RVA: 0x0000B71C File Offset: 0x0000AB1C
+		// (get) Token: 0x060002CC RID: 716 RVA: 0x0000B80C File Offset: 0x0000AC0C
 		public GameObjectType Type
 		{
 			get
@@ -716,7 +716,7 @@ namespace EnsoulSharp
 		/// 	Gets the bounding radius of the object.
 		/// </summary>
 		// Token: 0x17000014 RID: 20
-		// (get) Token: 0x060002C6 RID: 710 RVA: 0x0000B734 File Offset: 0x0000AB34
+		// (get) Token: 0x060002CD RID: 717 RVA: 0x0000B824 File Offset: 0x0000AC24
 		public float BoundingRadius
 		{
 			get
@@ -729,7 +729,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is dead.
 		/// </summary>
 		// Token: 0x17000013 RID: 19
-		// (get) Token: 0x060002C7 RID: 711 RVA: 0x0000B754 File Offset: 0x0000AB54
+		// (get) Token: 0x060002CE RID: 718 RVA: 0x0000B844 File Offset: 0x0000AC44
 		public bool IsDead
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -743,7 +743,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is visible on screen.
 		/// </summary>
 		// Token: 0x17000012 RID: 18
-		// (get) Token: 0x060002C8 RID: 712 RVA: 0x0000B774 File Offset: 0x0000AB74
+		// (get) Token: 0x060002CF RID: 719 RVA: 0x0000B864 File Offset: 0x0000AC64
 		public bool IsVisibleOnScreen
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -757,7 +757,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the obejct is local player.
 		/// </summary>
 		// Token: 0x17000011 RID: 17
-		// (get) Token: 0x060002C9 RID: 713 RVA: 0x0000B794 File Offset: 0x0000AB94
+		// (get) Token: 0x060002D0 RID: 720 RVA: 0x0000B884 File Offset: 0x0000AC84
 		public unsafe bool IsMe
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -772,7 +772,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is ally.
 		/// </summary>
 		// Token: 0x17000010 RID: 16
-		// (get) Token: 0x060002CA RID: 714 RVA: 0x0000B7BC File Offset: 0x0000ABBC
+		// (get) Token: 0x060002D1 RID: 721 RVA: 0x0000B8AC File Offset: 0x0000ACAC
 		public unsafe bool IsAlly
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -792,7 +792,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the object is not ally.
 		/// </summary>
 		// Token: 0x1700000F RID: 15
-		// (get) Token: 0x060002CB RID: 715 RVA: 0x0000B7EC File Offset: 0x0000ABEC
+		// (get) Token: 0x060002D2 RID: 722 RVA: 0x0000B8DC File Offset: 0x0000ACDC
 		public unsafe bool IsEnemy
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -813,7 +813,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <remarks>We suggest you can use this property check whether the object is valid before any other calls.</remarks>
 		// Token: 0x1700000E RID: 14
-		// (get) Token: 0x060002CC RID: 716 RVA: 0x0000B820 File Offset: 0x0000AC20
+		// (get) Token: 0x060002D3 RID: 723 RVA: 0x0000B910 File Offset: 0x0000AD10
 		public unsafe bool IsValid
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -875,22 +875,22 @@ namespace EnsoulSharp
 		internal static List<GameObjectIntegerPropertyChange> IntegerPropertyChangeHandlers = new List<GameObjectIntegerPropertyChange>();
 
 		// Token: 0x02000044 RID: 68
-		// (Invoke) Token: 0x060002CE RID: 718
+		// (Invoke) Token: 0x060002D5 RID: 725
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnCreateNativeDelegate(GameObject* gameObject);
 
 		// Token: 0x02000045 RID: 69
-		// (Invoke) Token: 0x060002D2 RID: 722
+		// (Invoke) Token: 0x060002D9 RID: 729
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnDeleteNativeDelegate(GameObject* gameObject);
 
 		// Token: 0x02000046 RID: 70
-		// (Invoke) Token: 0x060002D6 RID: 726
+		// (Invoke) Token: 0x060002DD RID: 733
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnFloatPropertyChangeNativeDelegate(GameObject* gameObject, sbyte* propertyName, float oldValue, float newValue);
 
 		// Token: 0x02000047 RID: 71
-		// (Invoke) Token: 0x060002DA RID: 730
+		// (Invoke) Token: 0x060002E1 RID: 737
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnIntegerPropertyChangeNativeDelegate(GameObject* gameObject, sbyte* propertyName, int oldValue, int newValue);
 	}

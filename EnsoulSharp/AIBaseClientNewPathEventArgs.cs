@@ -10,7 +10,7 @@ namespace EnsoulSharp
 	// Token: 0x02000050 RID: 80
 	public class AIBaseClientNewPathEventArgs : EventArgs
 	{
-		// Token: 0x06000319 RID: 793 RVA: 0x000053C8 File Offset: 0x000047C8
+		// Token: 0x06000320 RID: 800 RVA: 0x00005448 File Offset: 0x00004848
 		internal AIBaseClientNewPathEventArgs(Vector3[] path, [MarshalAs(UnmanagedType.U1)] bool isDash, float speed)
 		{
 			this.m_path = path;
@@ -22,7 +22,7 @@ namespace EnsoulSharp
 		/// 	Gets the path.
 		/// </summary>
 		// Token: 0x17000043 RID: 67
-		// (get) Token: 0x0600031A RID: 794 RVA: 0x000053F0 File Offset: 0x000047F0
+		// (get) Token: 0x06000321 RID: 801 RVA: 0x00005470 File Offset: 0x00004870
 		public Vector3[] Path
 		{
 			get
@@ -35,7 +35,7 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the new path is dash.
 		/// </summary>
 		// Token: 0x17000042 RID: 66
-		// (get) Token: 0x0600031B RID: 795 RVA: 0x00005404 File Offset: 0x00004804
+		// (get) Token: 0x06000322 RID: 802 RVA: 0x00005484 File Offset: 0x00004884
 		public bool IsDash
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -49,7 +49,7 @@ namespace EnsoulSharp
 		/// 	Gets the speed.
 		/// </summary>
 		// Token: 0x17000041 RID: 65
-		// (get) Token: 0x0600031C RID: 796 RVA: 0x00005418 File Offset: 0x00004818
+		// (get) Token: 0x06000323 RID: 803 RVA: 0x00005498 File Offset: 0x00004898
 		public float Speed
 		{
 			get

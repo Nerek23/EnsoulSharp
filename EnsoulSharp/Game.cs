@@ -16,7 +16,7 @@ namespace EnsoulSharp
 	// Token: 0x020000E2 RID: 226
 	public class Game
 	{
-		// Token: 0x0600051B RID: 1307 RVA: 0x0000AF00 File Offset: 0x0000A300
+		// Token: 0x06000526 RID: 1318 RVA: 0x0000AFF0 File Offset: 0x0000A3F0
 		static Game()
 		{
 			AppDomain.CurrentDomain.DomainUnload += Game.DomainUnloadEventHandler;
@@ -40,7 +40,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(void)>.Add(<Module>.EnsoulSharp.Native.EventAdapter.GetGameUpdateHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Game.m_UpdateNative.ToPointer());
 		}
 
-		// Token: 0x0600051C RID: 1308 RVA: 0x00009660 File Offset: 0x00008A60
+		// Token: 0x06000527 RID: 1319 RVA: 0x00009750 File Offset: 0x00008B50
 		internal static void DomainUnloadEventHandler(object sender, EventArgs args)
 		{
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(enum\u0020EnsoulSharp::Native::Enums::EventsNames,EnsoulSharp::Native::BaseParams\u0020*)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetGameNotifyHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Game.m_NotifyNative.ToPointer());
@@ -51,7 +51,7 @@ namespace EnsoulSharp
 			<Module>.EnsoulSharp.Native.EventHandler<void\u0020(__cdecl*)(void)>.Remove(<Module>.EnsoulSharp.Native.EventAdapter.GetGameUpdateHandler(<Module>.EnsoulSharp.Native.EventAdapter.GetInstance()), Game.m_UpdateNative.ToPointer());
 		}
 
-		// Token: 0x0600051D RID: 1309 RVA: 0x00009704 File Offset: 0x00008B04
+		// Token: 0x06000528 RID: 1320 RVA: 0x000097F4 File Offset: 0x00008BF4
 		[SecurityCritical]
 		[HandleProcessCorruptedStateExceptions]
 		internal unsafe static void OnNotifyNative(EventsNames type, BaseParams* @params)
@@ -154,7 +154,7 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x0600051E RID: 1310 RVA: 0x00009A0C File Offset: 0x00008E0C
+		// Token: 0x06000529 RID: 1321 RVA: 0x00009AFC File Offset: 0x00008EFC
 		[HandleProcessCorruptedStateExceptions]
 		[SecurityCritical]
 		internal unsafe static void OnProcessPacketNative(DefaultPacket* packet, bool* process)
@@ -248,9 +248,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x0600051F RID: 1311 RVA: 0x00009D1C File Offset: 0x0000911C
-		[SecurityCritical]
+		// Token: 0x0600052A RID: 1322 RVA: 0x00009E0C File Offset: 0x0000920C
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnDisplayChatNative(sbyte* msg, uint flags, bool* process)
 		{
 			GameDisplayChat[] array = null;
@@ -342,9 +342,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x06000520 RID: 1312 RVA: 0x00009FFC File Offset: 0x000093FC
-		[SecurityCritical]
+		// Token: 0x0600052B RID: 1323 RVA: 0x0000A0EC File Offset: 0x000094EC
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnSendChatNative(sbyte* msg, [MarshalAs(UnmanagedType.U1)] bool sendToAll, bool* process)
 		{
 			GameSendChat[] array = null;
@@ -436,9 +436,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x06000521 RID: 1313 RVA: 0x0000A2DC File Offset: 0x000096DC
-		[SecurityCritical]
+		// Token: 0x0600052C RID: 1324 RVA: 0x0000A3CC File Offset: 0x000097CC
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal unsafe static void OnWndProcNative(HWND__* hWnd, uint uMsg, uint wParam, int lParam, bool* process)
 		{
 			GameWndProc[] array = null;
@@ -525,9 +525,9 @@ namespace EnsoulSharp
 			}
 		}
 
-		// Token: 0x06000522 RID: 1314 RVA: 0x0000A5A8 File Offset: 0x000099A8
-		[SecurityCritical]
+		// Token: 0x0600052D RID: 1325 RVA: 0x0000A698 File Offset: 0x00009A98
 		[HandleProcessCorruptedStateExceptions]
+		[SecurityCritical]
 		internal static void OnUpdateNative()
 		{
 			GameUpdate[] array = null;
@@ -615,8 +615,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every a notify is received and about to be processed.
 		/// </summary>
 		// Token: 0x14000019 RID: 25
-		// (add) Token: 0x06000523 RID: 1315 RVA: 0x0000A854 File Offset: 0x00009C54
-		// (remove) Token: 0x06000524 RID: 1316 RVA: 0x0000A86C File Offset: 0x00009C6C
+		// (add) Token: 0x0600052E RID: 1326 RVA: 0x0000A944 File Offset: 0x00009D44
+		// (remove) Token: 0x0600052F RID: 1327 RVA: 0x0000A95C File Offset: 0x00009D5C
 		public static event GameNotify OnNotify
 		{
 			add
@@ -633,8 +633,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every a packet is received and about to be processed.
 		/// </summary>
 		// Token: 0x14000018 RID: 24
-		// (add) Token: 0x06000525 RID: 1317 RVA: 0x0000A888 File Offset: 0x00009C88
-		// (remove) Token: 0x06000526 RID: 1318 RVA: 0x0000A8A0 File Offset: 0x00009CA0
+		// (add) Token: 0x06000530 RID: 1328 RVA: 0x0000A978 File Offset: 0x00009D78
+		// (remove) Token: 0x06000531 RID: 1329 RVA: 0x0000A990 File Offset: 0x00009D90
 		public static event GameProcessPacket OnProcessPacket
 		{
 			add
@@ -651,8 +651,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before displaying chat.
 		/// </summary>
 		// Token: 0x14000017 RID: 23
-		// (add) Token: 0x06000527 RID: 1319 RVA: 0x0000A8BC File Offset: 0x00009CBC
-		// (remove) Token: 0x06000528 RID: 1320 RVA: 0x0000A8D4 File Offset: 0x00009CD4
+		// (add) Token: 0x06000532 RID: 1330 RVA: 0x0000A9AC File Offset: 0x00009DAC
+		// (remove) Token: 0x06000533 RID: 1331 RVA: 0x0000A9C4 File Offset: 0x00009DC4
 		public static event GameDisplayChat OnDisplayChat
 		{
 			add
@@ -669,8 +669,8 @@ namespace EnsoulSharp
 		/// 	This event is fired before sending chat.
 		/// </summary>
 		// Token: 0x14000016 RID: 22
-		// (add) Token: 0x06000529 RID: 1321 RVA: 0x0000A8F0 File Offset: 0x00009CF0
-		// (remove) Token: 0x0600052A RID: 1322 RVA: 0x0000A908 File Offset: 0x00009D08
+		// (add) Token: 0x06000534 RID: 1332 RVA: 0x0000A9E0 File Offset: 0x00009DE0
+		// (remove) Token: 0x06000535 RID: 1333 RVA: 0x0000A9F8 File Offset: 0x00009DF8
 		public static event GameSendChat OnSendChat
 		{
 			add
@@ -687,8 +687,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every a window event is received and about to be processed.
 		/// </summary>
 		// Token: 0x14000015 RID: 21
-		// (add) Token: 0x0600052B RID: 1323 RVA: 0x0000A924 File Offset: 0x00009D24
-		// (remove) Token: 0x0600052C RID: 1324 RVA: 0x0000A93C File Offset: 0x00009D3C
+		// (add) Token: 0x06000536 RID: 1334 RVA: 0x0000AA14 File Offset: 0x00009E14
+		// (remove) Token: 0x06000537 RID: 1335 RVA: 0x0000AA2C File Offset: 0x00009E2C
 		public static event GameWndProc OnWndProc
 		{
 			add
@@ -705,8 +705,8 @@ namespace EnsoulSharp
 		/// 	This event is fired every time the game updates.
 		/// </summary>
 		// Token: 0x14000014 RID: 20
-		// (add) Token: 0x0600052D RID: 1325 RVA: 0x0000A958 File Offset: 0x00009D58
-		// (remove) Token: 0x0600052E RID: 1326 RVA: 0x0000A970 File Offset: 0x00009D70
+		// (add) Token: 0x06000538 RID: 1336 RVA: 0x0000AA48 File Offset: 0x00009E48
+		// (remove) Token: 0x06000539 RID: 1337 RVA: 0x0000AA60 File Offset: 0x00009E60
 		public static event GameUpdate OnUpdate
 		{
 			add
@@ -722,9 +722,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets the desired zoom of the game.
 		/// </summary>
-		// Token: 0x17000135 RID: 309
-		// (get) Token: 0x0600052F RID: 1327 RVA: 0x0000A98C File Offset: 0x00009D8C
-		// (set) Token: 0x06000530 RID: 1328 RVA: 0x0000A9B0 File Offset: 0x00009DB0
+		// Token: 0x17000139 RID: 313
+		// (get) Token: 0x0600053A RID: 1338 RVA: 0x0000AA7C File Offset: 0x00009E7C
+		// (set) Token: 0x0600053B RID: 1339 RVA: 0x0000AAA0 File Offset: 0x00009EA0
 		public unsafe static float ZoomDesired
 		{
 			get
@@ -749,9 +749,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets the minimum zoom of the game.
 		/// </summary>
-		// Token: 0x17000134 RID: 308
-		// (get) Token: 0x06000531 RID: 1329 RVA: 0x0000A9D0 File Offset: 0x00009DD0
-		// (set) Token: 0x06000532 RID: 1330 RVA: 0x0000A9F4 File Offset: 0x00009DF4
+		// Token: 0x17000138 RID: 312
+		// (get) Token: 0x0600053C RID: 1340 RVA: 0x0000AAC0 File Offset: 0x00009EC0
+		// (set) Token: 0x0600053D RID: 1341 RVA: 0x0000AAE4 File Offset: 0x00009EE4
 		public unsafe static float ZoomMin
 		{
 			get
@@ -776,9 +776,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets the maximum zoomof the game.
 		/// </summary>
-		// Token: 0x17000133 RID: 307
-		// (get) Token: 0x06000533 RID: 1331 RVA: 0x0000AA14 File Offset: 0x00009E14
-		// (set) Token: 0x06000534 RID: 1332 RVA: 0x0000AA38 File Offset: 0x00009E38
+		// Token: 0x17000137 RID: 311
+		// (get) Token: 0x0600053E RID: 1342 RVA: 0x0000AB04 File Offset: 0x00009F04
+		// (set) Token: 0x0600053F RID: 1343 RVA: 0x0000AB28 File Offset: 0x00009F28
 		public unsafe static float ZoomMax
 		{
 			get
@@ -803,8 +803,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the fps of the game.
 		/// </summary>
-		// Token: 0x17000132 RID: 306
-		// (get) Token: 0x06000535 RID: 1333 RVA: 0x0000AA58 File Offset: 0x00009E58
+		// Token: 0x17000136 RID: 310
+		// (get) Token: 0x06000540 RID: 1344 RVA: 0x0000AB48 File Offset: 0x00009F48
 		public unsafe static int FPS
 		{
 			get
@@ -821,8 +821,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the ping of the game.
 		/// </summary>
-		// Token: 0x17000131 RID: 305
-		// (get) Token: 0x06000536 RID: 1334 RVA: 0x0000AA84 File Offset: 0x00009E84
+		// Token: 0x17000135 RID: 309
+		// (get) Token: 0x06000541 RID: 1345 RVA: 0x0000AB74 File Offset: 0x00009F74
 		public unsafe static int Ping
 		{
 			get
@@ -839,8 +839,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the time of the game.
 		/// </summary>
-		// Token: 0x17000130 RID: 304
-		// (get) Token: 0x06000537 RID: 1335 RVA: 0x0000AAA4 File Offset: 0x00009EA4
+		// Token: 0x17000134 RID: 308
+		// (get) Token: 0x06000542 RID: 1346 RVA: 0x0000AB94 File Offset: 0x00009F94
 		public unsafe static float Time
 		{
 			get
@@ -857,8 +857,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the window of the game.
 		/// </summary>
-		// Token: 0x1700012F RID: 303
-		// (get) Token: 0x06000538 RID: 1336 RVA: 0x0000AAC8 File Offset: 0x00009EC8
+		// Token: 0x17000133 RID: 307
+		// (get) Token: 0x06000543 RID: 1347 RVA: 0x0000ABB8 File Offset: 0x00009FB8
 		public static IntPtr Window
 		{
 			get
@@ -871,8 +871,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the map id of the game.
 		/// </summary>
-		// Token: 0x1700012E RID: 302
-		// (get) Token: 0x06000539 RID: 1337 RVA: 0x0000AAE4 File Offset: 0x00009EE4
+		// Token: 0x17000132 RID: 306
+		// (get) Token: 0x06000544 RID: 1348 RVA: 0x0000ABD4 File Offset: 0x00009FD4
 		public unsafe static GameMapId MapId
 		{
 			get
@@ -889,8 +889,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the state of the game.
 		/// </summary>
-		// Token: 0x1700012D RID: 301
-		// (get) Token: 0x0600053A RID: 1338 RVA: 0x0000AB04 File Offset: 0x00009F04
+		// Token: 0x17000131 RID: 305
+		// (get) Token: 0x06000545 RID: 1349 RVA: 0x0000ABF4 File Offset: 0x00009FF4
 		public unsafe static GameState State
 		{
 			get
@@ -907,8 +907,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the 3D cursor world position of the game.
 		/// </summary>
-		// Token: 0x1700012C RID: 300
-		// (get) Token: 0x0600053B RID: 1339 RVA: 0x0000AB24 File Offset: 0x00009F24
+		// Token: 0x17000130 RID: 304
+		// (get) Token: 0x06000546 RID: 1350 RVA: 0x0000AC14 File Offset: 0x0000A014
 		public unsafe static Vector3 CursorPos
 		{
 			get
@@ -927,8 +927,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the version of the game.
 		/// </summary>
-		// Token: 0x1700012B RID: 299
-		// (get) Token: 0x0600053C RID: 1340 RVA: 0x0000AB64 File Offset: 0x00009F64
+		// Token: 0x1700012F RID: 303
+		// (get) Token: 0x06000547 RID: 1351 RVA: 0x0000AC54 File Offset: 0x0000A054
 		public static string Version
 		{
 			get
@@ -943,7 +943,7 @@ namespace EnsoulSharp
 		/// <param name="format">The format.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x0600053D RID: 1341 RVA: 0x0000ABD4 File Offset: 0x00009FD4
+		// Token: 0x06000548 RID: 1352 RVA: 0x0000ACC4 File Offset: 0x0000A0C4
 		public static void Print(string format, [MarshalAs(UnmanagedType.U1)] bool triggerEvent, params object[] @params)
 		{
 			StringBuilder stringBuilder = new StringBuilder();
@@ -956,7 +956,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="format">The format.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x0600053E RID: 1342 RVA: 0x0000B108 File Offset: 0x0000A508
+		// Token: 0x06000549 RID: 1353 RVA: 0x0000B1F8 File Offset: 0x0000A5F8
 		public static void Print(string format, params object[] @params)
 		{
 			Game.Print(format, true, @params);
@@ -967,7 +967,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="text">The text.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
-		// Token: 0x0600053F RID: 1343 RVA: 0x0000AB7C File Offset: 0x00009F7C
+		// Token: 0x0600054A RID: 1354 RVA: 0x0000AC6C File Offset: 0x0000A06C
 		public unsafe static void Print(string text, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
 			ChatViewController* ptr = <Module>.EnsoulSharp.Native.ChatViewController.GetInstance();
@@ -988,7 +988,7 @@ namespace EnsoulSharp
 		/// 	Prints text into game chat.
 		/// </summary>
 		/// <param name="text">The text.</param>
-		// Token: 0x06000540 RID: 1344 RVA: 0x0000B0F4 File Offset: 0x0000A4F4
+		// Token: 0x0600054B RID: 1355 RVA: 0x0000B1E4 File Offset: 0x0000A5E4
 		public static void Print(string text)
 		{
 			Game.Print(text, true);
@@ -1001,7 +1001,7 @@ namespace EnsoulSharp
 		/// <param name="sendToAll">A value indicating whether send to all channel.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x06000541 RID: 1345 RVA: 0x0000AC58 File Offset: 0x0000A058
+		// Token: 0x0600054C RID: 1356 RVA: 0x0000AD48 File Offset: 0x0000A148
 		public static void Say(string format, [MarshalAs(UnmanagedType.U1)] bool sendToAll, [MarshalAs(UnmanagedType.U1)] bool triggerEvent, params object[] @params)
 		{
 			StringBuilder stringBuilder = new StringBuilder();
@@ -1015,7 +1015,7 @@ namespace EnsoulSharp
 		/// <param name="format">The format.</param>
 		/// <param name="sendToAll">A value indicating whether send to all channel.</param>
 		/// <param name="params">The params.</param>
-		// Token: 0x06000542 RID: 1346 RVA: 0x0000B138 File Offset: 0x0000A538
+		// Token: 0x0600054D RID: 1357 RVA: 0x0000B228 File Offset: 0x0000A628
 		public static void Say(string format, [MarshalAs(UnmanagedType.U1)] bool sendToAll, params object[] @params)
 		{
 			Game.Say(format, sendToAll, true, @params);
@@ -1027,7 +1027,7 @@ namespace EnsoulSharp
 		/// <param name="text">The text.</param>
 		/// <param name="sendToAll">A value indicating whether send to all channel.</param>
 		/// <param name="triggerEvent">A value indicating whether trigger event.</param>
-		// Token: 0x06000543 RID: 1347 RVA: 0x0000ABFC File Offset: 0x00009FFC
+		// Token: 0x0600054E RID: 1358 RVA: 0x0000ACEC File Offset: 0x0000A0EC
 		public unsafe static void Say(string text, [MarshalAs(UnmanagedType.U1)] bool sendToAll, [MarshalAs(UnmanagedType.U1)] bool triggerEvent)
 		{
 			MultiplayerClient* ptr = <Module>.EnsoulSharp.Native.MultiplayerClient.GetInstance();
@@ -1049,7 +1049,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="text">The text.</param>
 		/// <param name="sendToAll">A value indicating whether send to all channel.</param>
-		// Token: 0x06000544 RID: 1348 RVA: 0x0000B120 File Offset: 0x0000A520
+		// Token: 0x0600054F RID: 1359 RVA: 0x0000B210 File Offset: 0x0000A610
 		public static void Say(string text, [MarshalAs(UnmanagedType.U1)] bool sendToAll)
 		{
 			Game.Say(text, sendToAll, true);
@@ -1062,7 +1062,7 @@ namespace EnsoulSharp
 		/// <param name="position">The world position.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
 		/// <param name="showChat">A value indicating whether show chat.</param>
-		// Token: 0x06000545 RID: 1349 RVA: 0x0000AD78 File Offset: 0x0000A178
+		// Token: 0x06000550 RID: 1360 RVA: 0x0000AE68 File Offset: 0x0000A268
 		public unsafe static void ShowPing(PingCategory pingType, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool playAudio, [MarshalAs(UnmanagedType.U1)] bool showChat)
 		{
 			if (<Module>.EnsoulSharp.Native.ObjectManager.GetInstance() != null)
@@ -1087,7 +1087,7 @@ namespace EnsoulSharp
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
-		// Token: 0x06000546 RID: 1350 RVA: 0x0000B198 File Offset: 0x0000A598
+		// Token: 0x06000551 RID: 1361 RVA: 0x0000B288 File Offset: 0x0000A688
 		public static void ShowPing(PingCategory pingType, Vector3 position, [MarshalAs(UnmanagedType.U1)] bool playAudio)
 		{
 			Game.ShowPing(pingType, position, playAudio, true);
@@ -1098,7 +1098,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
-		// Token: 0x06000547 RID: 1351 RVA: 0x0000B1F8 File Offset: 0x0000A5F8
+		// Token: 0x06000552 RID: 1362 RVA: 0x0000B2E8 File Offset: 0x0000A6E8
 		public static void ShowPing(PingCategory pingType, Vector3 position)
 		{
 			Game.ShowPing(pingType, position, true);
@@ -1111,7 +1111,7 @@ namespace EnsoulSharp
 		/// <param name="position">The world position.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
 		/// <param name="showChat">A value indicating whether show chat.</param>
-		// Token: 0x06000548 RID: 1352 RVA: 0x0000AD28 File Offset: 0x0000A128
+		// Token: 0x06000553 RID: 1363 RVA: 0x0000AE18 File Offset: 0x0000A218
 		public unsafe static void ShowPing(PingCategory pingType, Vector2 position, [MarshalAs(UnmanagedType.U1)] bool playAudio, [MarshalAs(UnmanagedType.U1)] bool showChat)
 		{
 			if (<Module>.EnsoulSharp.Native.ObjectManager.GetInstance() != null)
@@ -1136,7 +1136,7 @@ namespace EnsoulSharp
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
-		// Token: 0x06000549 RID: 1353 RVA: 0x0000B180 File Offset: 0x0000A580
+		// Token: 0x06000554 RID: 1364 RVA: 0x0000B270 File Offset: 0x0000A670
 		public static void ShowPing(PingCategory pingType, Vector2 position, [MarshalAs(UnmanagedType.U1)] bool playAudio)
 		{
 			Game.ShowPing(pingType, position, playAudio, true);
@@ -1147,7 +1147,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
-		// Token: 0x0600054A RID: 1354 RVA: 0x0000B1E0 File Offset: 0x0000A5E0
+		// Token: 0x06000555 RID: 1365 RVA: 0x0000B2D0 File Offset: 0x0000A6D0
 		public static void ShowPing(PingCategory pingType, Vector2 position)
 		{
 			Game.ShowPing(pingType, position, true);
@@ -1161,7 +1161,7 @@ namespace EnsoulSharp
 		/// <param name="target">The target.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
 		/// <param name="showChat">A value indicating whether show chat.</param>
-		// Token: 0x0600054B RID: 1355 RVA: 0x0000ACE0 File Offset: 0x0000A0E0
+		// Token: 0x06000556 RID: 1366 RVA: 0x0000ADD0 File Offset: 0x0000A1D0
 		public unsafe static void ShowPing(PingCategory pingType, GameObject source, GameObject target, [MarshalAs(UnmanagedType.U1)] bool playAudio, [MarshalAs(UnmanagedType.U1)] bool showChat)
 		{
 			MenuGUI* ptr = <Module>.EnsoulSharp.Native.MenuGUI.GetInstance();
@@ -1180,7 +1180,7 @@ namespace EnsoulSharp
 		/// <param name="source">The source.</param>
 		/// <param name="target">The target.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
-		// Token: 0x0600054C RID: 1356 RVA: 0x0000B168 File Offset: 0x0000A568
+		// Token: 0x06000557 RID: 1367 RVA: 0x0000B258 File Offset: 0x0000A658
 		public static void ShowPing(PingCategory pingType, GameObject source, GameObject target, [MarshalAs(UnmanagedType.U1)] bool playAudio)
 		{
 			Game.ShowPing(pingType, source, target, playAudio, true);
@@ -1192,7 +1192,7 @@ namespace EnsoulSharp
 		/// <param name="pingType">The ping.</param>
 		/// <param name="source">The source.</param>
 		/// <param name="target">The target.</param>
-		// Token: 0x0600054D RID: 1357 RVA: 0x0000B1C8 File Offset: 0x0000A5C8
+		// Token: 0x06000558 RID: 1368 RVA: 0x0000B2B8 File Offset: 0x0000A6B8
 		public static void ShowPing(PingCategory pingType, GameObject source, GameObject target)
 		{
 			Game.ShowPing(pingType, source, target, true);
@@ -1205,7 +1205,7 @@ namespace EnsoulSharp
 		/// <param name="target">The target.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
 		/// <param name="showChat">A value indicating whether show chat.</param>
-		// Token: 0x0600054E RID: 1358 RVA: 0x0000AC84 File Offset: 0x0000A084
+		// Token: 0x06000559 RID: 1369 RVA: 0x0000AD74 File Offset: 0x0000A174
 		public unsafe static void ShowPing(PingCategory pingType, GameObject target, [MarshalAs(UnmanagedType.U1)] bool playAudio, [MarshalAs(UnmanagedType.U1)] bool showChat)
 		{
 			if (<Module>.EnsoulSharp.Native.ObjectManager.GetInstance() != null)
@@ -1231,7 +1231,7 @@ namespace EnsoulSharp
 		/// <param name="pingType">The ping.</param>
 		/// <param name="target">The target.</param>
 		/// <param name="playAudio">A value indicating whether play audio.</param>
-		// Token: 0x0600054F RID: 1359 RVA: 0x0000B150 File Offset: 0x0000A550
+		// Token: 0x0600055A RID: 1370 RVA: 0x0000B240 File Offset: 0x0000A640
 		public static void ShowPing(PingCategory pingType, GameObject target, [MarshalAs(UnmanagedType.U1)] bool playAudio)
 		{
 			Game.ShowPing(pingType, target, playAudio, true);
@@ -1242,7 +1242,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="target">The target.</param>
-		// Token: 0x06000550 RID: 1360 RVA: 0x0000B1B0 File Offset: 0x0000A5B0
+		// Token: 0x0600055B RID: 1371 RVA: 0x0000B2A0 File Offset: 0x0000A6A0
 		public static void ShowPing(PingCategory pingType, GameObject target)
 		{
 			Game.ShowPing(pingType, target, true);
@@ -1253,7 +1253,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
-		// Token: 0x06000551 RID: 1361 RVA: 0x0000AE3C File Offset: 0x0000A23C
+		// Token: 0x0600055C RID: 1372 RVA: 0x0000AF2C File Offset: 0x0000A32C
 		public unsafe static void SendPing(PingCategory pingType, Vector3 position)
 		{
 			SmartPingClientManager* ptr = <Module>.EnsoulSharp.Native.SmartPingClientManager.GetInstance();
@@ -1269,7 +1269,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="position">The world position.</param>
-		// Token: 0x06000552 RID: 1362 RVA: 0x0000AE08 File Offset: 0x0000A208
+		// Token: 0x0600055D RID: 1373 RVA: 0x0000AEF8 File Offset: 0x0000A2F8
 		public unsafe static void SendPing(PingCategory pingType, Vector2 position)
 		{
 			SmartPingClientManager* ptr = <Module>.EnsoulSharp.Native.SmartPingClientManager.GetInstance();
@@ -1285,7 +1285,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="pingType">The ping.</param>
 		/// <param name="target">The unit.</param>
-		// Token: 0x06000553 RID: 1363 RVA: 0x0000ADC8 File Offset: 0x0000A1C8
+		// Token: 0x0600055E RID: 1374 RVA: 0x0000AEB8 File Offset: 0x0000A2B8
 		public unsafe static void SendPing(PingCategory pingType, GameObject target)
 		{
 			SmartPingClientManager* ptr = <Module>.EnsoulSharp.Native.SmartPingClientManager.GetInstance();
@@ -1301,7 +1301,7 @@ namespace EnsoulSharp
 		/// 	Sends your champion mastery badge.
 		/// </summary>
 		/// <returns>A value indicating whether successfully sent.</returns>
-		// Token: 0x06000554 RID: 1364 RVA: 0x0000AE70 File Offset: 0x0000A270
+		// Token: 0x0600055F RID: 1375 RVA: 0x0000AF60 File Offset: 0x0000A360
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool SendMasteryBadge()
 		{
@@ -1314,7 +1314,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="emoteId">The emote id.</param>
 		/// <returns>A vlaue indicating whether successfully sent.</returns>
-		// Token: 0x06000555 RID: 1365 RVA: 0x0000AE90 File Offset: 0x0000A290
+		// Token: 0x06000560 RID: 1376 RVA: 0x0000AF80 File Offset: 0x0000A380
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool SendEmote(EmoteId emoteId)
 		{
@@ -1327,7 +1327,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="emoteSlot">The emote slot.</param>
 		/// <returns>A value indicating whether successfully sent.</returns>
-		// Token: 0x06000556 RID: 1366 RVA: 0x0000AEB0 File Offset: 0x0000A2B0
+		// Token: 0x06000561 RID: 1377 RVA: 0x0000AFA0 File Offset: 0x0000A3A0
 		[return: MarshalAs(UnmanagedType.U1)]
 		public unsafe static bool SendSummonerEmote(SummonerEmoteSlot emoteSlot)
 		{
@@ -1345,7 +1345,7 @@ namespace EnsoulSharp
 		/// </summary>
 		/// <param name="position">The position.</param>
 		/// <returns>A value indicating whether the position is in fow.</returns>
-		// Token: 0x06000557 RID: 1367 RVA: 0x0000AED0 File Offset: 0x0000A2D0
+		// Token: 0x06000562 RID: 1378 RVA: 0x0000AFC0 File Offset: 0x0000A3C0
 		[return: MarshalAs(UnmanagedType.U1)]
 		public static bool IsInFogOfWar(Vector3 position)
 		{
@@ -1408,32 +1408,32 @@ namespace EnsoulSharp
 		internal static List<GameUpdate> UpdateHandlers = new List<GameUpdate>();
 
 		// Token: 0x020000E3 RID: 227
-		// (Invoke) Token: 0x0600055A RID: 1370
+		// (Invoke) Token: 0x06000565 RID: 1381
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnNotifyNativeDelegate(EventsNames type, BaseParams* @params);
 
 		// Token: 0x020000E4 RID: 228
-		// (Invoke) Token: 0x0600055E RID: 1374
+		// (Invoke) Token: 0x06000569 RID: 1385
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnProcessPacketNativeDelegate(DefaultPacket* packet, bool* process);
 
 		// Token: 0x020000E5 RID: 229
-		// (Invoke) Token: 0x06000562 RID: 1378
+		// (Invoke) Token: 0x0600056D RID: 1389
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnDisplayChatNativeDelegate(sbyte* msg, uint flags, bool* process);
 
 		// Token: 0x020000E6 RID: 230
-		// (Invoke) Token: 0x06000566 RID: 1382
+		// (Invoke) Token: 0x06000571 RID: 1393
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnSendChatNativeDelegate(sbyte* msg, [MarshalAs(UnmanagedType.U1)] bool sendToAll, bool* process);
 
 		// Token: 0x020000E7 RID: 231
-		// (Invoke) Token: 0x0600056A RID: 1386
+		// (Invoke) Token: 0x06000575 RID: 1397
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal unsafe delegate void OnWndProcNativeDelegate(HWND__* hWnd, uint uMsg, uint wParam, int lParam, bool* process);
 
 		// Token: 0x020000E8 RID: 232
-		// (Invoke) Token: 0x0600056E RID: 1390
+		// (Invoke) Token: 0x06000579 RID: 1401
 		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 		internal delegate void OnUpdateNativeDelegate();
 	}

@@ -304,13 +304,13 @@ namespace EnsoulSharp.SDK.Rendering.Dx11
 				this.CacheBitmap[this.Color.ToRgba()] = bitmap;
 			}
 
-			// Token: 0x04000C88 RID: 3208
+			// Token: 0x04000C87 RID: 3207
 			private int ColorValue = -1;
 
-			// Token: 0x04000C89 RID: 3209
+			// Token: 0x04000C88 RID: 3208
 			private ColorBGRA originColor = SharpDX.Color.White;
 
-			// Token: 0x04000C8A RID: 3210
+			// Token: 0x04000C89 RID: 3209
 			public new Dictionary<int, SharpDX.Direct2D1.Bitmap> CacheBitmap = new Dictionary<int, SharpDX.Direct2D1.Bitmap>();
 		}
 	}

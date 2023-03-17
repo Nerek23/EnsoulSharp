@@ -4,25 +4,25 @@ using System.Security;
 
 namespace <CrtImplementationDetails>
 {
-	// Token: 0x02000172 RID: 370
+	// Token: 0x02000174 RID: 372
 	[Serializable]
 	internal class ModuleLoadExceptionHandlerException : ModuleLoadException
 	{
-		// Token: 0x060006AE RID: 1710 RVA: 0x000108F8 File Offset: 0x0000FCF8
+		// Token: 0x060006BB RID: 1723 RVA: 0x000109E8 File Offset: 0x0000FDE8
 		protected ModuleLoadExceptionHandlerException(SerializationInfo info, StreamingContext context) : base(info, context)
 		{
 			this.NestedException = (Exception)info.GetValue("NestedException", typeof(Exception));
 		}
 
-		// Token: 0x060006AF RID: 1711 RVA: 0x00010F18 File Offset: 0x00010318
+		// Token: 0x060006BC RID: 1724 RVA: 0x00011008 File Offset: 0x00010408
 		public ModuleLoadExceptionHandlerException(string message, Exception innerException, Exception nestedException) : base(message, innerException)
 		{
 			this.NestedException = nestedException;
 		}
 
-		// Token: 0x17000174 RID: 372
-		// (get) Token: 0x060006B0 RID: 1712 RVA: 0x000107FC File Offset: 0x0000FBFC
-		// (set) Token: 0x060006B1 RID: 1713 RVA: 0x00010810 File Offset: 0x0000FC10
+		// Token: 0x1700017A RID: 378
+		// (get) Token: 0x060006BD RID: 1725 RVA: 0x000108EC File Offset: 0x0000FCEC
+		// (set) Token: 0x060006BE RID: 1726 RVA: 0x00010900 File Offset: 0x0000FD00
 		public Exception NestedException
 		{
 			get
@@ -35,7 +35,7 @@ namespace <CrtImplementationDetails>
 			}
 		}
 
-		// Token: 0x060006B2 RID: 1714 RVA: 0x00010824 File Offset: 0x0000FC24
+		// Token: 0x060006BF RID: 1727 RVA: 0x00010914 File Offset: 0x0000FD14
 		public override string ToString()
 		{
 			string text;
@@ -91,7 +91,7 @@ namespace <CrtImplementationDetails>
 			return string.Format("\n{0}: {1}\n--- Start of primary exception ---\n{2}\n--- End of primary exception ---\n\n--- Start of nested exception ---\n{3}\n--- End of nested exception ---\n", array);
 		}
 
-		// Token: 0x060006B3 RID: 1715 RVA: 0x000108C8 File Offset: 0x0000FCC8
+		// Token: 0x060006C0 RID: 1728 RVA: 0x000109B8 File Offset: 0x0000FDB8
 		[SecurityCritical]
 		public override void GetObjectData(SerializationInfo info, StreamingContext context)
 		{

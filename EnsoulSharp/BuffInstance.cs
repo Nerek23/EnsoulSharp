@@ -10,13 +10,13 @@ namespace EnsoulSharp
 	// Token: 0x02000068 RID: 104
 	public class BuffInstance
 	{
-		// Token: 0x06000417 RID: 1047 RVA: 0x000064C4 File Offset: 0x000058C4
+		// Token: 0x06000422 RID: 1058 RVA: 0x0000655C File Offset: 0x0000595C
 		internal unsafe BuffInstance(BuffInstanceClient* buff)
 		{
 			this.m_buff = buff;
 		}
 
-		// Token: 0x06000418 RID: 1048 RVA: 0x000064E0 File Offset: 0x000058E0
+		// Token: 0x06000423 RID: 1059 RVA: 0x00006578 File Offset: 0x00005978
 		internal unsafe BuffInstanceClient* GetPtr()
 		{
 			return this.m_buff;
@@ -26,8 +26,8 @@ namespace EnsoulSharp
 		/// 	Gets a value indicating whether the buff is valid.
 		/// </summary>
 		/// <remarks>We suggest you can use this property check whether the buff is valid before any other calls.</remarks>
-		// Token: 0x170000BD RID: 189
-		// (get) Token: 0x06000419 RID: 1049 RVA: 0x000064F4 File Offset: 0x000058F4
+		// Token: 0x170000C1 RID: 193
+		// (get) Token: 0x06000424 RID: 1060 RVA: 0x0000658C File Offset: 0x0000598C
 		public unsafe bool IsValid
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -49,8 +49,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the buff is active.
 		/// </summary>
-		// Token: 0x170000BC RID: 188
-		// (get) Token: 0x0600041A RID: 1050 RVA: 0x00006528 File Offset: 0x00005928
+		// Token: 0x170000C0 RID: 192
+		// (get) Token: 0x06000425 RID: 1061 RVA: 0x000065C0 File Offset: 0x000059C0
 		public bool IsActive
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -63,8 +63,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets a value indicating whether the buff is positive.
 		/// </summary>
-		// Token: 0x170000BB RID: 187
-		// (get) Token: 0x0600041B RID: 1051 RVA: 0x00006540 File Offset: 0x00005940
+		// Token: 0x170000BF RID: 191
+		// (get) Token: 0x06000426 RID: 1062 RVA: 0x000065D8 File Offset: 0x000059D8
 		public bool IsPositive
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -77,8 +77,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the type of the buff.
 		/// </summary>
-		// Token: 0x170000BA RID: 186
-		// (get) Token: 0x0600041C RID: 1052 RVA: 0x00006558 File Offset: 0x00005958
+		// Token: 0x170000BE RID: 190
+		// (get) Token: 0x06000427 RID: 1063 RVA: 0x000065F0 File Offset: 0x000059F0
 		public unsafe BuffType Type
 		{
 			get
@@ -90,8 +90,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the start time of the buff.
 		/// </summary>
-		// Token: 0x170000B9 RID: 185
-		// (get) Token: 0x0600041D RID: 1053 RVA: 0x00006574 File Offset: 0x00005974
+		// Token: 0x170000BD RID: 189
+		// (get) Token: 0x06000428 RID: 1064 RVA: 0x0000660C File Offset: 0x00005A0C
 		public unsafe float StartTime
 		{
 			get
@@ -103,8 +103,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the end time of the buff.
 		/// </summary>
-		// Token: 0x170000B8 RID: 184
-		// (get) Token: 0x0600041E RID: 1054 RVA: 0x00006590 File Offset: 0x00005990
+		// Token: 0x170000BC RID: 188
+		// (get) Token: 0x06000429 RID: 1065 RVA: 0x00006628 File Offset: 0x00005A28
 		public unsafe float EndTime
 		{
 			get
@@ -117,8 +117,8 @@ namespace EnsoulSharp
 		/// 	Gets the tooltip vars of the buff.
 		/// </summary>
 		/// <remarks>The max count is 16.</remarks>
-		// Token: 0x170000B7 RID: 183
-		// (get) Token: 0x0600041F RID: 1055 RVA: 0x000065AC File Offset: 0x000059AC
+		// Token: 0x170000BB RID: 187
+		// (get) Token: 0x0600042A RID: 1066 RVA: 0x00006644 File Offset: 0x00005A44
 		public unsafe float[] TooltipVars
 		{
 			get
@@ -140,8 +140,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the count of the buff.
 		/// </summary>
-		// Token: 0x170000B6 RID: 182
-		// (get) Token: 0x06000420 RID: 1056 RVA: 0x000065E4 File Offset: 0x000059E4
+		// Token: 0x170000BA RID: 186
+		// (get) Token: 0x0600042B RID: 1067 RVA: 0x0000667C File Offset: 0x00005A7C
 		public int Count
 		{
 			get
@@ -153,8 +153,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the name of the buff.
 		/// </summary>
-		// Token: 0x170000B5 RID: 181
-		// (get) Token: 0x06000421 RID: 1057 RVA: 0x000065FC File Offset: 0x000059FC
+		// Token: 0x170000B9 RID: 185
+		// (get) Token: 0x0600042C RID: 1068 RVA: 0x00006694 File Offset: 0x00005A94
 		public unsafe string Name
 		{
 			get
@@ -171,8 +171,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the caster of the buff.
 		/// </summary>
-		// Token: 0x170000B4 RID: 180
-		// (get) Token: 0x06000422 RID: 1058 RVA: 0x0000662C File Offset: 0x00005A2C
+		// Token: 0x170000B8 RID: 184
+		// (get) Token: 0x0600042D RID: 1069 RVA: 0x000066C4 File Offset: 0x00005AC4
 		public unsafe GameObject Caster
 		{
 			get

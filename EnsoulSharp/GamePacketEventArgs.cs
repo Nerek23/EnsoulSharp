@@ -9,7 +9,7 @@ namespace EnsoulSharp
 	// Token: 0x020000D8 RID: 216
 	public class GamePacketEventArgs : EventArgs
 	{
-		// Token: 0x060004EC RID: 1260 RVA: 0x0000C5F0 File Offset: 0x0000B9F0
+		// Token: 0x060004F7 RID: 1271 RVA: 0x0000C6E0 File Offset: 0x0000BAE0
 		internal GamePacketEventArgs([MarshalAs(UnmanagedType.U1)] bool process, int eventId, int networkId, byte[] packetData)
 		{
 			this.m_process = process;
@@ -21,9 +21,9 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets or sets a value indicating whether the event should process.
 		/// </summary>
-		// Token: 0x1700011F RID: 287
-		// (get) Token: 0x060004ED RID: 1261 RVA: 0x0000C620 File Offset: 0x0000BA20
-		// (set) Token: 0x060004EE RID: 1262 RVA: 0x0000C634 File Offset: 0x0000BA34
+		// Token: 0x17000123 RID: 291
+		// (get) Token: 0x060004F8 RID: 1272 RVA: 0x0000C710 File Offset: 0x0000BB10
+		// (set) Token: 0x060004F9 RID: 1273 RVA: 0x0000C724 File Offset: 0x0000BB24
 		public bool Process
 		{
 			[return: MarshalAs(UnmanagedType.U1)]
@@ -41,8 +41,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the event id.
 		/// </summary>
-		// Token: 0x1700011E RID: 286
-		// (get) Token: 0x060004EF RID: 1263 RVA: 0x0000C648 File Offset: 0x0000BA48
+		// Token: 0x17000122 RID: 290
+		// (get) Token: 0x060004FA RID: 1274 RVA: 0x0000C738 File Offset: 0x0000BB38
 		public int EventId
 		{
 			get
@@ -54,8 +54,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the relative object network id.
 		/// </summary>
-		// Token: 0x1700011D RID: 285
-		// (get) Token: 0x060004F0 RID: 1264 RVA: 0x0000C65C File Offset: 0x0000BA5C
+		// Token: 0x17000121 RID: 289
+		// (get) Token: 0x060004FB RID: 1275 RVA: 0x0000C74C File Offset: 0x0000BB4C
 		public int NetworkId
 		{
 			get
@@ -67,8 +67,8 @@ namespace EnsoulSharp
 		/// <summary>
 		/// 	Gets the original packet data.
 		/// </summary>
-		// Token: 0x1700011C RID: 284
-		// (get) Token: 0x060004F1 RID: 1265 RVA: 0x0000C670 File Offset: 0x0000BA70
+		// Token: 0x17000120 RID: 288
+		// (get) Token: 0x060004FC RID: 1276 RVA: 0x0000C760 File Offset: 0x0000BB60
 		public byte[] PacketData
 		{
 			get
